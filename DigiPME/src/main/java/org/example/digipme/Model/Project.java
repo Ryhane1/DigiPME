@@ -38,6 +38,7 @@ public class Project {
     @ManyToOne
     @JoinColumn(name = "pme_id")
     private PME pme;
+
     @OneToMany(
             mappedBy = "project",
             cascade = CascadeType.ALL,

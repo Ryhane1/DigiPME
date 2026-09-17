@@ -16,11 +16,11 @@ public class CacheConfig {
     @Bean
     public RedisCacheManager cacheManager(RedisConnectionFactory connectionFactory) {
         RedisCacheConfiguration cacheConfig = RedisCacheConfiguration.defaultCacheConfig()
-                .entryTtl(Duration.ofHours(1));
+                .entryTtl(Duration.ofMinutes(15));
 
         return RedisCacheManager.builder(connectionFactory)
-//                .cacheDefaults(cacheConfig)
-                .withCacheConfiguration("users", cacheConfig)
+                .cacheDefaults(cacheConfig)
+                .withCacheConfiguration("users", cacheConfig.entryTtl(Duration.ofHours(1)))
                 .build();
     }
 }

@@ -1,6 +1,8 @@
 package org.example.digipme.Controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.example.digipme.DTOs.Dashboard.FreelancerDashboardResponse;
 import org.example.digipme.DTOs.FreelancerRequest;
 import org.example.digipme.DTOs.FreelancerResponse;
 import org.example.digipme.DTOs.OfferResponse;
@@ -34,7 +36,7 @@ public class FreelancerController {
     @PutMapping("/me")
     @PreAuthorize("hasRole('FREELANCER')")
     public ResponseEntity<FreelancerResponse> updateMyProfile(
-            @RequestBody FreelancerRequest request,
+            @Valid @RequestBody FreelancerRequest request,
             Authentication authentication
     ) {
         return ResponseEntity.ok(
@@ -75,5 +77,13 @@ public class FreelancerController {
                         authentication
                 )
         );
+    }
+
+
+
+    @GetMapping("/dashboard")
+    @PreAuthorize("hasRole('FREELANCER')")
+    public ResponseEntity<FreelancerDashboardResponse> getDashboard(Authentication authentication) {
+        return ResponseEntity.ok(freelancerService.getDashboard(authentication));
     }
 }

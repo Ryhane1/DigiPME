@@ -29,6 +29,4 @@ public class OfferRequest {
     @NotNull(message = "Le projet est obligatoire")
     private Long projectId;
 
-    @NotNull(message = "Le freelancer est obligatoire")
-    private Long freelancerId;
 }

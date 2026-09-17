@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.example.digipme.Enums.ActiviteType;
+import org.example.digipme.Enums.ProjectStatus;
 
 import java.time.LocalDate;
 
@@ -20,4 +21,5 @@ public class ProjectResponse {
     private String description;
     private Double prix;
     private LocalDate date;
+    private ProjectStatus status;
 }

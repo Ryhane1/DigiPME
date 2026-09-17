@@ -1,6 +1,7 @@
 package org.example.digipme.Service;
 
 import lombok.RequiredArgsConstructor;
+import org.example.digipme.Enums.OfferStatus;
 import org.example.digipme.Model.Freelancer;
 import org.example.digipme.Model.Offer;
 import org.example.digipme.Model.Project;
@@ -30,7 +31,7 @@ public class OfferService {
     private final OfferMapper offerMapper;
 
 
-    @CacheEvict(value = "offers", allEntries = true)
+    @CacheEvict(value = {"offers", "freelancer"}, allEntries = true)
     public OfferResponse createOffer(
             OfferRequest request,
             Authentication authentication) {
@@ -50,6 +51,7 @@ public class OfferService {
                         ));
 
         Offer offer = offerMapper.toEntity(request);
+        offer.setStatus(OfferStatus.EN_ATTENTE);
         offer.setProject(project);
         offer.setFreelancer(freelancer);
         Offer savedOffer = offerRepository.save(offer);
@@ -106,7 +108,7 @@ public class OfferService {
     }
 
 
-    @CacheEvict(value = "offers", allEntries = true)
+    @CacheEvict(value = {"offers", "freelancer"}, allEntries = true)
     public void deleteOffer( Long id, Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
         if (!(user instanceof Freelancer freelancer)) {

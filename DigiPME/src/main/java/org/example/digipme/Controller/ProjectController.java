@@ -1,5 +1,6 @@
 package org.example.digipme.Controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.digipme.DTOs.ProjectRequest;
 import org.example.digipme.DTOs.ProjectResponse;
@@ -21,37 +22,32 @@ public class ProjectController {
     @PostMapping
     @PreAuthorize("hasRole('PME')")
     public ResponseEntity<ProjectResponse> createProject(
-            @RequestBody ProjectRequest request,
-            Authentication authentication
-    ) {
-
+            @Valid @RequestBody ProjectRequest request,
+            Authentication authentication) {
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(projectService.createProject(request, authentication));
     }
 
+
+
     @GetMapping
     @PreAuthorize("hasAnyRole('PME', 'FREELANCER', 'ADMIN')")
     public ResponseEntity<Page<ProjectResponse>> getAllProjects(
             @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "10") int size
-    ) {
+            @RequestParam(defaultValue = "10") int size) {
 
-        return ResponseEntity.ok(
-                projectService.getAllProjects(page, size)
-        );
+        return ResponseEntity.ok(projectService.getAllProjects(page, size));
     }
+
 
 
     @GetMapping("/{id}")
     @PreAuthorize("hasAnyRole('PME', 'FREELANCER', 'ADMIN')")
     public ResponseEntity<ProjectResponse> getProjectById(
-            @PathVariable Long id
-    ) {
+            @PathVariable Long id) {
 
-        return ResponseEntity.ok(
-                projectService.getProjectById(id)
-        );
+        return ResponseEntity.ok(projectService.getProjectById(id));
     }
 
 
@@ -60,12 +56,9 @@ public class ProjectController {
     public ResponseEntity<Page<ProjectResponse>> getMyProjects(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size,
-            Authentication authentication
-    ) {
+            Authentication authentication) {
 
-        return ResponseEntity.ok(
-                projectService.getMyProjects(page, size, authentication)
-        );
+        return ResponseEntity.ok(projectService.getMyProjects(page, size, authentication));
     }
 
 
@@ -74,23 +67,18 @@ public class ProjectController {
     public ResponseEntity<ProjectResponse> updateProject(
             @PathVariable Long id,
             @RequestBody ProjectRequest request,
-            Authentication authentication
-    ) {
+            Authentication authentication) {
 
-        return ResponseEntity.ok(
-                projectService.updateProject(id, request, authentication)
-        );
+        return ResponseEntity.ok(projectService.updateProject(id, request, authentication));
     }
 
     @DeleteMapping("/{id}")
     @PreAuthorize("hasAnyRole('PME', 'ADMIN')")
     public ResponseEntity<Void> deleteProject(
             @PathVariable Long id,
-            Authentication authentication
-    ) {
+            Authentication authentication) {
 
         projectService.deleteProject(id, authentication);
-
         return ResponseEntity.noContent().build();
     }
 }

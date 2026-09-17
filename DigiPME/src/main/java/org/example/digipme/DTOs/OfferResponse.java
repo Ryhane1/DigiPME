@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.digipme.Enums.OfferStatus;
 
 import java.time.LocalDate;
 
@@ -19,5 +20,6 @@ public class OfferResponse {
     private LocalDate dateLivraison;
     private Long projectId;
     private Long freelancerId;
+    private OfferStatus status;
 
 }

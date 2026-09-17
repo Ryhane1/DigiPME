@@ -17,4 +17,6 @@ public class FreelancerResponse {
     private String telephone;
     private String adresse;
     private String specialite;
+    private Double noteMoyenne;
+
 }

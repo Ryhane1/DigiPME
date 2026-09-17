@@ -1,5 +1,6 @@
 package org.example.digipme.Controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.digipme.DTOs.UserRequest;
 import org.example.digipme.DTOs.UserResponse;
@@ -65,7 +66,7 @@ public class UserController {
     @PostMapping("/add")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<UserResponse> addUser(
-            @RequestBody UserRequest userRequest
+            @Valid @RequestBody UserRequest userRequest
     ) {
 
         return ResponseEntity.ok(

@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.digipme.Enums.RoleUser;
 
 @Data
 @Builder
@@ -27,4 +28,7 @@ public class UserRequest {
     private String telephone;
 
     private String adresse;
+
+    @NotBlank(message = "Le rôle est obligatoire")
+    private RoleUser role;
 }

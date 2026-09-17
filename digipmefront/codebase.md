@@ -82,6 +82,17 @@ dist-ssr
 </project>
 ```
 
+# .idea\vcs.xml
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+  </component>
+</project>
+```
+
 # .idea\workspace.xml
 
 ```xml
@@ -91,7 +102,64 @@ dist-ssr
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27b7f0b8-91d6-4e4b-91de-058a7d4bd0c9" name="Changes" comment="" />
+    <list default="true" id="27b7f0b8-91d6-4e4b-91de-058a7d4bd0c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Dashboard/useDashboard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Freelancers/FreelancersList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Offers/MyOffers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Offers/ProjectOffers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Projects/ActiviteTypes.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Projects/FreelancerOfferBox.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Projects/MyProjects.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Projects/Pagination.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Projects/ProjectDetails.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Projects/ProjectForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Projects/Projects.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Projects/ProjectsList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Reviews/FreelancerReviewsPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Reviews/MyReviews.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Reviews/ReviewForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Reviews/ReviewsList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Reviews/StarRating.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/codebase.md" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/codebase.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/FreelancerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/FreelancerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/PMEController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/PMEController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/FreelancerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/FreelancerResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/OfferRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/OfferRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/OfferResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/OfferResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ProjectRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ProjectRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ProjectResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ProjectResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ReviewRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ReviewRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/UserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Enums/ActiviteType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Enums/ActiviteType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Mappers/ProjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Mappers/ProjectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/Freelancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/Freelancer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/OfferRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/OfferRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/ProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/UserAppRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/UserAppRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/FreelancerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/FreelancerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/OfferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/OfferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/PMEService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/PMEService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/config/CacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/config/CacheConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/security/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codebase.md" beforeDir="false" afterPath="$PROJECT_DIR$/codebase.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Auth/Auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auth/Auth.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard/Admin/AdminDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/Admin/AdminDashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard/DashboardLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/DashboardLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard/Freelancer/FreelancerDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/Freelancer/FreelancerDashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard/PME/PMEDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/PME/PMEDashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/axios.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/axios.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,6 +169,25 @@ dist-ssr
     <persistenceIdMap>
       <entry key="_C:/Users/enaaj/OneDrive/Desktop/FileRouge/digipmefront" value="3J5seNk2VbVGAh2MhqvnPpPwPLk" />
     </persistenceIdMap>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Ryhane1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ryhane1/DigiPME.git",
+    "accountId": "9496ee63-fbfc-4ad7-95b3-3d1bf0661724"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
@@ -170,25 +257,27 @@ dist-ssr
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\enaaj\OneDrive\Desktop\FileRouge\digipmefront\src" />
@@ -358,7 +447,7 @@ api.interceptors.response.use(
                 toast.error("Erreur 401 : Session expirée.");
 
                 localStorage.removeItem("token");
-                localStorage.removeItem("username");
+                localStorage.removeItem("nom");
                 localStorage.removeItem("role");
 
                 window.location.href = "/";
@@ -590,33 +679,43 @@ import Login from "./Auth/Login";
 import Home from "./Home";
 import Dashboard from "./Dashboard/Dashboard.jsx";
 
+import ProjectsList from "./Projects/ProjectsList";
+import MyProjects from "./Projects/MyProjects";
+import ProjectForm from "./Projects/ProjectForm";
+import ProjectDetails from "./Projects/ProjectDetails";
+import MyOffers from "./Offers/MyOffers";
+import ProjectOffers from "./Offers/ProjectOffers";
+import FreelancersList from "./Freelancers/FreelancersList.jsx";
+import FreelancerReviewsPage from "./Reviews/FreelancerReviewsPage";
+import MyReviews from "./Reviews/MyReviews";
+
+
 function App() {
-  return (
-      <BrowserRouter>
-        <Routes>
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/register/pme" element={<RegisterPME />} />
+                <Route path="/register/freelance" element={<RegisterFreelance />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/dashboard" element={<Dashboard />} />
 
-          <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<ProjectsList />} />
+                <Route path="/projects/new" element={<ProjectForm />} />
+                <Route path="/projects/:id" element={<ProjectDetails />} />
+                <Route path="/projects/:id/edit" element={<ProjectForm />} />
+                <Route path="/my-projects" element={<MyProjects />} />
+                <Route path="/my-offers" element={<MyOffers />} />
+                <Route path="/projects/:projectId/offers" element={<ProjectOffers />} />
+                <Route path="/my-offers" element={<MyOffers />} />
+                <Route path="/projects/:projectId/offers" element={<ProjectOffers />} />
+                <Route path="/freelancers" element={<FreelancersList />} />
+                <Route path="/freelancers/:freelancerId/reviews" element={<FreelancerReviewsPage />} />
+                <Route path="/my-reviews" element={<MyReviews />} />
 
-          <Route
-              path="/register/pme"
-              element={<RegisterPME />}
-          />
-
-          <Route
-              path="/register/freelance"
-              element={<RegisterFreelance />}
-          />
-
-          <Route
-              path="/login"
-              element={<Login />}
-          />
-
-           <Route path="/dashboard" element={<Dashboard />} />
-
-        </Routes>
-      </BrowserRouter>
-  );
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
@@ -771,6 +870,17 @@ This is a file of the type: SVG Image
     transition: 0.2s;
 }
 
+.auth-error {
+    background: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
 .auth-button:hover {
     background: #1d4ed8;
 }
@@ -847,166 +957,127 @@ This is a file of the type: SVG Image
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../api/axios";
-import {jwtDecode} from "jwt-decode";
+import { jwtDecode } from "jwt-decode";
 import { Mail, Lock, LogIn } from "lucide-react";
 import "./Auth.css";
 
 function Login() {
-
   const navigate = useNavigate();
 
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-  });
+  const [formData, setFormData] = useState({ email: "", password: "" });
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
-
     e.preventDefault();
+    setError("");
+    setLoading(true);
 
     try {
       const response = await api.post("/auth/login", formData);
-
       const token = response.data.token;
 
-      localStorage.setItem("token", token);
-
       const decoded = jwtDecode(token);
+      const role = decoded.role[0].authority.replace("ROLE_", "");
 
-      console.log(decoded);
-
+      localStorage.setItem("token", token);
       localStorage.setItem("nom", decoded.sub);
-
-      localStorage.setItem(
-          "role",
-          decoded.role[0].authority.replace("ROLE_", "")
-      );
+      localStorage.setItem("role", role);
 
       navigate("/dashboard");
-
-
-    } catch (error) {
-
-      setError(
-          "Nom d'utilisateur ou mot de passe incorrect."
-      );
-
-      console.error(error);
-
+    } catch (err) {
+      setError("Email ou mot de passe incorrect.");
+      console.error(err);
+    } finally {
+      setLoading(false);
     }
-
   };
 
   return (
-    <div className="auth-page">
-      <div className="auth-container login-container">
-
-        <div className="auth-header">
-          <div className="auth-icon">
-            <LogIn size={30} />
+      <div className="auth-page">
+        <div className="auth-container login-container">
+          <div className="auth-header">
+            <div className="auth-icon">
+              <LogIn size={30} />
+            </div>
+            <h1>Bienvenue sur DigiPME</h1>
+            <p>Connectez-vous à votre compte pour accéder à votre espace.</p>
           </div>
 
-          <h1>Bienvenue sur DigiPME</h1>
+          <form onSubmit={handleSubmit} className="auth-form">
+            {error && <p className="auth-error">{error}</p>}
 
-          <p>
-            Connectez-vous à votre compte pour accéder à votre espace.
-          </p>
+            <div className="form-group">
+              <label>Email</label>
+              <div className="input-icon">
+                <Mail size={18} />
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="votre@email.com"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                />
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label>Mot de passe</label>
+              <div className="input-icon">
+                <Lock size={18} />
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="••••••••"
+                    value={formData.password}
+                    onChange={handleChange}
+                    required
+                />
+              </div>
+            </div>
+
+            <div className="forgot-password">
+              <a href="/forgot-password">Mot de passe oublié ?</a>
+            </div>
+
+            <button type="submit" className="auth-button" disabled={loading}>
+              <LogIn size={18} />
+              {loading ? "Connexion..." : "Se connecter"}
+            </button>
+
+            <p className="auth-footer">Vous n'avez pas encore de compte ?</p>
+
+            <div className="register-links">
+              <a href="/register/pme">Créer un compte PME</a>
+              <a href="/register/freelance">Créer un compte Freelance</a>
+            </div>
+          </form>
         </div>
-
-        <form onSubmit={handleSubmit} className="auth-form">
-
-          <div className="form-group">
-            <label>Email</label>
-
-            <div className="input-icon">
-              <Mail size={18} />
-
-              <input
-                type="email"
-                name="email"
-                placeholder="votre@email.com"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label>Mot de passe</label>
-
-            <div className="input-icon">
-              <Lock size={18} />
-
-              <input
-                type="password"
-                name="password"
-                placeholder="••••••••"
-                value={formData.password}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-
-          <div className="forgot-password">
-            <a href="/forgot-password">
-              Mot de passe oublié ?
-            </a>
-          </div>
-
-          <button type="submit" className="auth-button">
-            <LogIn size={18} />
-            Se connecter
-          </button>
-
-          <p className="auth-footer">
-            Vous n'avez pas encore de compte ?
-          </p>
-
-          <div className="register-links">
-            <a href="/register/pme">
-              Créer un compte PME
-            </a>
-
-            <a href="/register/freelance">
-              Créer un compte Freelance
-            </a>
-          </div>
-
-        </form>
       </div>
-    </div>
   );
 }
 
 export default Login;
-
 ```
 
 # src\Auth\RegisterFreelancer.jsx
 
 ```jsx
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import api from "../api/axios";
+import { jwtDecode } from "jwt-decode";
+import { Code2, Mail, Lock, User, Phone, MapPin, Briefcase } from "lucide-react";
 import "./Auth.css";
-import {
-  Code2,
-  Mail,
-  Lock,
-  User,
-  Phone,
-  MapPin,
-  Briefcase,
-} from "lucide-react";
 
 function RegisterFreelance() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     nom: "",
     email: "",
@@ -1015,166 +1086,191 @@ function RegisterFreelance() {
     specialite: "",
     password: "",
     confirmPassword: "",
-    role: "freelance",
   });
 
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setError("");
 
     if (formData.password !== formData.confirmPassword) {
-      alert("Les mots de passe ne correspondent pas.");
+      setError("Les mots de passe ne correspondent pas.");
       return;
     }
 
-    console.log("Inscription Freelance :", formData);
-    alert("Compte Freelance créé avec succès !");
+    setLoading(true);
+
+    try {
+      const payload = {
+        nom: formData.nom,
+        email: formData.email,
+        password: formData.password,
+        telephone: formData.telephone,
+        adresse: formData.ville,
+        role: "FREELANCER",
+        specialite: formData.specialite,
+      };
+
+      const response = await api.post("/auth/register", payload);
+      const token = response.data.token;
+
+      const decoded = jwtDecode(token);
+      const role = decoded.role[0].authority.replace("ROLE_", "");
+
+      localStorage.setItem("token", token);
+      localStorage.setItem("nom", decoded.sub);
+      localStorage.setItem("role", role);
+
+      navigate("/dashboard");
+    } catch (err) {
+      setError(
+          err.response?.data?.message || "Erreur lors de la création du compte."
+      );
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <div className="auth-page">
-      <div className="auth-container">
-
-        <div className="auth-header">
-          <div className="auth-icon green">
-            <Code2 size={30} />
+      <div className="auth-page">
+        <div className="auth-container">
+          <div className="auth-header">
+            <div className="auth-icon green">
+              <Code2 size={30} />
+            </div>
+            <h1>Créer un compte Freelance</h1>
+            <p>Présentez vos compétences et trouvez de nouveaux projets.</p>
           </div>
 
-          <h1>Créer un compte Freelance</h1>
-          <p>
-            Présentez vos compétences et trouvez de nouveaux projets.
-          </p>
+          <form onSubmit={handleSubmit} className="auth-form">
+            {error && <p className="auth-error">{error}</p>}
+
+            <div className="form-group">
+              <label>Nom complet</label>
+              <div className="input-icon">
+                <User size={18} />
+                <input
+                    type="text"
+                    name="nom"
+                    placeholder="Votre nom complet"
+                    value={formData.nom}
+                    onChange={handleChange}
+                    required
+                />
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-group">
+                <label>Email</label>
+                <div className="input-icon">
+                  <Mail size={18} />
+                  <input
+                      type="email"
+                      name="email"
+                      placeholder="freelance@email.com"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label>Téléphone</label>
+                <div className="input-icon">
+                  <Phone size={18} />
+                  <input
+                      type="tel"
+                      name="telephone"
+                      placeholder="06XXXXXXXX"
+                      value={formData.telephone}
+                      onChange={handleChange}
+                      required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label>Ville</label>
+              <div className="input-icon">
+                <MapPin size={18} />
+                <input
+                    type="text"
+                    name="ville"
+                    placeholder="Ex: Casablanca"
+                    value={formData.ville}
+                    onChange={handleChange}
+                    required
+                />
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label>Spécialité</label>
+              <div className="input-icon">
+                <Briefcase size={18} />
+                <input
+                    type="text"
+                    name="specialite"
+                    placeholder="Ex: Développement Web"
+                    value={formData.specialite}
+                    onChange={handleChange}
+                    required
+                />
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-group">
+                <label>Mot de passe</label>
+                <div className="input-icon">
+                  <Lock size={18} />
+                  <input
+                      type="password"
+                      name="password"
+                      placeholder="••••••••"
+                      value={formData.password}
+                      onChange={handleChange}
+                      required
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label>Confirmer le mot de passe</label>
+                <div className="input-icon">
+                  <Lock size={18} />
+                  <input
+                      type="password"
+                      name="confirmPassword"
+                      placeholder="••••••••"
+                      value={formData.confirmPassword}
+                      onChange={handleChange}
+                      required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" className="auth-button green-button" disabled={loading}>
+              {loading ? "Création..." : "Créer mon compte Freelance"}
+            </button>
+
+            <p className="auth-footer">
+              Vous avez déjà un compte ? <a href="/login">Se connecter</a>
+            </p>
+          </form>
         </div>
-
-        <form onSubmit={handleSubmit} className="auth-form">
-
-          <div className="form-group">
-            <label>Nom complet</label>
-            <div className="input-icon">
-              <User size={18} />
-              <input
-                type="text"
-                name="nom"
-                placeholder="Votre nom complet"
-                value={formData.nom}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-
-          <div className="form-row">
-            <div className="form-group">
-              <label>Email</label>
-              <div className="input-icon">
-                <Mail size={18} />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="freelance@email.com"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="form-group">
-              <label>Téléphone</label>
-              <div className="input-icon">
-                <Phone size={18} />
-                <input
-                  type="tel"
-                  name="telephone"
-                  placeholder="06XXXXXXXX"
-                  value={formData.telephone}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label>Ville</label>
-            <div className="input-icon">
-              <MapPin size={18} />
-              <input
-                type="text"
-                name="ville"
-                placeholder="Ex: Casablanca"
-                value={formData.ville}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label>Spécialité</label>
-            <div className="input-icon">
-              <Briefcase size={18} />
-              <input
-                type="text"
-                name="specialite"
-                placeholder="Ex: Développement Web"
-                value={formData.specialite}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-
-          <div className="form-row">
-            <div className="form-group">
-              <label>Mot de passe</label>
-              <div className="input-icon">
-                <Lock size={18} />
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="••••••••"
-                  value={formData.password}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="form-group">
-              <label>Confirmer le mot de passe</label>
-              <div className="input-icon">
-                <Lock size={18} />
-                <input
-                  type="password"
-                  name="confirmPassword"
-                  placeholder="••••••••"
-                  value={formData.confirmPassword}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-            </div>
-          </div>
-
-          <button type="submit" className="auth-button green-button">
-            Créer mon compte Freelance
-          </button>
-
-          <p className="auth-footer">
-            Vous avez déjà un compte ?{" "}
-            <a href="/login">Se connecter</a>
-          </p>
-
-        </form>
       </div>
-    </div>
   );
 }
 
@@ -1185,192 +1281,225 @@ export default RegisterFreelance;
 
 ```jsx
 import { useState } from "react";
-import {Building2, Mail, Lock, User, Phone, MapPin, Building} from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import api from "../api/axios";
+import { jwtDecode } from "jwt-decode";
+import { Building2, Mail, Lock, Phone, MapPin, Building } from "lucide-react";
 import "./Auth.css";
 
 function RegisterPME() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     nomEntreprise: "",
     email: "",
     telephone: "",
     ville: "",
-    rc:"",
+    rc: "",
     activite: "",
     password: "",
     confirmPassword: "",
-    role: "PME",
   });
 
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setError("");
 
     if (formData.password !== formData.confirmPassword) {
-      alert("Les mots de passe ne correspondent pas.");
+      setError("Les mots de passe ne correspondent pas.");
       return;
     }
 
-    console.log("Inscription PME :", formData);
-    alert("Compte PME créé avec succès !");
+    setLoading(true);
+
+    try {
+      const payload = {
+        nom: formData.nomEntreprise,
+        email: formData.email,
+        password: formData.password,
+        telephone: formData.telephone,
+        adresse: formData.ville,
+        role: "PME",
+        RC: formData.rc,
+        activite: formData.activite,
+      };
+
+      const response = await api.post("/auth/register", payload);
+      const token = response.data.token;
+
+      const decoded = jwtDecode(token);
+      const role = decoded.role[0].authority.replace("ROLE_", "");
+
+      localStorage.setItem("token", token);
+      localStorage.setItem("nom", decoded.sub);
+      localStorage.setItem("role", role);
+
+      navigate("/dashboard");
+    } catch (err) {
+      setError(
+          err.response?.data?.message || "Erreur lors de la création du compte."
+      );
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <div className="auth-page">
-      <div className="auth-container">
-        <div className="auth-header">
-          <div className="auth-icon blue">
-            <Building2 size={30} />
+      <div className="auth-page">
+        <div className="auth-container">
+          <div className="auth-header">
+            <div className="auth-icon blue">
+              <Building2 size={30} />
+            </div>
+            <h1>Créer un compte PME</h1>
+            <p>Rejoignez DigiPME et commencez votre transformation digitale.</p>
           </div>
 
-          <h1>Créer un compte PME</h1>
-          <p>
-            Rejoignez DigiPME et commencez votre transformation digitale.
-          </p>
+          <form onSubmit={handleSubmit} className="auth-form">
+            {error && <p className="auth-error">{error}</p>}
+
+            <div className="form-group">
+              <label>Nom de l'entreprise</label>
+              <div className="input-icon">
+                <Building2 size={18} />
+                <input
+                    type="text"
+                    name="nomEntreprise"
+                    placeholder="Ex: Digital Maroc SARL"
+                    value={formData.nomEntreprise}
+                    onChange={handleChange}
+                    required
+                />
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label>Activité de l'entreprise</label>
+              <div className="input-icon">
+                <Building size={18} />
+                <input
+                    type="text"
+                    name="activite"
+                    placeholder="Ex: Développement de logiciels"
+                    value={formData.activite}
+                    onChange={handleChange}
+                    required
+                />
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label>Registre de commerce</label>
+              <div className="input-icon">
+                <Building2 size={18} />
+                <input
+                    type="text"
+                    name="rc"
+                    placeholder="Numéro de registre de commerce"
+                    value={formData.rc}
+                    onChange={handleChange}
+                    required
+                />
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-group">
+                <label>Email</label>
+                <div className="input-icon">
+                  <Mail size={18} />
+                  <input
+                      type="email"
+                      name="email"
+                      placeholder="contact@entreprise.ma"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label>Téléphone</label>
+                <div className="input-icon">
+                  <Phone size={18} />
+                  <input
+                      type="tel"
+                      name="telephone"
+                      placeholder="06XXXXXXXX"
+                      value={formData.telephone}
+                      onChange={handleChange}
+                      required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label>Ville</label>
+              <div className="input-icon">
+                <MapPin size={18} />
+                <input
+                    type="text"
+                    name="ville"
+                    placeholder="Ex: Beni Mellal"
+                    value={formData.ville}
+                    onChange={handleChange}
+                    required
+                />
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-group">
+                <label>Mot de passe</label>
+                <div className="input-icon">
+                  <Lock size={18} />
+                  <input
+                      type="password"
+                      name="password"
+                      placeholder="••••••••"
+                      value={formData.password}
+                      onChange={handleChange}
+                      required
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label>Confirmer le mot de passe</label>
+                <div className="input-icon">
+                  <Lock size={18} />
+                  <input
+                      type="password"
+                      name="confirmPassword"
+                      placeholder="••••••••"
+                      value={formData.confirmPassword}
+                      onChange={handleChange}
+                      required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" className="auth-button blue-button" disabled={loading}>
+              {loading ? "Création..." : "Créer mon compte PME"}
+            </button>
+
+            <p className="auth-footer">
+              Vous avez déjà un compte ? <a href="/login">Se connecter</a>
+            </p>
+          </form>
         </div>
-
-        <form onSubmit={handleSubmit} className="auth-form">
-
-          <div className="form-group">
-            <label>Nom de l'entreprise</label>
-            <div className="input-icon">
-              <Building2 size={18} />
-              <input
-                type="text"
-                name="nomEntreprise"
-                placeholder="Ex: Digital Maroc SARL"
-                value={formData.nomEntreprise}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label>Activité de l'entreprise</label>
-            <div className="input-icon">
-              <Building size={18} />
-              <input
-                type="text"
-                name="activite"
-                placeholder="Ex: Développement de logiciels"
-                value={formData.activite}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label>Registre de commerce</label>
-            <div className="input-icon">
-              <Building2 size={18} />
-              <input
-                  type="text"
-                  name="rc"
-                  placeholder="Numéro de registre de commerce"
-                  value={formData.rc}
-                  onChange={handleChange}
-                  required
-              />
-            </div>
-          </div>
-
-          <div className="form-row">
-            <div className="form-group">
-              <label>Email</label>
-              <div className="input-icon">
-                <Mail size={18} />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="contact@entreprise.ma"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="form-group">
-              <label>Téléphone</label>
-              <div className="input-icon">
-                <Phone size={18} />
-                <input
-                  type="tel"
-                  name="telephone"
-                  placeholder="06XXXXXXXX"
-                  value={formData.telephone}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label>Ville</label>
-            <div className="input-icon">
-              <MapPin size={18} />
-              <input
-                type="text"
-                name="ville"
-                placeholder="Ex: Beni Mellal"
-                value={formData.ville}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-
-          <div className="form-row">
-            <div className="form-group">
-              <label>Mot de passe</label>
-              <div className="input-icon">
-                <Lock size={18} />
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="••••••••"
-                  value={formData.password}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="form-group">
-              <label>Confirmer le mot de passe</label>
-              <div className="input-icon">
-                <Lock size={18} />
-                <input
-                  type="password"
-                  name="confirmPassword"
-                  placeholder="••••••••"
-                  value={formData.confirmPassword}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-            </div>
-          </div>
-
-          <button type="submit" className="auth-button blue-button">
-            Créer mon compte PME
-          </button>
-
-          <p className="auth-footer">
-            Vous avez déjà un compte ?{" "}
-            <a href="/login">Se connecter</a>
-          </p>
-        </form>
       </div>
-    </div>
   );
 }
 
@@ -1385,242 +1514,170 @@ import {
   Building2,
   Code2,
   FolderKanban,
-  TrendingUp,
   ArrowRight,
 } from "lucide-react";
 
-import DashboardLayout from "../DashboardLayout.jsx";
+import DashboardLayout from "../DashboardLayout";
+import { useDashboard } from "../useDashboard";
 
 function AdminDashboard() {
+  const { data, loading, error } = useDashboard("/api/admin/dashboard");
 
+  if (loading) {
+    return (
+        <DashboardLayout role="ADMIN">
+          <p>Chargement du tableau de bord...</p>
+        </DashboardLayout>
+    );
+  }
 
+  if (error || !data) {
+    return (
+        <DashboardLayout role="ADMIN">
+          <p>Impossible de charger le tableau de bord.</p>
+        </DashboardLayout>
+    );
+  }
+
+  const {
+    totalUsers,
+    totalPME,
+    totalFreelancers,
+    totalProjects,
+    recentUsers,
+    recentProjects,
+  } = data;
 
   return (
-    <DashboardLayout role="ADMIN">
+      <DashboardLayout role="ADMIN">
 
-      {/* HEADER */}
-      <div className="dashboard-header">
-
-        <div>
-          <h1>Administration 👋</h1>
-          <p>
-            Vue globale de la plateforme DigiPME.
-          </p>
-        </div>
-
-        <button className="dashboard-primary-button">
-          Gérer les utilisateurs
-          <ArrowRight size={17} />
-        </button>
-
-      </div>
-
-      {/* STATISTIQUES */}
-      <div className="dashboard-stats">
-
-        <div className="stat-card">
-          <div className="stat-icon blue">
-            <Users size={23} />
-          </div>
-
+        {/* HEADER */}
+        <div className="dashboard-header">
           <div>
-            <span>Utilisateurs</span>
-            <strong>358</strong>
+            <h1>Administration 👋</h1>
+            <p>Vue globale de la plateforme DigiPME.</p>
           </div>
+
+          <a href="#" className="dashboard-primary-button">
+            Gérer les utilisateurs
+            <ArrowRight size={17} />
+          </a>
         </div>
 
-        <div className="stat-card">
-          <div className="stat-icon purple">
-            <Building2 size={23} />
-          </div>
+        {/* STATISTIQUES */}
+        <div className="dashboard-stats">
 
-          <div>
-            <span>PME</span>
-            <strong>185</strong>
-          </div>
-        </div>
-
-        <div className="stat-card">
-          <div className="stat-icon green">
-            <Code2 size={23} />
-          </div>
-
-          <div>
-            <span>Freelancers</span>
-            <strong>173</strong>
-          </div>
-        </div>
-
-        <div className="stat-card">
-          <div className="stat-icon orange">
-            <FolderKanban size={23} />
-          </div>
-
-          <div>
-            <span>Projets</span>
-            <strong>246</strong>
-          </div>
-        </div>
-
-      </div>
-
-      {/* ANALYSE */}
-      <div className="dashboard-grid">
-
-        <div className="dashboard-card">
-
-          <div className="dashboard-card-header">
+          <div className="stat-card">
+            <div className="stat-icon blue">
+              <Users size={23} />
+            </div>
             <div>
-              <h2>Activité de la plateforme</h2>
-              <p>Évolution des projets</p>
+              <span>Utilisateurs</span>
+              <strong>{totalUsers}</strong>
             </div>
-
-            <TrendingUp size={22} />
           </div>
 
-          <div className="admin-chart">
-
-            <div className="chart-bar" style={{ height: "45%" }}>
-              <span>Jan</span>
+          <div className="stat-card">
+            <div className="stat-icon purple">
+              <Building2 size={23} />
             </div>
-
-            <div className="chart-bar" style={{ height: "60%" }}>
-              <span>Fév</span>
+            <div>
+              <span>PME</span>
+              <strong>{totalPME}</strong>
             </div>
+          </div>
 
-            <div className="chart-bar" style={{ height: "50%" }}>
-              <span>Mar</span>
+          <div className="stat-card">
+            <div className="stat-icon green">
+              <Code2 size={23} />
             </div>
-
-            <div className="chart-bar" style={{ height: "75%" }}>
-              <span>Avr</span>
+            <div>
+              <span>Freelancers</span>
+              <strong>{totalFreelancers}</strong>
             </div>
+          </div>
 
-            <div className="chart-bar" style={{ height: "85%" }}>
-              <span>Mai</span>
+          <div className="stat-card">
+            <div className="stat-icon orange">
+              <FolderKanban size={23} />
             </div>
-
-            <div className="chart-bar" style={{ height: "95%" }}>
-              <span>Juin</span>
+            <div>
+              <span>Projets</span>
+              <strong>{totalProjects}</strong>
             </div>
-
           </div>
 
         </div>
 
-        {/* NOUVEAUX UTILISATEURS */}
-        <div className="dashboard-card">
+        <div className="dashboard-grid">
 
-          <div className="dashboard-card-header">
-            <div>
-              <h2>Nouveaux utilisateurs</h2>
-              <p>Dernières inscriptions</p>
-            </div>
-          </div>
+          {/* NOUVEAUX UTILISATEURS */}
+          <div className="dashboard-card">
 
-          <div className="admin-users">
-
-            <div className="admin-user">
-              <div className="admin-user-avatar">A</div>
-
+            <div className="dashboard-card-header">
               <div>
-                <strong>Atlas Digital</strong>
-                <span>PME</span>
+                <h2>Nouveaux utilisateurs</h2>
+                <p>Dernières inscriptions</p>
               </div>
-
-              <small>Aujourd'hui</small>
             </div>
 
-            <div className="admin-user">
-              <div className="admin-user-avatar">M</div>
+            <div className="admin-users">
 
+              {recentUsers.length === 0 && <p>Aucun utilisateur pour le moment.</p>}
+
+              {recentUsers.map((user) => (
+                  <div className="admin-user" key={user.id}>
+                    <div className="admin-user-avatar">
+                      {user.nom?.charAt(0).toUpperCase()}
+                    </div>
+
+                    <div>
+                      <strong>{user.nom}</strong>
+                      <span>{user.role}</span>
+                    </div>
+                  </div>
+              ))}
+
+            </div>
+
+          </div>
+
+          {/* PROJETS RÉCENTS */}
+          <div className="dashboard-card">
+
+            <div className="dashboard-card-header">
               <div>
-                <strong>Mohamed Dev</strong>
-                <span>Freelance</span>
+                <h2>Projets récents</h2>
+                <p>Derniers projets publiés</p>
               </div>
-
-              <small>Hier</small>
             </div>
 
-            <div className="admin-user">
-              <div className="admin-user-avatar">S</div>
+            <div className="project-list">
 
-              <div>
-                <strong>Smart Solutions</strong>
-                <span>PME</span>
-              </div>
+              {recentProjects.length === 0 && <p>Aucun projet pour le moment.</p>}
 
-              <small>Hier</small>
+              {recentProjects.map((project) => (
+                  <div className="project-row" key={project.id}>
+                    <div>
+                      <strong>{project.titre}</strong>
+                      <span>{project.type}</span>
+                    </div>
+
+                    <span>{project.prix} DH</span>
+                  </div>
+              ))}
+
             </div>
 
           </div>
 
         </div>
 
-      </div>
-
-      {/* PROJETS */}
-      <div className="dashboard-card projects-card">
-
-        <div className="dashboard-card-header">
-          <div>
-            <h2>Projets récents</h2>
-            <p>
-              Activité récente des projets de la plateforme.
-            </p>
-          </div>
-
-          <button className="dashboard-link">
-            Voir tout
-            <ArrowRight size={16} />
-          </button>
-        </div>
-
-        <div className="project-list">
-
-          <div className="project-row">
-            <div>
-              <strong>Création site web</strong>
-              <span>PME : Atlas Digital</span>
-            </div>
-
-            <span className="status active-status">
-              En cours
-            </span>
-          </div>
-
-          <div className="project-row">
-            <div>
-              <strong>CRM personnalisé</strong>
-              <span>PME : Smart Solutions</span>
-            </div>
-
-            <span className="status completed-status">
-              Terminé
-            </span>
-          </div>
-
-          <div className="project-row">
-            <div>
-              <strong>Application mobile</strong>
-              <span>PME : Maroc Services</span>
-            </div>
-
-            <span className="status pending-status">
-              En attente
-            </span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </DashboardLayout>
+      </DashboardLayout>
   );
 }
 
 export default AdminDashboard;
-
 ```
 
 # src\Dashboard\Dashboard.css
@@ -2246,27 +2303,16 @@ export default AdminDashboard;
 # src\Dashboard\Dashboard.jsx
 
 ```jsx
-import PMEDashboard from "../dashboard/PME/PMEDashboard";
-import FreelancerDashboard from "../dashboard/Freelancer/FreelancerDashboard";
-import AdminDashboard from "../dashboard/Admin/AdminDashboard";
+import PMEDashboard from "./PME/PMEDashboard";
+import FreelancerDashboard from "./Freelancer/FreelancerDashboard";
+import AdminDashboard from "./Admin/AdminDashboard";
 
 function Dashboard() {
+  const role = localStorage.getItem("role");
 
-  // Temporaire
-  // Plus tard : récupérer le rôle depuis le JWT
-  const role = "PME";
-
-  if (role === "PME") {
-    return <PMEDashboard />;
-  }
-
-  if (role === "FREELANCE") {
-    return <FreelancerDashboard />;
-  }
-
-  if (role === "ADMIN") {
-    return <AdminDashboard />;
-  }
+  if (role === "PME") return <PMEDashboard />;
+  if (role === "FREELANCER") return <FreelancerDashboard />;
+  if (role === "ADMIN") return <AdminDashboard />;
 
   return <h1>Accès non autorisé</h1>;
 }
@@ -2296,23 +2342,22 @@ function DashboardLayout({ role, children }) {
       return [
         { icon: LayoutDashboard, label: "Tableau de bord", path: "/dashboard" },
         { icon: ClipboardCheck, label: "Diagnostic digital", path: "#" },
-        { icon: FolderKanban, label: "Mes projets", path: "#" },
-        { icon: Users, label: "Prestataires", path: "#" },
+        { icon: FolderKanban, label: "Mes projets", path: "/my-projects" },
+        { icon: Users, label: "Prestataires", path: "/freelancers" },
         { icon: MessageCircle, label: "Messages", path: "#" },
         { icon: Star, label: "Évaluations", path: "#" },
       ];
     }
 
-    if (role === "FREELANCE") {
+    if (role === "FREELANCER") {
       return [
         { icon: LayoutDashboard, label: "Tableau de bord", path: "/dashboard" },
-        { icon: BriefcaseBusiness, label: "Projets", path: "#" },
-        { icon: FolderKanban, label: "Mes missions", path: "#" },
+        { icon: BriefcaseBusiness, label: "Projets", path: "/projects" },
+        { icon: FolderKanban, label: "Mes offres", path: "/my-offers" },
         { icon: MessageCircle, label: "Messages", path: "#" },
-        { icon: Star, label: "Évaluations", path: "#" },
+        { icon: Star, label: "Évaluations", path: "/my-reviews" },
       ];
     }
-
     return [
       { icon: LayoutDashboard, label: "Tableau de bord", path: "/dashboard" },
       { icon: Users, label: "Utilisateurs", path: "#" },
@@ -2418,211 +2463,176 @@ import {
   Send,
   FolderKanban,
   Star,
-  MessageCircle,
   ArrowRight,
 } from "lucide-react";
 
 import DashboardLayout from "../DashboardLayout";
+import { useDashboard } from "../useDashboard";
 
 function FreelancerDashboard() {
+  const { data, loading, error } = useDashboard("/api/freelancers/dashboard");
+
+  if (loading) {
+    return (
+        <DashboardLayout role="FREELANCE">
+          <p>Chargement du tableau de bord...</p>
+        </DashboardLayout>
+    );
+  }
+
+  if (error || !data) {
+    return (
+        <DashboardLayout role="FREELANCE">
+          <p>Impossible de charger votre tableau de bord.</p>
+        </DashboardLayout>
+    );
+  }
+
+  const {
+    profile,
+    projetsDisponibles,
+    propositionsEnvoyees,
+    missionsEnCours,
+    noteMoyenne,
+    recommendedProjects,
+    recentOffers,
+  } = data;
+
   return (
-    <DashboardLayout role="FREELANCE">
+      <DashboardLayout role="FREELANCE">
 
-      {/* HEADER */}
-      <div className="dashboard-header">
-        <div>
-          <h1>Bonjour, Freelance 👋</h1>
-          <p>
-            Retrouvez vos projets et vos missions.
-          </p>
-        </div>
-
-        <button className="dashboard-primary-button">
-          Voir les projets
-          <ArrowRight size={17} />
-        </button>
-      </div>
-
-      {/* STATISTIQUES */}
-      <div className="dashboard-stats">
-
-        <div className="stat-card">
-          <div className="stat-icon blue">
-            <BriefcaseBusiness size={23} />
-          </div>
-
+        {/* HEADER */}
+        <div className="dashboard-header">
           <div>
-            <span>Projets disponibles</span>
-            <strong>24</strong>
+            <h1>Bonjour, {profile?.nom} 👋</h1>
+            <p>Retrouvez vos projets et vos missions.</p>
           </div>
+
+          <a href="#" className="dashboard-primary-button">
+            Voir les projets
+            <ArrowRight size={17} />
+          </a>
         </div>
 
-        <div className="stat-card">
-          <div className="stat-icon orange">
-            <Send size={23} />
-          </div>
+        {/* STATISTIQUES */}
+        <div className="dashboard-stats">
 
-          <div>
-            <span>Propositions envoyées</span>
-            <strong>8</strong>
-          </div>
-        </div>
-
-        <div className="stat-card">
-          <div className="stat-icon green">
-            <FolderKanban size={23} />
-          </div>
-
-          <div>
-            <span>Missions en cours</span>
-            <strong>4</strong>
-          </div>
-        </div>
-
-        <div className="stat-card">
-          <div className="stat-icon purple">
-            <Star size={23} />
-          </div>
-
-          <div>
-            <span>Note moyenne</span>
-            <strong>4.8</strong>
-          </div>
-        </div>
-
-      </div>
-
-      {/* PROJETS */}
-      <div className="dashboard-card">
-
-        <div className="dashboard-card-header">
-          <div>
-            <h2>Projets recommandés</h2>
-            <p>
-              Des projets correspondant à vos compétences.
-            </p>
-          </div>
-
-          <button className="dashboard-link">
-            Voir tout
-            <ArrowRight size={16} />
-          </button>
-        </div>
-
-        <div className="freelance-projects">
-
-          <div className="freelance-project">
-
-            <div className="project-info">
-              <h3>Création d'une plateforme web</h3>
-
-              <p>
-                Une PME recherche un développeur full-stack
-                pour créer une plateforme web.
-              </p>
-
-              <div className="project-tags">
-                <span>React</span>
-                <span>Spring Boot</span>
-                <span>PostgreSQL</span>
-              </div>
+          <div className="stat-card">
+            <div className="stat-icon blue">
+              <BriefcaseBusiness size={23} />
             </div>
-
-            <div className="project-budget">
-              <strong>8 000 DH</strong>
-              <span>Budget estimé</span>
-
-              <button className="small-button">
-                Voir le projet
-              </button>
-            </div>
-
-          </div>
-
-          <div className="freelance-project">
-
-            <div className="project-info">
-              <h3>Application mobile PME</h3>
-
-              <p>
-                Développement d'une application mobile
-                pour la gestion des clients.
-              </p>
-
-              <div className="project-tags">
-                <span>Flutter</span>
-                <span>Firebase</span>
-              </div>
-            </div>
-
-            <div className="project-budget">
-              <strong>12 000 DH</strong>
-              <span>Budget estimé</span>
-
-              <button className="small-button">
-                Voir le projet
-              </button>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      {/* MISSIONS */}
-      <div className="dashboard-card projects-card">
-
-        <div className="dashboard-card-header">
-          <div>
-            <h2>Mes missions</h2>
-            <p>État de vos missions actuelles.</p>
-          </div>
-        </div>
-
-        <div className="project-list">
-
-          <div className="project-row">
             <div>
-              <strong>Site e-commerce</strong>
-              <span>Client : PME Maroc</span>
+              <span>Projets disponibles</span>
+              <strong>{projetsDisponibles}</strong>
             </div>
-
-            <div className="project-progress">
-              <span>80%</span>
-              <div>
-                <div style={{ width: "80%" }}></div>
-              </div>
-            </div>
-
-            <span className="status active-status">
-              En cours
-            </span>
           </div>
 
-          <div className="project-row">
+          <div className="stat-card">
+            <div className="stat-icon orange">
+              <Send size={23} />
+            </div>
             <div>
-              <strong>Application de gestion</strong>
-              <span>Client : Atlas Services</span>
+              <span>Propositions envoyées</span>
+              <strong>{propositionsEnvoyees}</strong>
             </div>
+          </div>
 
-            <div className="project-progress">
-              <span>45%</span>
-              <div>
-                <div style={{ width: "45%" }}></div>
-              </div>
+          <div className="stat-card">
+            <div className="stat-icon green">
+              <FolderKanban size={23} />
             </div>
+            <div>
+              <span>Missions en cours</span>
+              <strong>{missionsEnCours}</strong>
+            </div>
+          </div>
 
-            <span className="status active-status">
-              En cours
-            </span>
+          <div className="stat-card">
+            <div className="stat-icon purple">
+              <Star size={23} />
+            </div>
+            <div>
+              <span>Note moyenne</span>
+              <strong>{noteMoyenne ? noteMoyenne.toFixed(1) : "—"}</strong>
+            </div>
           </div>
 
         </div>
 
-      </div>
+        {/* PROJETS RECOMMANDÉS */}
+        <div className="dashboard-card">
 
-    </DashboardLayout>
+          <div className="dashboard-card-header">
+            <div>
+              <h2>Projets récents</h2>
+              <p>Derniers projets publiés sur la plateforme.</p>
+            </div>
+          </div>
+
+          <div className="freelance-projects">
+
+            {recommendedProjects.length === 0 && (
+                <p>Aucun projet disponible pour le moment.</p>
+            )}
+
+            {recommendedProjects.map((project) => (
+                <div className="freelance-project" key={project.id}>
+                  <div className="project-info">
+                    <h3>{project.titre}</h3>
+                    <p>{project.description}</p>
+
+                    <div className="project-tags">
+                      <span>{project.type}</span>
+                    </div>
+                  </div>
+
+                  <div className="project-budget">
+                    <strong>{project.prix} DH</strong>
+                    <span>Budget estimé</span>
+
+                    <button className="small-button">Voir le projet</button>
+                  </div>
+                </div>
+            ))}
+
+          </div>
+
+        </div>
+
+        {/* MES OFFRES */}
+        <div className="dashboard-card projects-card">
+
+          <div className="dashboard-card-header">
+            <div>
+              <h2>Mes offres récentes</h2>
+              <p>Les propositions que vous avez envoyées.</p>
+            </div>
+          </div>
+
+          <div className="project-list">
+
+            {recentOffers.length === 0 && (
+                <p>Vous n'avez pas encore envoyé de proposition.</p>
+            )}
+
+            {recentOffers.map((offer) => (
+                <div className="project-row" key={offer.id}>
+                  <div>
+                    <strong>{offer.description}</strong>
+                    <span>Livraison : {offer.dateLivraison}</span>
+                  </div>
+
+                  <div>
+                    <span>{offer.prixProposer} DH</span>
+                  </div>
+                </div>
+            ))}
+
+          </div>
+
+        </div>
+
+      </DashboardLayout>
   );
 }
 
@@ -2633,245 +2643,274 @@ export default FreelancerDashboard;
 
 ```jsx
 import {
-  ClipboardCheck,
   FolderKanban,
-  Users,
-  MessageCircle,
+  CheckCircle2,
+  Clock,
+  FileText,
   ArrowRight,
-  TrendingUp,
 } from "lucide-react";
 
 import DashboardLayout from "../DashboardLayout";
+import { useDashboard } from "../useDashboard";
+
+const statusLabel = {
+  EN_ATTENTE: { text: "En attente", className: "pending-status" },
+  EN_COURS: { text: "En cours", className: "active-status" },
+  TERMINE: { text: "Terminé", className: "completed-status" },
+};
 
 function PMEDashboard() {
+  const { data, loading, error } = useDashboard("/api/pme/dashboard");
+
+  if (loading) {
+    return (
+        <DashboardLayout role="PME">
+          <p>Chargement du tableau de bord...</p>
+        </DashboardLayout>
+    );
+  }
+
+  if (error || !data) {
+    return (
+        <DashboardLayout role="PME">
+          <p>Impossible de charger votre tableau de bord.</p>
+        </DashboardLayout>
+    );
+  }
+
+  const {
+    profile,
+    totalProjets,
+    projetsEnCours,
+    projetsTermines,
+    totalOffresRecues,
+    recentProjects,
+  } = data;
+
   return (
-    <DashboardLayout role="PME">
+      <DashboardLayout role="PME">
 
-      {/* HEADER */}
-      <div className="dashboard-header">
-        <div>
-          <h1>Bonjour, PME 👋</h1>
-          <p>
-            Voici un aperçu de votre transformation digitale.
-          </p>
-        </div>
-
-        <button className="dashboard-primary-button">
-          Nouveau projet
-          <ArrowRight size={17} />
-        </button>
-      </div>
-
-      {/* STATISTIQUES */}
-      <div className="dashboard-stats">
-
-        <div className="stat-card">
-          <div className="stat-icon blue">
-            <ClipboardCheck size={23} />
-          </div>
-
+        {/* HEADER */}
+        <div className="dashboard-header">
           <div>
-            <span>Maturité digitale</span>
-            <strong>78%</strong>
+            <h1>Bonjour, {profile?.nom} 👋</h1>
+            <p>Voici un aperçu de vos projets sur DigiPME.</p>
           </div>
+
+          <a href="#" className="dashboard-primary-button">
+            Nouveau projet
+            <ArrowRight size={17} />
+          </a>
         </div>
 
-        <div className="stat-card">
-          <div className="stat-icon green">
-            <FolderKanban size={23} />
+        {/* STATISTIQUES */}
+        <div className="dashboard-stats">
+
+          <div className="stat-card">
+            <div className="stat-icon blue">
+              <FolderKanban size={23} />
+            </div>
+            <div>
+              <span>Total projets</span>
+              <strong>{totalProjets}</strong>
+            </div>
           </div>
 
-          <div>
-            <span>Projets en cours</span>
-            <strong>3</strong>
+          <div className="stat-card">
+            <div className="stat-icon orange">
+              <Clock size={23} />
+            </div>
+            <div>
+              <span>Projets en cours</span>
+              <strong>{projetsEnCours}</strong>
+            </div>
           </div>
+
+          <div className="stat-card">
+            <div className="stat-icon green">
+              <CheckCircle2 size={23} />
+            </div>
+            <div>
+              <span>Projets terminés</span>
+              <strong>{projetsTermines}</strong>
+            </div>
+          </div>
+
+          <div className="stat-card">
+            <div className="stat-icon purple">
+              <FileText size={23} />
+            </div>
+            <div>
+              <span>Offres reçues</span>
+              <strong>{totalOffresRecues}</strong>
+            </div>
+          </div>
+
         </div>
 
-        <div className="stat-card">
-          <div className="stat-icon purple">
-            <Users size={23} />
-          </div>
-
-          <div>
-            <span>Prestataires</span>
-            <strong>12</strong>
-          </div>
-        </div>
-
-        <div className="stat-card">
-          <div className="stat-icon orange">
-            <MessageCircle size={23} />
-          </div>
-
-          <div>
-            <span>Nouveaux messages</span>
-            <strong>5</strong>
-          </div>
-        </div>
-
-      </div>
-
-      {/* CONTENU */}
-      <div className="dashboard-grid">
-
-        {/* MATURITÉ */}
-        <div className="dashboard-card maturity-card">
+        {/* PROJETS RÉCENTS */}
+        <div className="dashboard-card projects-card">
 
           <div className="dashboard-card-header">
             <div>
-              <h2>Votre maturité digitale</h2>
-              <p>Dernier diagnostic</p>
-            </div>
-
-            <ClipboardCheck size={22} />
-          </div>
-
-          <div className="maturity-score">
-            <strong>78%</strong>
-            <span>Bon niveau</span>
-          </div>
-
-          <div className="dashboard-progress">
-            <div style={{ width: "78%" }}></div>
-          </div>
-
-          <div className="maturity-details">
-
-            <div>
-              <span>Présence digitale</span>
-              <strong>90%</strong>
-            </div>
-
-            <div>
-              <span>Outils de gestion</span>
-              <strong>75%</strong>
-            </div>
-
-            <div>
-              <span>Cybersécurité</span>
-              <strong>68%</strong>
-            </div>
-
-          </div>
-
-          <button className="dashboard-link">
-            Voir le diagnostic
-            <ArrowRight size={16} />
-          </button>
-
-        </div>
-
-        {/* RECOMMANDATIONS */}
-        <div className="dashboard-card">
-
-          <div className="dashboard-card-header">
-            <div>
-              <h2>Recommandations</h2>
-              <p>Solutions proposées pour votre PME</p>
-            </div>
-
-            <TrendingUp size={22} />
-          </div>
-
-          <div className="recommendation-item">
-            <div className="recommendation-number">01</div>
-
-            <div>
-              <strong>Mettre en place un CRM</strong>
-              <p>
-                Centralisez vos clients et améliorez votre suivi commercial.
-              </p>
+              <h2>Mes projets récents</h2>
+              <p>Les 5 derniers projets que vous avez publiés.</p>
             </div>
           </div>
 
-          <div className="recommendation-item">
-            <div className="recommendation-number">02</div>
+          <div className="project-list">
 
-            <div>
-              <strong>Améliorer la cybersécurité</strong>
-              <p>
-                Renforcez la protection de vos données et systèmes.
-              </p>
-            </div>
-          </div>
+            {recentProjects.length === 0 && (
+                <p>Vous n'avez pas encore publié de projet.</p>
+            )}
 
-          <div className="recommendation-item">
-            <div className="recommendation-number">03</div>
+            {recentProjects.map((project) => {
+              const status = statusLabel[project.status] || statusLabel.EN_ATTENTE;
 
-            <div>
-              <strong>Développer votre présence digitale</strong>
-              <p>
-                Optimisez votre présence sur les canaux numériques.
-              </p>
-            </div>
+              return (
+                  <div className="project-row" key={project.id}>
+                    <div>
+                      <strong>{project.titre}</strong>
+                      <span>{project.type}</span>
+                    </div>
+
+                    <div>
+                      <span>{project.prix} DH</span>
+                    </div>
+
+                    <span className={`status ${status.className}`}>
+                  {status.text}
+                </span>
+                  </div>
+              );
+            })}
+
           </div>
 
         </div>
 
-      </div>
-
-      {/* PROJETS */}
-      <div className="dashboard-card projects-card">
-
-        <div className="dashboard-card-header">
-          <div>
-            <h2>Mes projets</h2>
-            <p>Suivez vos projets de transformation digitale.</p>
-          </div>
-
-          <button className="dashboard-link">
-            Voir tout
-            <ArrowRight size={16} />
-          </button>
-        </div>
-
-        <div className="project-list">
-
-          <div className="project-row">
-            <div>
-              <strong>Création d'un site web</strong>
-              <span>Prestataire : Ahmed Dev</span>
-            </div>
-
-            <div className="project-progress">
-              <span>75%</span>
-              <div>
-                <div style={{ width: "75%" }}></div>
-              </div>
-            </div>
-
-            <span className="status active-status">
-              En cours
-            </span>
-          </div>
-
-          <div className="project-row">
-            <div>
-              <strong>Mise en place CRM</strong>
-              <span>Prestataire : Digital Solutions</span>
-            </div>
-
-            <div className="project-progress">
-              <span>40%</span>
-              <div>
-                <div style={{ width: "40%" }}></div>
-              </div>
-            </div>
-
-            <span className="status active-status">
-              En cours
-            </span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </DashboardLayout>
+      </DashboardLayout>
   );
 }
 
 export default PMEDashboard;
+```
+
+# src\Dashboard\useDashboard.jsx
+
+```jsx
+import { useState, useEffect } from "react";
+import api from "../api/axios";
+
+export function useDashboard(url) {
+    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        let isMounted = true;
+
+        api
+            .get(url)
+            .then((res) => {
+                if (isMounted) setData(res.data);
+            })
+            .catch((err) => {
+                if (isMounted) setError(err);
+            })
+            .finally(() => {
+                if (isMounted) setLoading(false);
+            });
+
+        return () => {
+            isMounted = false;
+        };
+    }, [url]);
+
+    return { data, loading, error };
+}
+```
+
+# src\Freelancers\FreelancersList.jsx
+
+```jsx
+import { useState, useEffect } from "react";
+import api from "../api/axios";
+import DashboardLayout from "../Dashboard/DashboardLayout";
+import Pagination from "../Projects/Pagination";
+import { Star } from "lucide-react";
+import "../Dashboard/Dashboard.css";
+import "../Projects/Projects.css";
+import { useNavigate } from "react-router-dom";
+
+function FreelancersList() {
+    const [freelancers, setFreelancers] = useState([]);
+    const [page, setPage] = useState(0);
+    const [totalPages, setTotalPages] = useState(0);
+    const [loading, setLoading] = useState(true);
+
+    const navigate = useNavigate();
+
+
+    useEffect(() => {
+        setLoading(true);
+        api
+            .get(`/api/pme/freelancers?page=${page}&size=9`)
+            .then((res) => {
+                setFreelancers(res.data.content);
+                setTotalPages(res.data.totalPages);
+            })
+            .finally(() => setLoading(false));
+    }, [page]);
+
+    return (
+        <DashboardLayout role="PME">
+            <div className="page-container">
+                <div className="page-header">
+                    <div>
+                        <h1>Prestataires</h1>
+                        <p>Découvrez les freelancers inscrits sur la plateforme.</p>
+                    </div>
+                </div>
+
+                {loading && <p>Chargement...</p>}
+                {!loading && freelancers.length === 0 && (
+                    <div className="empty-state">Aucun prestataire pour le moment.</div>
+                )}
+
+                {!loading && freelancers.length > 0 && (
+                    <div className="projects-cards-grid">
+                        {freelancers.map((f) => (
+                            <div className="project-card" key={f.id}>
+                                <div className="project-card-top">
+                                    <span className="project-card-type">{f.specialite}</span>
+                                    {f.noteMoyenne && (
+                                        <span style={{ display: "flex", alignItems: "center", gap: 4, color: "#f59e0b", fontSize: 13 }}>
+                                            <Star size={14} fill="#f59e0b" /> {f.noteMoyenne.toFixed(1)}
+                                        </span>
+                                    )}
+                                </div>
+
+                                <h3>{f.nom}</h3>
+                                <p>{f.adresse || "Adresse non renseignée"}</p>
+                                <p>{f.telephone}</p>
+                                <div className="project-card-footer">
+                                    <button className="small-button" onClick={() => navigate(`/freelancers/${f.id}/reviews`)}>
+                                        Voir les avis
+                                    </button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                )}
+
+                <Pagination page={page} totalPages={totalPages} onPageChange={setPage} />
+            </div>
+        </DashboardLayout>
+    );
+}
+
+export default FreelancersList;
 ```
 
 # src\Home.jsx
@@ -4652,6 +4691,1300 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
+```
+
+# src\Offers\MyOffers.jsx
+
+```jsx
+import { useState, useEffect } from "react";
+import api from "../api/axios";
+import DashboardLayout from "../Dashboard/DashboardLayout";
+import Pagination from "../Projects/Pagination";
+import "../Dashboard/Dashboard.css";
+
+const statusLabel = {
+    EN_ATTENTE: { text: "En attente", className: "pending-status" },
+    ACCEPTEE: { text: "Acceptée", className: "active-status" },
+    REFUSEE: { text: "Refusée", className: "completed-status" },
+};
+
+function MyOffers() {
+    const [offers, setOffers] = useState([]);
+    const [page, setPage] = useState(0);
+    const [totalPages, setTotalPages] = useState(0);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setLoading(true);
+        api
+            .get(`/api/freelancers/my-offers?page=${page}&size=10`)
+            .then((res) => {
+                setOffers(res.data.content);
+                setTotalPages(res.data.totalPages);
+            })
+            .finally(() => setLoading(false));
+    }, [page]);
+
+    return (
+        <DashboardLayout role="FREELANCE">
+            <div className="dashboard-header">
+                <div>
+                    <h1>Mes offres</h1>
+                    <p>Toutes les propositions que vous avez envoyées.</p>
+                </div>
+            </div>
+
+            {loading && <p>Chargement...</p>}
+            {!loading && offers.length === 0 && <p>Aucune offre envoyée pour le moment.</p>}
+
+            <div className="dashboard-card projects-card">
+                <div className="project-list">
+                    {offers.map((offer) => {
+                        const status = statusLabel[offer.status] || statusLabel.EN_ATTENTE;
+                        return (
+                            <div className="project-row" key={offer.id}>
+                                <div>
+                                    <strong>{offer.description}</strong>
+                                    <span>Livraison : {offer.dateLivraison}</span>
+                                </div>
+                                <span>{offer.prixProposer} DH</span>
+                                <span className={`status ${status.className}`}>{status.text}</span>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+
+            <Pagination page={page} totalPages={totalPages} onPageChange={setPage} />
+        </DashboardLayout>
+    );
+}
+
+export default MyOffers;
+```
+
+# src\Offers\ProjectOffers.jsx
+
+```jsx
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import api from "../api/axios";
+import { toast } from "react-toastify";
+import DashboardLayout from "../Dashboard/DashboardLayout";
+
+function ProjectOffers() {
+    const { projectId } = useParams();
+    const [offers, setOffers] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    const load = () => {
+        setLoading(true);
+        api
+            .get(`/api/pme/projects/${projectId}/offers?page=0&size=20`)
+            .then((res) => setOffers(res.data.content))
+            .finally(() => setLoading(false));
+    };
+
+    useEffect(load, [projectId]);
+
+    const handleAccept = async (offerId) => {
+        try {
+            await api.put(`/api/pme/offers/${offerId}/accept`);
+            toast.success("Offre acceptée.");
+            load();
+        } catch (err) {
+            toast.error("Erreur lors de l'acceptation.");
+        }
+    };
+
+    return (
+        <DashboardLayout role="PME">
+            <div className="dashboard-header">
+                <div>
+                    <h1>Offres reçues</h1>
+                    <p>Propositions des freelancers pour ce projet.</p>
+                </div>
+            </div>
+
+            {loading && <p>Chargement...</p>}
+            {!loading && offers.length === 0 && <p>Aucune offre reçue pour l'instant.</p>}
+
+            <div className="dashboard-card projects-card">
+                <div className="project-list">
+                    {offers.map((offer) => (
+                        <div className="project-row" key={offer.id}>
+                            <div>
+                                <strong>{offer.description}</strong>
+                                <span>Livraison : {offer.dateLivraison}</span>
+                            </div>
+                            <span>{offer.prixProposer} DH</span>
+                            <button className="small-button" onClick={() => handleAccept(offer.id)}>
+                                Accepter
+                            </button>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </DashboardLayout>
+    );
+}
+
+export default ProjectOffers;
+```
+
+# src\Projects\ActiviteTypes.jsx
+
+```jsx
+export const ACTIVITE_TYPES = [
+    { value: "DEVELOPPEMENT_WEB", label: "Développement Web" },
+    { value: "APPLICATION_MOBILE", label: "Application Mobile" },
+    { value: "MARKETING_DIGITAL", label: "Marketing Digital" },
+    { value: "CRM_ERP", label: "CRM / ERP" },
+    { value: "CYBERSECURITE", label: "Cybersécurité" },
+    { value: "CLOUD_HEBERGEMENT", label: "Cloud & Hébergement" },
+    { value: "AUTOMATISATION", label: "Automatisation" },
+    { value: "DESIGN_UI_UX", label: "Design UI/UX" },
+    { value: "AUTRE", label: "Autre" },
+];
+
+export function typeLabel(value) {
+    return ACTIVITE_TYPES.find((t) => t.value === value)?.label || value;
+}
+```
+
+# src\Projects\FreelancerOfferBox.jsx
+
+```jsx
+// nouveau fichier: src/Projects/FreelancerOfferBox.jsx
+import { useState } from "react";
+import api from "../api/axios";
+import { toast } from "react-toastify";
+
+function FreelancerOfferBox({ projectId }) {
+    const [open, setOpen] = useState(false);
+    const [saving, setSaving] = useState(false);
+    const [form, setForm] = useState({ description: "", prixProposer: "", dateLivraison: "" });
+
+    const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setSaving(true);
+        try {
+            await api.post("/api/offers", {
+                description: form.description,
+                prixProposer: parseFloat(form.prixProposer),
+                dateLivraison: form.dateLivraison,
+                projectId: Number(projectId),
+            });
+            toast.success("Votre offre a été envoyée.");
+            setOpen(false);
+            setForm({ description: "", prixProposer: "", dateLivraison: "" });
+        } catch (err) {
+            toast.error(err.response?.data?.message || "Erreur lors de l'envoi de l'offre.");
+        } finally {
+            setSaving(false);
+        }
+    };
+
+    if (!open) {
+        return (
+            <div className="project-details-actions">
+                <button className="dashboard-primary-button" onClick={() => setOpen(true)}>
+                    Proposer une offre
+                </button>
+            </div>
+        );
+    }
+
+    return (
+        <form onSubmit={handleSubmit} className="auth-form" style={{ marginTop: 20 }}>
+            <div className="form-group">
+                <label>Description de votre offre</label>
+                <textarea
+                    className="form-textarea"
+                    name="description"
+                    rows={4}
+                    value={form.description}
+                    onChange={handleChange}
+                    required
+                />
+            </div>
+
+            <div className="form-row">
+                <div className="form-group">
+                    <label>Prix proposé (DH)</label>
+                    <input
+                        className="form-input"
+                        type="number"
+                        min="0"
+                        step="0.01"
+                        name="prixProposer"
+                        value={form.prixProposer}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label>Date de livraison</label>
+                    <input
+                        className="form-input"
+                        type="date"
+                        name="dateLivraison"
+                        value={form.dateLivraison}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+            </div>
+
+            <div style={{ display: "flex", gap: 10 }}>
+                <button type="submit" className="auth-button" disabled={saving}>
+                    {saving ? "Envoi..." : "Envoyer l'offre"}
+                </button>
+                <button type="button" className="small-button" onClick={() => setOpen(false)}>
+                    Annuler
+                </button>
+            </div>
+        </form>
+    );
+}
+
+export default FreelancerOfferBox;
+```
+
+# src\Projects\MyProjects.jsx
+
+```jsx
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import api from "../api/axios";
+import { toast } from "react-toastify";
+import DashboardLayout from "../Dashboard/DashboardLayout";
+import Pagination from "./Pagination";
+import { typeLabel } from "./activiteTypes";
+import "../Dashboard/Dashboard.css";
+import "./Projects.css";
+
+const statusLabel = {
+    EN_ATTENTE: { text: "En attente", className: "pending-status" },
+    EN_COURS: { text: "En cours", className: "active-status" },
+    TERMINE: { text: "Terminé", className: "completed-status" },
+};
+
+function MyProjects() {
+    const navigate = useNavigate();
+
+    const [projects, setProjects] = useState([]);
+    const [page, setPage] = useState(0);
+    const [totalPages, setTotalPages] = useState(0);
+    const [loading, setLoading] = useState(true);
+
+    const loadProjects = () => {
+        setLoading(true);
+
+        api
+            .get(`/api/projects/my-projects?page=${page}&size=9`)
+            .then((res) => {
+                setProjects(res.data.content);
+                setTotalPages(res.data.totalPages);
+            })
+            .catch((err) => console.error(err))
+            .finally(() => setLoading(false));
+    };
+
+    useEffect(() => {
+        loadProjects();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [page]);
+
+    const handleDelete = async (id) => {
+        if (!window.confirm("Supprimer ce projet ?")) return;
+
+        try {
+            await api.delete(`/api/projects/${id}`);
+            toast.success("Projet supprimé.");
+            loadProjects();
+        } catch (err) {
+            console.error(err);
+        }
+    };
+
+    return (
+        <DashboardLayout role="PME">
+            <div className="page-container">
+
+                <div className="page-header">
+                    <div>
+                        <h1>Mes projets</h1>
+                        <p>Gérez les projets que vous avez publiés.</p>
+                    </div>
+
+                    <button className="dashboard-primary-button" onClick={() => navigate("/projects/new")}>
+                        Nouveau projet
+                    </button>
+                </div>
+
+                {loading && <p>Chargement des projets...</p>}
+
+                {!loading && projects.length === 0 && (
+                    <div className="empty-state">Vous n'avez pas encore publié de projet.</div>
+                )}
+
+                {!loading && projects.length > 0 && (
+                    <div className="projects-cards-grid">
+                        {projects.map((project) => {
+                            const status = statusLabel[project.status] || statusLabel.EN_ATTENTE;
+
+                            return (
+                                <div className="project-card" key={project.id}>
+                                    <div className="project-card-top">
+                                        <span className="project-card-type">{typeLabel(project.type)}</span>
+                                        <span className={`status ${status.className}`}>{status.text}</span>
+                                    </div>
+
+                                    <h3>{project.titre}</h3>
+                                    <p>{project.description}</p>
+
+                                    <div className="project-card-footer">
+                                        <span className="project-card-price">{project.prix} DH</span>
+
+                                        <div className="project-card-actions">
+                                            <button className="small-button" onClick={() => navigate(`/projects/${project.id}`)}>Voir</button>
+                                            <button className="small-button" onClick={() => navigate(`/projects/${project.id}/offers`)}>Offres</button>
+                                            <button className="small-button" onClick={() => navigate(`/projects/${project.id}/edit`)}>Modifier</button>
+                                            <button className="small-button btn-danger" onClick={() => handleDelete(project.id)}>Supprimer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                )}
+
+                <Pagination page={page} totalPages={totalPages} onPageChange={setPage} />
+
+            </div>
+        </DashboardLayout>
+    );
+}
+
+export default MyProjects;
+```
+
+# src\Projects\Pagination.jsx
+
+```jsx
+function Pagination({ page, totalPages, onPageChange }) {
+    if (totalPages <= 1) return null;
+
+    return (
+        <div className="pagination">
+            <button onClick={() => onPageChange(page - 1)} disabled={page === 0}>
+                Précédent
+            </button>
+
+            <span>
+        Page {page + 1} sur {totalPages}
+      </span>
+
+            <button
+                onClick={() => onPageChange(page + 1)}
+                disabled={page + 1 >= totalPages}
+            >
+                Suivant
+            </button>
+        </div>
+    );
+}
+
+export default Pagination;
+```
+
+# src\Projects\ProjectDetails.jsx
+
+```jsx
+import { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import api from "../api/axios";
+import { toast } from "react-toastify";
+import DashboardLayout from "../Dashboard/DashboardLayout";
+import { typeLabel } from "./ActiviteTypes";
+import "../Dashboard/Dashboard.css";
+import "./Projects.css";
+import FreelancerOfferBox from "./FreelancerOfferBox.jsx";
+
+const statusLabel = {
+    EN_ATTENTE: { text: "En attente", className: "pending-status" },
+    EN_COURS: { text: "En cours", className: "active-status" },
+    TERMINE: { text: "Terminé", className: "completed-status" },
+};
+
+function ProjectDetails() {
+    const { id } = useParams();
+    const navigate = useNavigate();
+    const role = localStorage.getItem("role");
+
+    const [project, setProject] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        api
+            .get(`/api/projects/${id}`)
+            .then((res) => setProject(res.data))
+            .catch((err) => console.error(err))
+            .finally(() => setLoading(false));
+    }, [id]);
+
+    const handleDelete = async () => {
+        if (!window.confirm("Supprimer ce projet ?")) return;
+
+        try {
+            await api.delete(`/api/projects/${id}`);
+            toast.success("Projet supprimé.");
+            navigate("/my-projects");
+        } catch (err) {
+            console.error(err);
+        }
+    };
+
+    if (loading) {
+        return (
+            <DashboardLayout role={role}>
+                <p>Chargement...</p>
+            </DashboardLayout>
+        );
+    }
+
+    if (!project) {
+        return (
+            <DashboardLayout role={role}>
+                <div className="empty-state">Projet introuvable.</div>
+            </DashboardLayout>
+        );
+    }
+
+    const status = statusLabel[project.status] || statusLabel.EN_ATTENTE;
+
+    return (
+        <DashboardLayout role={role}>
+            <div className="page-container project-details-page">
+                <div className="project-details-card">
+
+                    <h1>{project.titre}</h1>
+
+                    <div className="project-details-meta">
+                        <span className="project-card-type">{typeLabel(project.type)}</span>
+                        <span className={`status ${status.className}`}>{status.text}</span>
+                    </div>
+
+                    <p className="project-details-description">
+                        {project.description || "Aucune description fournie."}
+                    </p>
+
+                    <div className="project-details-info">
+                        <div>
+                            <span>Budget</span>
+                            <strong>{project.prix} DH</strong>
+                        </div>
+                        <div>
+                            <span>Date souhaitée</span>
+                            <strong>{project.date}</strong>
+                        </div>
+                    </div>
+
+                    {role === "PME" && (
+                        <div className="project-details-actions">
+                            <button className="dashboard-primary-button" onClick={() => navigate(`/projects/${id}/edit`)}>
+                                Modifier
+                            </button>
+                            <button className="small-button" onClick={() => navigate(`/projects/${id}/offers`)}>
+                                Voir les offres reçues
+                            </button>
+                            <button className="small-button btn-danger" onClick={handleDelete}>
+                                Supprimer
+                            </button>
+                        </div>
+                    )}
+
+                    {role === "FREELANCER" && (
+                        <FreelancerOfferBox projectId={id} />
+                    )}
+
+                </div>
+            </div>
+        </DashboardLayout>
+    );
+}
+
+export default ProjectDetails;
+```
+
+# src\Projects\ProjectForm.jsx
+
+```jsx
+import { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import api from "../api/axios";
+import DashboardLayout from "../Dashboard/DashboardLayout";
+import { ACTIVITE_TYPES } from "./activiteTypes";
+import "../Auth/Auth.css";
+import "./Projects.css";
+
+function ProjectForm() {
+    const { id } = useParams();
+    const navigate = useNavigate();
+    const isEditing = Boolean(id);
+    const role = localStorage.getItem("role");
+
+    const [formData, setFormData] = useState({
+        titre: "",
+        type: "",
+        description: "",
+        prix: "",
+        date: "",
+    });
+
+    const [loading, setLoading] = useState(isEditing);
+    const [saving, setSaving] = useState(false);
+    const [error, setError] = useState("");
+
+    useEffect(() => {
+        if (!isEditing) return;
+
+        api
+            .get(`/api/projects/${id}`)
+            .then((res) => {
+                const project = res.data;
+                setFormData({
+                    titre: project.titre || "",
+                    type: project.type || "",
+                    description: project.description || "",
+                    prix: project.prix ?? "",
+                    date: project.date || "",
+                });
+            })
+            .catch((err) => {
+                console.error(err);
+                setError("Impossible de charger ce projet.");
+            })
+            .finally(() => setLoading(false));
+    }, [id, isEditing]);
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError("");
+        setSaving(true);
+
+        const payload = { ...formData, prix: parseFloat(formData.prix) };
+
+        try {
+            if (isEditing) {
+                await api.put(`/api/projects/${id}`, payload);
+                navigate(`/projects/${id}`);
+            } else {
+                const res = await api.post("/api/projects", payload);
+                navigate(`/projects/${res.data.id}`);
+            }
+        } catch (err) {
+            setError(
+                err.response?.data?.message || "Erreur lors de l'enregistrement du projet."
+            );
+            console.error(err);
+        } finally {
+            setSaving(false);
+        }
+    };
+
+    if (role !== "PME") {
+        return (
+            <DashboardLayout role={role}>
+                <p>Seule une PME peut créer ou modifier un projet.</p>
+            </DashboardLayout>
+        );
+    }
+
+    if (loading) {
+        return (
+            <DashboardLayout role={role}>
+                <p>Chargement...</p>
+            </DashboardLayout>
+        );
+    }
+
+    return (
+        <DashboardLayout role={role}>
+            <div className="page-container">
+
+                <div className="page-header">
+                    <div>
+                        <h1>{isEditing ? "Modifier le projet" : "Nouveau projet"}</h1>
+                        <p>
+                            {isEditing
+                                ? "Mettez à jour les informations de votre projet."
+                                : "Décrivez votre besoin pour trouver le bon prestataire."}
+                        </p>
+                    </div>
+                </div>
+
+                <form onSubmit={handleSubmit} className="auth-form" style={{ maxWidth: 600 }}>
+
+                    {error && <p className="auth-error">{error}</p>}
+
+                    <div className="form-group">
+                        <label>Titre du projet</label>
+                        <input
+                            type="text"
+                            name="titre"
+                            className="form-input"
+                            placeholder="Ex: Création d'un site e-commerce"
+                            value={formData.titre}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label>Type d'activité</label>
+                        <select
+                            name="type"
+                            className="form-select"
+                            value={formData.type}
+                            onChange={handleChange}
+                            required
+                        >
+                            <option value="">Sélectionnez un type</option>
+                            {ACTIVITE_TYPES.map((t) => (
+                                <option key={t.value} value={t.value}>
+                                    {t.label}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+
+                    <div className="form-group">
+                        <label>Description</label>
+                        <textarea
+                            name="description"
+                            className="form-textarea"
+                            placeholder="Décrivez votre projet en détail..."
+                            value={formData.description}
+                            onChange={handleChange}
+                            rows={5}
+                        />
+                    </div>
+
+                    <div className="form-row">
+                        <div className="form-group">
+                            <label>Budget (DH)</label>
+                            <input
+                                type="number"
+                                name="prix"
+                                className="form-input"
+                                min="0"
+                                step="0.01"
+                                placeholder="Ex: 8000"
+                                value={formData.prix}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+
+                        <div className="form-group">
+                            <label>Date souhaitée</label>
+                            <input
+                                type="date"
+                                name="date"
+                                className="form-input"
+                                value={formData.date}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <button type="submit" className="auth-button" disabled={saving}>
+                        {saving ? "Enregistrement..." : isEditing ? "Enregistrer" : "Publier le projet"}
+                    </button>
+
+                </form>
+
+            </div>
+        </DashboardLayout>
+    );
+}
+
+export default ProjectForm;
+```
+
+# src\Projects\Projects.css
+
+```css
+.page-container {
+    padding: 0;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.page-header h1 {
+    font-size: 26px;
+    color: #172033;
+}
+
+.page-header p {
+    color: #7b8494;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    border: 1px solid #d9dee7;
+    border-radius: 9px;
+    padding: 0 15px;
+    outline: none;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+.form-input,
+.form-select {
+    height: 48px;
+}
+
+.form-textarea {
+    padding: 12px 15px;
+    resize: vertical;
+    height: auto;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.projects-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 18px;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid #e7ebf0;
+    border-radius: 12px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.project-card h3 {
+    font-size: 17px;
+    color: #172033;
+}
+
+.project-card-type {
+    display: inline-block;
+    background: #f1f4f8;
+    color: #596273;
+    padding: 4px 9px;
+    border-radius: 6px;
+    font-size: 11px;
+    width: fit-content;
+}
+
+.project-card p {
+    color: #707a8b;
+    font-size: 13px;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.project-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-card-price {
+    color: #10b981;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.project-card-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.pagination button {
+    border: 1px solid #d9dee7;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 13px;
+    color: #667085;
+}
+
+.project-details-page {
+    max-width: 750px;
+}
+
+.project-details-card {
+    background: white;
+    border: 1px solid #e7ebf0;
+    border-radius: 14px;
+    padding: 35px;
+}
+
+.project-details-meta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 12px 0 20px;
+}
+
+.project-details-description {
+    color: #4f5b6e;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.project-details-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    padding-top: 20px;
+    border-top: 1px solid #edf0f4;
+}
+
+.project-details-info div span {
+    display: block;
+    color: #8a93a3;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.project-details-info div strong {
+    color: #172033;
+    font-size: 15px;
+}
+
+.project-details-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.btn-danger {
+    background: white;
+    color: #ef4444;
+    border: 1px solid #fecaca;
+}
+
+.btn-danger:hover {
+    background: #fef2f2;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #8a93a3;
+}
+```
+
+# src\Projects\ProjectsList.jsx
+
+```jsx
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import api from "../api/axios";
+import DashboardLayout from "../Dashboard/DashboardLayout";
+import Pagination from "./Pagination";
+import { typeLabel } from "./activiteTypes";
+import "../Dashboard/Dashboard.css";
+import "./Projects.css";
+
+const statusLabel = {
+    EN_ATTENTE: { text: "En attente", className: "pending-status" },
+    EN_COURS: { text: "En cours", className: "active-status" },
+    TERMINE: { text: "Terminé", className: "completed-status" },
+};
+
+function ProjectsList() {
+    const navigate = useNavigate();
+    const role = localStorage.getItem("role");
+
+    const [projects, setProjects] = useState([]);
+    const [page, setPage] = useState(0);
+    const [totalPages, setTotalPages] = useState(0);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setLoading(true);
+
+        api
+            .get(`/api/projects?page=${page}&size=9`)
+            .then((res) => {
+                setProjects(res.data.content);
+                setTotalPages(res.data.totalPages);
+            })
+            .catch((err) => console.error(err))
+            .finally(() => setLoading(false));
+    }, [page]);
+
+    return (
+        <DashboardLayout role={role}>
+            <div className="page-container">
+
+                <div className="page-header">
+                    <div>
+                        <h1>Tous les projets</h1>
+                        <p>Parcourez les projets publiés sur la plateforme.</p>
+                    </div>
+
+                    {role === "PME" && (
+                        <button
+                            className="dashboard-primary-button"
+                            onClick={() => navigate("/projects/new")}
+                        >
+                            Nouveau projet
+                        </button>
+                    )}
+                </div>
+
+                {loading && <p>Chargement des projets...</p>}
+
+                {!loading && projects.length === 0 && (
+                    <div className="empty-state">Aucun projet pour le moment.</div>
+                )}
+
+                {!loading && projects.length > 0 && (
+                    <div className="projects-cards-grid">
+                        {projects.map((project) => {
+                            const status = statusLabel[project.status] || statusLabel.EN_ATTENTE;
+
+                            return (
+                                <div className="project-card" key={project.id}>
+                                    <div className="project-card-top">
+                                        <span className="project-card-type">{typeLabel(project.type)}</span>
+                                        <span className={`status ${status.className}`}>{status.text}</span>
+                                    </div>
+
+                                    <h3>{project.titre}</h3>
+                                    <p>{project.description}</p>
+
+                                    <div className="project-card-footer">
+                                        <span className="project-card-price">{project.prix} DH</span>
+
+                                        <button
+                                            className="small-button"
+                                            onClick={() => navigate(`/projects/${project.id}`)}
+                                        >
+                                            Voir le projet
+                                        </button>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                )}
+
+                <Pagination page={page} totalPages={totalPages} onPageChange={setPage} />
+
+            </div>
+        </DashboardLayout>
+    );
+}
+
+export default ProjectsList;
+```
+
+# src\Reviews\FreelancerReviewsPage.jsx
+
+```jsx
+import { useParams } from "react-router-dom";
+import DashboardLayout from "../Dashboard/DashboardLayout";
+import ReviewsList from "./ReviewsList";
+
+function FreelancerReviewsPage() {
+    const { freelancerId } = useParams();
+    const role = localStorage.getItem("role");
+
+    return (
+        <DashboardLayout role={role}>
+            <div className="dashboard-header">
+                <div>
+                    <h1>Avis du prestataire</h1>
+                    <p>Retours des entreprises ayant travaillé avec ce freelancer.</p>
+                </div>
+            </div>
+
+            <ReviewsList freelancerId={freelancerId} />
+        </DashboardLayout>
+    );
+}
+
+export default FreelancerReviewsPage;
+```
+
+# src\Reviews\MyReviews.jsx
+
+```jsx
+import { useState, useEffect } from "react";
+import api from "../api/axios";
+import DashboardLayout from "../Dashboard/DashboardLayout";
+import ReviewsList from "./ReviewsList";
+
+function MyReviews() {
+    const [freelancerId, setFreelancerId] = useState(null);
+
+    useEffect(() => {
+        api.get("/api/freelancers/me").then((res) => setFreelancerId(res.data.id));
+    }, []);
+
+    return (
+        <DashboardLayout role="FREELANCE">
+            <div className="dashboard-header">
+                <div>
+                    <h1>Mes évaluations</h1>
+                    <p>Ce que les PME pensent de votre travail.</p>
+                </div>
+            </div>
+
+            {freelancerId && <ReviewsList freelancerId={freelancerId} />}
+        </DashboardLayout>
+    );
+}
+
+export default MyReviews;
+```
+
+# src\Reviews\ReviewForm.jsx
+
+```jsx
+// src/Reviews/ReviewForm.jsx
+import { useState, useEffect } from "react";
+import api from "../api/axios";
+import { toast } from "react-toastify";
+import StarRating from "./StarRating";
+
+function ReviewForm({ projectId }) {
+    const [freelancer, setFreelancer] = useState(null);
+    const [note, setNote] = useState(0);
+    const [commentaire, setCommentaire] = useState("");
+    const [saving, setSaving] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        api
+            .get(`/api/pme/projects/${projectId}/offers?page=0&size=50`)
+            .then((res) => {
+                const accepted = res.data.content.find((o) => o.status === "ACCEPTEE");
+                if (accepted) setFreelancer({ id: accepted.freelancerId });
+            })
+            .finally(() => setLoading(false));
+    }, [projectId]);
+
+    if (loading) return null;
+    if (!freelancer) return null; // pas d'offre acceptée -> rien à évaluer
+    if (submitted) {
+        return (
+            <div className="dashboard-card" style={{ marginTop: 20 }}>
+                <p>Merci, votre évaluation a été enregistrée.</p>
+            </div>
+        );
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (note === 0) {
+            toast.error("Merci de sélectionner une note.");
+            return;
+        }
+        setSaving(true);
+        try {
+            await api.post("/api/reviews", {
+                note,
+                commentaire,
+                projectId: Number(projectId),
+                freelancerId: freelancer.id,
+            });
+            toast.success("Évaluation envoyée.");
+            setSubmitted(true);
+        } catch (err) {
+            toast.error(err.response?.data?.message || "Impossible d'envoyer l'évaluation.");
+        } finally {
+            setSaving(false);
+        }
+    };
+
+    return (
+        <div className="dashboard-card" style={{ marginTop: 20 }}>
+            <div className="dashboard-card-header">
+                <div>
+                    <h2>Évaluer le freelancer</h2>
+                    <p>Votre avis aide les autres PME à choisir un prestataire.</p>
+                </div>
+            </div>
+
+            <form onSubmit={handleSubmit} className="auth-form">
+                <div className="form-group">
+                    <label>Note</label>
+                    <StarRating value={note} onChange={setNote} />
+                </div>
+
+                <div className="form-group">
+                    <label>Commentaire</label>
+                    <textarea
+                        className="form-textarea"
+                        rows={4}
+                        value={commentaire}
+                        onChange={(e) => setCommentaire(e.target.value)}
+                        placeholder="Décrivez votre expérience avec ce prestataire..."
+                        required
+                    />
+                </div>
+
+                <button type="submit" className="auth-button" disabled={saving}>
+                    {saving ? "Envoi..." : "Envoyer l'évaluation"}
+                </button>
+            </form>
+        </div>
+    );
+}
+
+export default ReviewForm;
+```
+
+# src\Reviews\ReviewsList.jsx
+
+```jsx
+// src/Reviews/ReviewsList.jsx
+import { useState, useEffect } from "react";
+import api from "../api/axios";
+import StarRating from "./StarRating";
+import Pagination from "../Projects/Pagination";
+
+function ReviewsList({ freelancerId }) {
+    const [reviews, setReviews] = useState([]);
+    const [page, setPage] = useState(0);
+    const [totalPages, setTotalPages] = useState(0);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setLoading(true);
+        api
+            .get(`/api/reviews/freelancer/${freelancerId}?page=${page}&size=10`)
+            .then((res) => {
+                setReviews(res.data.content);
+                setTotalPages(res.data.totalPages);
+            })
+            .finally(() => setLoading(false));
+    }, [freelancerId, page]);
+
+    if (loading) return <p>Chargement des avis...</p>;
+    if (reviews.length === 0) return <p>Aucun avis pour ce prestataire pour le moment.</p>;
+
+    return (
+        <div>
+            <div className="dashboard-card projects-card">
+                <div className="project-list">
+                    {reviews.map((review) => (
+                        <div className="project-row" key={review.id} style={{ gridTemplateColumns: "1fr auto" }}>
+                            <div>
+                                <StarRating value={review.note} readOnly size={16} />
+                                <span style={{ display: "block", marginTop: 6 }}>{review.commentaire}</span>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <Pagination page={page} totalPages={totalPages} onPageChange={setPage} />
+        </div>
+    );
+}
+
+export default ReviewsList;
+```
+
+# src\Reviews\StarRating.jsx
+
+```jsx
+// src/Reviews/StarRating.jsx
+import { Star } from "lucide-react";
+
+function StarRating({ value = 0, onChange, readOnly = false, size = 20 }) {
+    const stars = [1, 2, 3, 4, 5];
+
+    return (
+        <div style={{ display: "flex", gap: 4 }}>
+            {stars.map((n) => (
+                <span
+                    key={n}
+                    onClick={() => !readOnly && onChange?.(n)}
+                    style={{ cursor: readOnly ? "default" : "pointer" }}
+                >
+                    <Star
+                        size={size}
+                        color="#f59e0b"
+                        fill={n <= value ? "#f59e0b" : "none"}
+                    />
+                </span>
+            ))}
+        </div>
+    );
+}
+
+export default StarRating;
 ```
 
 # vite.config.js

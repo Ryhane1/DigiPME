@@ -17,23 +17,22 @@ function DashboardLayout({ role, children }) {
       return [
         { icon: LayoutDashboard, label: "Tableau de bord", path: "/dashboard" },
         { icon: ClipboardCheck, label: "Diagnostic digital", path: "#" },
-        { icon: FolderKanban, label: "Mes projets", path: "#" },
-        { icon: Users, label: "Prestataires", path: "#" },
+        { icon: FolderKanban, label: "Mes projets", path: "/my-projects" },
+        { icon: Users, label: "Prestataires", path: "/freelancers" },
         { icon: MessageCircle, label: "Messages", path: "#" },
         { icon: Star, label: "Évaluations", path: "#" },
       ];
     }
 
-    if (role === "FREELANCE") {
+    if (role === "FREELANCER") {
       return [
         { icon: LayoutDashboard, label: "Tableau de bord", path: "/dashboard" },
-        { icon: BriefcaseBusiness, label: "Projets", path: "#" },
-        { icon: FolderKanban, label: "Mes missions", path: "#" },
+        { icon: BriefcaseBusiness, label: "Projets", path: "/projects" },
+        { icon: FolderKanban, label: "Mes offres", path: "/my-offers" },
         { icon: MessageCircle, label: "Messages", path: "#" },
-        { icon: Star, label: "Évaluations", path: "#" },
+        { icon: Star, label: "Évaluations", path: "/my-reviews" },
       ];
     }
-
     return [
       { icon: LayoutDashboard, label: "Tableau de bord", path: "/dashboard" },
       { icon: Users, label: "Utilisateurs", path: "#" },

@@ -1,6 +1,9 @@
 package org.example.digipme.Controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.example.digipme.DTOs.Dashboard.PMEDashboardResponse;
+import org.example.digipme.DTOs.FreelancerResponse;
 import org.example.digipme.DTOs.OfferResponse;
 import org.example.digipme.DTOs.PMERequest;
 import org.example.digipme.DTOs.PMEResponse;
@@ -31,7 +34,7 @@ public class PMEController {
     @PutMapping("/me")
     @PreAuthorize("hasRole('PME')")
     public ResponseEntity<PMEResponse> updateMyProfile(
-            @RequestBody PMERequest request,
+            @Valid @RequestBody PMERequest request,
             Authentication authentication
     ) {
         return ResponseEntity.ok(
@@ -69,5 +72,22 @@ public class PMEController {
                         authentication
                 )
         );
+    }
+
+
+    @GetMapping("/freelancers")
+    @PreAuthorize("hasRole('PME')")
+    public ResponseEntity<Page<FreelancerResponse>> getFreelancers(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size
+    ) {
+        return ResponseEntity.ok(pmeService.getFreelancers(page, size));
+    }
+
+
+    @GetMapping("/dashboard")
+    @PreAuthorize("hasRole('PME')")
+    public ResponseEntity<PMEDashboardResponse> getDashboard(Authentication authentication) {
+        return ResponseEntity.ok(pmeService.getDashboard(authentication));
     }
 }

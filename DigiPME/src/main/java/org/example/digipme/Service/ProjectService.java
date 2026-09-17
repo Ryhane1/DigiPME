@@ -1,5 +1,6 @@
 package org.example.digipme.Service;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.digipme.Model.PME;
 import org.example.digipme.Model.Project;
@@ -27,37 +28,24 @@ public class ProjectService {
     private final ProjectMapper projectMapper;
 
 
-    @CacheEvict(value = "projects", allEntries = true)
-    public ProjectResponse createProject(
-            ProjectRequest request,
-            Authentication authentication
-    ) {
-
+    @CacheEvict(value = {"projects", "pme"}, allEntries = true)
+    public ProjectResponse createProject(ProjectRequest request,
+                                         Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
-
         if (!(user instanceof PME pme)) {
-            throw new AccessDeniedException(
-                    "Seule une PME peut créer un projet"
-            );
+            throw new AccessDeniedException("Seule une PME peut créer un projet");
         }
-
         Project project = projectMapper.toEntity(request);
-
         project.setPme(pme);
-
+        project.setStatus(org.example.digipme.Enums.ProjectStatus.EN_ATTENTE);
         Project savedProject = projectRepository.save(project);
-
         return projectMapper.toResponse(savedProject);
     }
 
-    @Cacheable(
-            value = "projects",
-            key = "'page:' + #page + ':size:' + #size"
-    )
-    public Page<ProjectResponse> getAllProjects(
-            int page,
-            int size
-    ) {
+
+
+    @Cacheable(value = "projects", key = "'page:' + #page + ':size:' + #size")
+    public Page<ProjectResponse> getAllProjects(int page, int size) {
 
         Pageable pageable = PageRequest.of(page, size);
 
@@ -67,87 +55,45 @@ public class ProjectService {
     }
 
 
-    // =========================
-    // GET PROJECT BY ID
-    // =========================
 
-    @Cacheable(
-            value = "projects",
-            key = "'id:' + #id"
-    )
+    @Cacheable(value = "projects", key = "'id:' + #id")
     public ProjectResponse getProjectById(Long id) {
-
         Project project = projectRepository.findById(id)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Projet introuvable avec l'id : " + id
-                        )
-                );
+                .orElseThrow(() -> new RuntimeException("Projet introuvable avec l'id : " + id));
 
         return projectMapper.toResponse(project);
     }
 
 
-    // =========================
-    // GET MY PROJECTS
-    // =========================
 
-    public Page<ProjectResponse> getMyProjects(
-            int page,
-            int size,
-            Authentication authentication
-    ) {
-
+    public Page<ProjectResponse> getMyProjects(int page, int size,
+                                            Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
-
         if (!(user instanceof PME pme)) {
-            throw new AccessDeniedException(
-                    "Seule une PME peut consulter ses projets"
-            );
-        }
-
+            throw new AccessDeniedException("Seule une PME peut consulter ses projets");}
         Pageable pageable = PageRequest.of(page, size);
-
         return projectRepository
                 .findByPmeId(pme.getId(), pageable)
                 .map(projectMapper::toResponse);
     }
 
 
-    @CacheEvict(value = "projects", allEntries = true)
-    public ProjectResponse updateProject(
-            Long id,
-            ProjectRequest request,
-            Authentication authentication
-    ) {
-
+    @CacheEvict(value = {"projects", "pme"}, allEntries = true)
+    public ProjectResponse updateProject(Long id, ProjectRequest request,
+                                         Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
-
         Project project = projectRepository.findById(id)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Projet introuvable avec l'id : " + id
-                        )
-                );
+                .orElseThrow(() -> new RuntimeException("Projet introuvable avec l'id : " + id));
 
         if (user.getRole().name().equals("ADMIN")) {
-
             projectMapper.updateEntity(request, project);
-
         } else {
-
             if (!(user instanceof PME pme)) {
-                throw new AccessDeniedException(
-                        "Accès refusé"
-                );
+                throw new AccessDeniedException("Accès refusé");
             }
-
             if (!project.getPme().getId().equals(pme.getId())) {
-                throw new AccessDeniedException(
-                        "Vous ne pouvez pas modifier ce projet"
-                );
+                throw new AccessDeniedException("Vous ne pouvez pas modifier ce projet");
             }
-
             projectMapper.updateEntity(request, project);
         }
         Project updatedProject = projectRepository.save(project);
@@ -156,17 +102,10 @@ public class ProjectService {
 
 
     @CacheEvict(value = "projects", allEntries = true)
-    public void deleteProject(
-            Long id,
-            Authentication authentication
-    ) {
+    public void deleteProject(Long id, Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
         Project project = projectRepository.findById(id)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Projet introuvable avec l'id : " + id
-                        )
-                );
+                .orElseThrow(() -> new RuntimeException("Projet introuvable avec l'id : " + id));
 
         if (user.getRole().name().equals("ADMIN")) {
             projectRepository.delete(project);
@@ -174,18 +113,16 @@ public class ProjectService {
         }
 
         if (!(user instanceof PME pme)) {
-            throw new AccessDeniedException(
-                    "Accès refusé"
-            );
+            throw new AccessDeniedException("Accès refusé");
         }
 
         if (!project.getPme().getId().equals(pme.getId())) {
-            throw new AccessDeniedException(
-                    "Vous ne pouvez pas supprimer ce projet"
-            );
+            throw new AccessDeniedException("Vous ne pouvez pas supprimer ce projet");
         }
         projectRepository.delete(project);
     }
+
+
 
 
     private UserApp getCurrentUser(Authentication authentication) {
@@ -193,4 +130,6 @@ public class ProjectService {
         return userRepository.findUserAppByEmail(email);
 
     }
+
+
 }

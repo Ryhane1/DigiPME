@@ -1,5 +1,6 @@
 package org.example.digipme.Controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.digipme.DTOs.OfferRequest;
 import org.example.digipme.DTOs.OfferResponse;
@@ -22,7 +23,7 @@ public class OfferController {
     @PostMapping
     @PreAuthorize("hasRole('FREELANCER')")
     public ResponseEntity<OfferResponse> createOffer(
-            @RequestBody OfferRequest request,
+            @Valid @RequestBody OfferRequest request,
             Authentication authentication
     ) {
 

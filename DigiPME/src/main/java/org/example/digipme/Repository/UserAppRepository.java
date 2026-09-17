@@ -1,21 +1,23 @@
 package org.example.digipme.Repository;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 import org.example.digipme.Enums.RoleUser;
 import org.example.digipme.Model.UserApp;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.nio.channels.FileChannel;
+import java.util.List;
 
-public interface UserAppRepository extends JpaRepository<UserApp,Long> {
-    boolean findByEmail(@NotBlank @Email String email);
+public interface UserAppRepository extends JpaRepository<UserApp, Long> {
+    boolean findByEmail(String email);
 
-    UserApp findUserAppByNom(@NotBlank String nom);
+    UserApp findUserAppByNom(String nom);
 
-    UserApp findUserAppByEmail(@NotBlank @Email String email);
+    UserApp findUserAppByEmail(String email);
 
     Page<UserApp> findByRole(RoleUser role, Pageable pageable);
+
+    long countByRole(RoleUser role);
+
+    List<UserApp> findTop5ByOrderByIdDesc();
 }

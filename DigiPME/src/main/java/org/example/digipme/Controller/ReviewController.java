@@ -20,10 +20,6 @@ public class ReviewController {
     private final ReviewService reviewService;
 
 
-    // =========================
-    // CREER UNE REVIEW
-    // =========================
-
     @PostMapping
     @PreAuthorize("hasRole('PME')")
     public ResponseEntity<ReviewResponse> createReview(
@@ -42,9 +38,6 @@ public class ReviewController {
     }
 
 
-    // =========================
-    // CONSULTER UNE REVIEW
-    // =========================
 
     @GetMapping("/{id}")
     @PreAuthorize("hasAnyRole('PME', 'FREELANCER', 'ADMIN')")
@@ -58,10 +51,6 @@ public class ReviewController {
     }
 
 
-    // =========================
-    // TOUTES LES REVIEWS
-    // =========================
-
     @GetMapping
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Page<ReviewResponse>> getAllReviews(
@@ -74,10 +63,6 @@ public class ReviewController {
         );
     }
 
-
-    // =========================
-    // REVIEWS D'UN FREELANCER
-    // =========================
 
     @GetMapping("/freelancer/{freelancerId}")
     @PreAuthorize("hasAnyRole('PME', 'FREELANCER', 'ADMIN')")
@@ -97,9 +82,6 @@ public class ReviewController {
     }
 
 
-    // =========================
-    // SUPPRIMER UNE REVIEW
-    // =========================
 
     @DeleteMapping("/{id}")
     @PreAuthorize("hasAnyRole('PME', 'ADMIN')")

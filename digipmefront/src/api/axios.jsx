@@ -38,7 +38,7 @@ api.interceptors.response.use(
                 toast.error("Erreur 401 : Session expirée.");
 
                 localStorage.removeItem("token");
-                localStorage.removeItem("username");
+                localStorage.removeItem("nom");
                 localStorage.removeItem("role");
 
                 window.location.href = "/";

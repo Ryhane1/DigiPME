@@ -1,0 +1,213 @@
+.page-container {
+    padding: 0;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.page-header h1 {
+    font-size: 26px;
+    color: #172033;
+}
+
+.page-header p {
+    color: #7b8494;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    border: 1px solid #d9dee7;
+    border-radius: 9px;
+    padding: 0 15px;
+    outline: none;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+.form-input,
+.form-select {
+    height: 48px;
+}
+
+.form-textarea {
+    padding: 12px 15px;
+    resize: vertical;
+    height: auto;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.projects-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 18px;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid #e7ebf0;
+    border-radius: 12px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.project-card h3 {
+    font-size: 17px;
+    color: #172033;
+}
+
+.project-card-type {
+    display: inline-block;
+    background: #f1f4f8;
+    color: #596273;
+    padding: 4px 9px;
+    border-radius: 6px;
+    font-size: 11px;
+    width: fit-content;
+}
+
+.project-card p {
+    color: #707a8b;
+    font-size: 13px;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.project-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-card-price {
+    color: #10b981;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.project-card-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.pagination button {
+    border: 1px solid #d9dee7;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 13px;
+    color: #667085;
+}
+
+.project-details-page {
+    max-width: 750px;
+}
+
+.project-details-card {
+    background: white;
+    border: 1px solid #e7ebf0;
+    border-radius: 14px;
+    padding: 35px;
+}
+
+.project-details-meta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 12px 0 20px;
+}
+
+.project-details-description {
+    color: #4f5b6e;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.project-details-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    padding-top: 20px;
+    border-top: 1px solid #edf0f4;
+}
+
+.project-details-info div span {
+    display: block;
+    color: #8a93a3;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.project-details-info div strong {
+    color: #172033;
+    font-size: 15px;
+}
+
+.project-details-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.btn-danger {
+    background: white;
+    color: #ef4444;
+    border: 1px solid #fecaca;
+}
+
+.btn-danger:hover {
+    background: #fef2f2;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #8a93a3;
+}

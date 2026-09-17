@@ -8,6 +8,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.example.digipme.Enums.ActiviteType;
+import org.example.digipme.Enums.ProjectStatus;
 
 import java.time.LocalDate;
 
@@ -31,4 +32,6 @@ public class ProjectRequest {
 
     @NotNull(message = "La date est obligatoire")
     private LocalDate date;
+
+    private ProjectStatus status;
 }

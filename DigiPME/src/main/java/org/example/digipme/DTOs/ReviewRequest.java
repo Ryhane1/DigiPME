@@ -21,9 +21,6 @@ public class ReviewRequest {
     @NotNull(message = "Le projet est obligatoire")
     private Long projectId;
 
-    @NotNull(message = "Le PME est obligatoire")
-    private Long pmeId;
-
     @NotNull(message = "Le freelancer est obligatoire")
     private Long freelancerId;
 

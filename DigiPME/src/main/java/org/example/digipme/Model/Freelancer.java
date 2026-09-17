@@ -22,6 +22,8 @@ public class Freelancer extends UserApp{
     @NotBlank
     private String specialite ;
 
+    private Double noteMoyenne;
+
     @OneToMany(mappedBy = "freelancer")
     @Builder.Default
     private List<Offer> offers = new ArrayList<>();

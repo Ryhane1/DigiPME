@@ -132,6 +132,17 @@
     transition: 0.2s;
 }
 
+.auth-error {
+    background: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
 .auth-button:hover {
     background: #1d4ed8;
 }

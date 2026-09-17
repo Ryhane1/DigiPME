@@ -6,45 +6,6 @@
 
 ```
 
-# .gitignore
-
-```
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
-
-```
-
 # .idea\.gitignore
 
 ```
@@ -148,6 +109,7 @@ build/
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>
@@ -163,72 +125,32 @@ build/
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf188629-4482-4d47-a9b3-2e1ec40c6c2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Controller/FreelancerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Controller/OfferController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Controller/PMEController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Controller/ProjectController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Controller/ReviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DTOs/FreelancerRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DTOs/FreelancerResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DTOs/OfferRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DTOs/OfferResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DTOs/PMERequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DTOs/PMEResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DTOs/ProjectRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DTOs/ProjectResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DTOs/ReviewRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DTOs/ReviewResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DTOs/UserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DTOs/UserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/DigiPmeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Enums/ActiviteType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Enums/OfferStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Enums/ProjectStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Enums/RoleUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Mappers/FreelancerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Mappers/OfferMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Mappers/PMEMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Mappers/ProjectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Mappers/ReviewMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Mappers/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Model/Freelancer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Model/Offer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Model/PME.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Model/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Model/Review.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Model/UserApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Repository/FreelancerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Repository/OfferRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Repository/PMERepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Repository/ProjectRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Repository/ReviewRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Repository/UserAppRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Service/FrelancerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Service/OfferService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Service/PMEService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Service/ProjectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Service/ReviewService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/Service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/auth/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/auth/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/auth/dto/TokenResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/auth/dto/UserLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/auth/dto/UserSignUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/config/CacheConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/config/JwtFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/security/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/digipme/security/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/digipme/DigiPmeApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Dashboard/useDashboard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Freelancers/FreelancersList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Offers/MyOffers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Offers/ProjectOffers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Projects/ActiviteTypes.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Projects/FreelancerOfferBox.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Projects/MyProjects.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Projects/Pagination.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Projects/ProjectDetails.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Projects/ProjectForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Projects/Projects.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Projects/ProjectsList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Reviews/FreelancerReviewsPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Reviews/MyReviews.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Reviews/ReviewForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Reviews/ReviewsList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digipmefront/src/Reviews/StarRating.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../digipmefront/codebase.md" beforeDir="false" afterPath="$PROJECT_DIR$/../digipmefront/codebase.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../digipmefront/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../digipmefront/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../digipmefront/src/Auth/Auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/../digipmefront/src/Auth/Auth.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../digipmefront/src/Dashboard/Admin/AdminDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../digipmefront/src/Dashboard/Admin/AdminDashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../digipmefront/src/Dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../digipmefront/src/Dashboard/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../digipmefront/src/Dashboard/DashboardLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../digipmefront/src/Dashboard/DashboardLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../digipmefront/src/Dashboard/Freelancer/FreelancerDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../digipmefront/src/Dashboard/Freelancer/FreelancerDashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../digipmefront/src/Dashboard/PME/PMEDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../digipmefront/src/Dashboard/PME/PMEDashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../digipmefront/src/api/axios.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../digipmefront/src/api/axios.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,8 +172,20 @@ build/
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Ryhane1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ryhane1/DigiPME.git",
+    "accountId": "9496ee63-fbfc-4ad7-95b3-3d1bf0661724"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -266,60 +200,60 @@ build/
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.8327777832444425E-83" />
-      <entry key="S2" value="2.069080810649451E-21" />
-      <entry key="S5" value="5.324894379011602E-9" />
-      <entry key="S10" value="7.299655080396504E-5" />
-      <entry key="S30" value="0.049231903348484755" />
-      <entry key="S60" value="0.39260031993013506" />
-      <entry key="M2" value="1.4155471579736254" />
-      <entry key="M5" value="3.3112336731346153" />
-      <entry key="M10" value="4.4461087037073925" />
-      <entry key="M15" value="4.910631670405261" />
-      <entry key="M30" value="5.426627994571257" />
-      <entry key="H1" value="5.705747081215967" />
-      <entry key="H2" value="5.850930954757168" />
-      <entry key="H4" value="5.93485216878629" />
-      <entry key="D1" value="37.26053062305506" />
-      <entry key="W1" value="154.18758667324332" />
+      <entry key="MS500" value="2.960301780379836E-87" />
+      <entry key="S2" value="2.332566298759907E-22" />
+      <entry key="S5" value="2.2239940206722427E-9" />
+      <entry key="S10" value="4.7175188945692596E-5" />
+      <entry key="S30" value="0.0425647802779669" />
+      <entry key="S60" value="0.3650501522945712" />
+      <entry key="M2" value="1.3649768460687932" />
+      <entry key="M5" value="3.2633992310808018" />
+      <entry key="M10" value="4.4138773908469755" />
+      <entry key="M15" value="4.886870374454306" />
+      <entry key="M30" value="5.41348303864403" />
+      <entry key="H1" value="5.6988323573381905" />
+      <entry key="H2" value="5.847384544765276" />
+      <entry key="H4" value="5.933053257679986" />
+      <entry key="D1" value="37.25864804739794" />
+      <entry key="W1" value="154.1864737526504" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000938359322478" />
-      <entry key="S5" value="1.0244876816307669" />
-      <entry key="S10" value="1.1564932303752642" />
-      <entry key="S30" value="1.565477634286501" />
-      <entry key="S60" value="2.0300185162480773" />
-      <entry key="M2" value="3.00791392458858" />
-      <entry key="M5" value="4.683920816664449" />
-      <entry key="M10" value="5.6661058241809865" />
-      <entry key="M15" value="6.065905571659215" />
-      <entry key="M30" value="6.508892009754052" />
-      <entry key="H1" value="6.748100508935029" />
-      <entry key="H2" value="6.872421343983784" />
-      <entry key="H4" value="6.94482198195752" />
-      <entry key="D1" value="39.36855252665347" />
-      <entry key="W1" value="166.3668157965012" />
+      <entry key="MS500" value="1.0001615199511606" />
+      <entry key="S2" value="1.112745000837394" />
+      <entry key="S5" value="1.4278872623614587" />
+      <entry key="S10" value="1.7474022547159036" />
+      <entry key="S30" value="2.3534762420581323" />
+      <entry key="S60" value="2.887564861508607" />
+      <entry key="M2" value="3.90045643403978" />
+      <entry key="M5" value="5.616256386724872" />
+      <entry key="M10" value="6.625030348593283" />
+      <entry key="M15" value="7.036554199539944" />
+      <entry key="M30" value="7.4931254787353625" />
+      <entry key="H1" value="7.7399225699106395" />
+      <entry key="H2" value="7.868255780603997" />
+      <entry key="H4" value="7.9427169392303645" />
+      <entry key="D1" value="40.36656344390549" />
+      <entry key="W1" value="167.36561496665962" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.1135093202376162E-5" />
-      <entry key="MS500" value="0.11614508428136414" />
-      <entry key="S2" value="0.5837963617099047" />
-      <entry key="S5" value="0.8180742556779201" />
-      <entry key="S10" value="1.0065036271586434" />
-      <entry key="S30" value="1.5145881889534352" />
-      <entry key="S60" value="2.346491104436272" />
-      <entry key="M2" value="4.361398945073493" />
-      <entry key="M5" value="7.9548382790314225" />
-      <entry key="M10" value="10.087615127212157" />
-      <entry key="M15" value="10.958940220557816" />
-      <entry key="M30" value="11.92606017574318" />
-      <entry key="H1" value="12.448939521450715" />
-      <entry key="H2" value="12.720852019905001" />
-      <entry key="H4" value="12.878410480543268" />
-      <entry key="D1" value="76.62782415323231" />
-      <entry key="W1" value="320.55363068427465" />
+      <entry key="MS100" value="1.0993603053920724E-19" />
+      <entry key="MS500" value="1.8027969950133577E-4" />
+      <entry key="S2" value="0.17854836787469383" />
+      <entry key="S5" value="0.7593364273483222" />
+      <entry key="S10" value="1.2967350743137434" />
+      <entry key="S30" value="2.1740555711354173" />
+      <entry key="S60" value="3.1116558630015496" />
+      <entry key="M2" value="5.169863385575265" />
+      <entry key="M5" value="8.825475710561859" />
+      <entry key="M10" value="11.007237337136292" />
+      <entry key="M15" value="11.901073954685547" />
+      <entry key="M30" value="12.894749296963058" />
+      <entry key="H1" value="13.432640919021262" />
+      <entry key="H2" value="13.712535434548426" />
+      <entry key="H4" value="13.87420380006644" />
+      <entry key="D1" value="77.62390203377716" />
+      <entry key="W1" value="321.55130972144593" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -331,27 +265,29 @@ build/
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/enaaj/OneDrive/Desktop/FileRouge/DigiPME/src/main/java/org/example/digipme&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.DigiPmeApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/enaaj/OneDrive/Desktop/FileRouge/DigiPME/src/main/java/org/example/digipme",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\enaaj\OneDrive\Desktop\FileRouge\DigiPME\src\main\java\org\example\digipme" />
@@ -1056,6 +992,24 @@ Write-Output "MVN_CMD=$MAVEN_HOME/bin/$MVN_CMD"
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
+            <version>0.11.5</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-impl</artifactId>
+            <version>0.11.5</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-jackson</artifactId>
+            <version>0.11.5</version>
+            <scope>runtime</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -1398,11 +1352,11 @@ public class CacheConfig {
     @Bean
     public RedisCacheManager cacheManager(RedisConnectionFactory connectionFactory) {
         RedisCacheConfiguration cacheConfig = RedisCacheConfiguration.defaultCacheConfig()
-                .entryTtl(Duration.ofHours(1));
+                .entryTtl(Duration.ofMinutes(15));
 
         return RedisCacheManager.builder(connectionFactory)
-//                .cacheDefaults(cacheConfig)
-                .withCacheConfiguration("users", cacheConfig)
+                .cacheDefaults(cacheConfig)
+                .withCacheConfiguration("users", cacheConfig.entryTtl(Duration.ofHours(1)))
                 .build();
     }
 }
@@ -1531,6 +1485,7 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(List.of(
                 "http://localhost:8082",
+                "http://localhost:5173",
                 "http://localhost:5174"
         ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH"));
@@ -1548,12 +1503,43 @@ public class SecurityConfig {
 }
 ```
 
-# src\main\java\org\example\digipme\Controller\FreelancerController.java
+# src\main\java\org\example\digipme\Controller\AdminController.java
 
 ```java
 package org.example.digipme.Controller;
 
 import lombok.RequiredArgsConstructor;
+import org.example.digipme.DTOs.Dashboard.AdminDashboardResponse;
+import org.example.digipme.Service.AdminService;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/admin")
+@RequiredArgsConstructor
+public class AdminController {
+
+    private final AdminService adminService;
+
+    @GetMapping("/dashboard")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<AdminDashboardResponse> getDashboard() {
+        return ResponseEntity.ok(adminService.getDashboard());
+    }
+}
+```
+
+# src\main\java\org\example\digipme\Controller\FreelancerController.java
+
+```java
+package org.example.digipme.Controller;
+
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import org.example.digipme.DTOs.Dashboard.FreelancerDashboardResponse;
 import org.example.digipme.DTOs.FreelancerRequest;
 import org.example.digipme.DTOs.FreelancerResponse;
 import org.example.digipme.DTOs.OfferResponse;
@@ -1587,7 +1573,7 @@ public class FreelancerController {
     @PutMapping("/me")
     @PreAuthorize("hasRole('FREELANCER')")
     public ResponseEntity<FreelancerResponse> updateMyProfile(
-            @RequestBody FreelancerRequest request,
+            @Valid @RequestBody FreelancerRequest request,
             Authentication authentication
     ) {
         return ResponseEntity.ok(
@@ -1629,6 +1615,14 @@ public class FreelancerController {
                 )
         );
     }
+
+
+
+    @GetMapping("/dashboard")
+    @PreAuthorize("hasRole('FREELANCER')")
+    public ResponseEntity<FreelancerDashboardResponse> getDashboard(Authentication authentication) {
+        return ResponseEntity.ok(freelancerService.getDashboard(authentication));
+    }
 }
 ```
 
@@ -1637,6 +1631,7 @@ public class FreelancerController {
 ```java
 package org.example.digipme.Controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.digipme.DTOs.OfferRequest;
 import org.example.digipme.DTOs.OfferResponse;
@@ -1659,7 +1654,7 @@ public class OfferController {
     @PostMapping
     @PreAuthorize("hasRole('FREELANCER')")
     public ResponseEntity<OfferResponse> createOffer(
-            @RequestBody OfferRequest request,
+            @Valid @RequestBody OfferRequest request,
             Authentication authentication
     ) {
 
@@ -1743,7 +1738,10 @@ public class OfferController {
 ```java
 package org.example.digipme.Controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.example.digipme.DTOs.Dashboard.PMEDashboardResponse;
+import org.example.digipme.DTOs.FreelancerResponse;
 import org.example.digipme.DTOs.OfferResponse;
 import org.example.digipme.DTOs.PMERequest;
 import org.example.digipme.DTOs.PMEResponse;
@@ -1774,7 +1772,7 @@ public class PMEController {
     @PutMapping("/me")
     @PreAuthorize("hasRole('PME')")
     public ResponseEntity<PMEResponse> updateMyProfile(
-            @RequestBody PMERequest request,
+            @Valid @RequestBody PMERequest request,
             Authentication authentication
     ) {
         return ResponseEntity.ok(
@@ -1813,6 +1811,23 @@ public class PMEController {
                 )
         );
     }
+
+
+    @GetMapping("/freelancers")
+    @PreAuthorize("hasRole('PME')")
+    public ResponseEntity<Page<FreelancerResponse>> getFreelancers(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size
+    ) {
+        return ResponseEntity.ok(pmeService.getFreelancers(page, size));
+    }
+
+
+    @GetMapping("/dashboard")
+    @PreAuthorize("hasRole('PME')")
+    public ResponseEntity<PMEDashboardResponse> getDashboard(Authentication authentication) {
+        return ResponseEntity.ok(pmeService.getDashboard(authentication));
+    }
 }
 ```
 
@@ -1821,6 +1836,7 @@ public class PMEController {
 ```java
 package org.example.digipme.Controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.digipme.DTOs.ProjectRequest;
 import org.example.digipme.DTOs.ProjectResponse;
@@ -1842,37 +1858,32 @@ public class ProjectController {
     @PostMapping
     @PreAuthorize("hasRole('PME')")
     public ResponseEntity<ProjectResponse> createProject(
-            @RequestBody ProjectRequest request,
-            Authentication authentication
-    ) {
-
+            @Valid @RequestBody ProjectRequest request,
+            Authentication authentication) {
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(projectService.createProject(request, authentication));
     }
 
+
+
     @GetMapping
     @PreAuthorize("hasAnyRole('PME', 'FREELANCER', 'ADMIN')")
     public ResponseEntity<Page<ProjectResponse>> getAllProjects(
             @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "10") int size
-    ) {
+            @RequestParam(defaultValue = "10") int size) {
 
-        return ResponseEntity.ok(
-                projectService.getAllProjects(page, size)
-        );
+        return ResponseEntity.ok(projectService.getAllProjects(page, size));
     }
+
 
 
     @GetMapping("/{id}")
     @PreAuthorize("hasAnyRole('PME', 'FREELANCER', 'ADMIN')")
     public ResponseEntity<ProjectResponse> getProjectById(
-            @PathVariable Long id
-    ) {
+            @PathVariable Long id) {
 
-        return ResponseEntity.ok(
-                projectService.getProjectById(id)
-        );
+        return ResponseEntity.ok(projectService.getProjectById(id));
     }
 
 
@@ -1881,12 +1892,9 @@ public class ProjectController {
     public ResponseEntity<Page<ProjectResponse>> getMyProjects(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size,
-            Authentication authentication
-    ) {
+            Authentication authentication) {
 
-        return ResponseEntity.ok(
-                projectService.getMyProjects(page, size, authentication)
-        );
+        return ResponseEntity.ok(projectService.getMyProjects(page, size, authentication));
     }
 
 
@@ -1895,23 +1903,18 @@ public class ProjectController {
     public ResponseEntity<ProjectResponse> updateProject(
             @PathVariable Long id,
             @RequestBody ProjectRequest request,
-            Authentication authentication
-    ) {
+            Authentication authentication) {
 
-        return ResponseEntity.ok(
-                projectService.updateProject(id, request, authentication)
-        );
+        return ResponseEntity.ok(projectService.updateProject(id, request, authentication));
     }
 
     @DeleteMapping("/{id}")
     @PreAuthorize("hasAnyRole('PME', 'ADMIN')")
     public ResponseEntity<Void> deleteProject(
             @PathVariable Long id,
-            Authentication authentication
-    ) {
+            Authentication authentication) {
 
         projectService.deleteProject(id, authentication);
-
         return ResponseEntity.noContent().build();
     }
 }
@@ -1944,10 +1947,6 @@ public class ReviewController {
     private final ReviewService reviewService;
 
 
-    // =========================
-    // CREER UNE REVIEW
-    // =========================
-
     @PostMapping
     @PreAuthorize("hasRole('PME')")
     public ResponseEntity<ReviewResponse> createReview(
@@ -1966,9 +1965,6 @@ public class ReviewController {
     }
 
 
-    // =========================
-    // CONSULTER UNE REVIEW
-    // =========================
 
     @GetMapping("/{id}")
     @PreAuthorize("hasAnyRole('PME', 'FREELANCER', 'ADMIN')")
@@ -1982,10 +1978,6 @@ public class ReviewController {
     }
 
 
-    // =========================
-    // TOUTES LES REVIEWS
-    // =========================
-
     @GetMapping
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Page<ReviewResponse>> getAllReviews(
@@ -1998,10 +1990,6 @@ public class ReviewController {
         );
     }
 
-
-    // =========================
-    // REVIEWS D'UN FREELANCER
-    // =========================
 
     @GetMapping("/freelancer/{freelancerId}")
     @PreAuthorize("hasAnyRole('PME', 'FREELANCER', 'ADMIN')")
@@ -2021,9 +2009,6 @@ public class ReviewController {
     }
 
 
-    // =========================
-    // SUPPRIMER UNE REVIEW
-    // =========================
 
     @DeleteMapping("/{id}")
     @PreAuthorize("hasAnyRole('PME', 'ADMIN')")
@@ -2048,6 +2033,7 @@ public class ReviewController {
 ```java
 package org.example.digipme.Controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.digipme.DTOs.UserRequest;
 import org.example.digipme.DTOs.UserResponse;
@@ -2113,7 +2099,7 @@ public class UserController {
     @PostMapping("/add")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<UserResponse> addUser(
-            @RequestBody UserRequest userRequest
+            @Valid @RequestBody UserRequest userRequest
     ) {
 
         return ResponseEntity.ok(
@@ -2141,6 +2127,111 @@ public class DigiPmeApplication {
 
 }
 
+```
+
+# src\main\java\org\example\digipme\DTOs\Dashboard\AdminDashboardResponse.java
+
+```java
+package org.example.digipme.DTOs.Dashboard;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.example.digipme.DTOs.ProjectResponse;
+import org.example.digipme.Enums.RoleUser;
+
+import java.util.List;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class AdminDashboardResponse {
+
+    private long totalUsers;
+    private long totalPME;
+    private long totalFreelancers;
+    private long totalProjects;
+
+    private List<UserSummary> recentUsers;
+    private List<ProjectResponse> recentProjects;
+
+    @Data
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class UserSummary {
+        private Long id;
+        private String nom;
+        private String email;
+        private RoleUser role;
+    }
+}
+```
+
+# src\main\java\org\example\digipme\DTOs\Dashboard\FreelancerDashboardResponse.java
+
+```java
+package org.example.digipme.DTOs.Dashboard;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.example.digipme.DTOs.FreelancerResponse;
+import org.example.digipme.DTOs.OfferResponse;
+import org.example.digipme.DTOs.ProjectResponse;
+
+import java.util.List;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class FreelancerDashboardResponse {
+
+    private FreelancerResponse profile;
+
+    private long projetsDisponibles;
+    private long propositionsEnvoyees;
+    private long missionsEnCours;
+    private Double noteMoyenne;
+
+    private List<ProjectResponse> recommendedProjects;
+    private List<OfferResponse> recentOffers;
+}
+```
+
+# src\main\java\org\example\digipme\DTOs\Dashboard\PMEDashboardResponse.java
+
+```java
+package org.example.digipme.DTOs.Dashboard;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.example.digipme.DTOs.PMEResponse;
+import org.example.digipme.DTOs.ProjectResponse;
+
+import java.util.List;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class PMEDashboardResponse {
+
+    private PMEResponse profile;
+
+    private long totalProjets;
+    private long projetsEnCours;
+    private long projetsTermines;
+    private long totalOffresRecues;
+
+    private List<ProjectResponse> recentProjects;
+}
 ```
 
 # src\main\java\org\example\digipme\DTOs\FreelancerRequest.java
@@ -2201,6 +2292,8 @@ public class FreelancerResponse {
     private String telephone;
     private String adresse;
     private String specialite;
+    private Double noteMoyenne;
+
 }
 
 ```
@@ -2239,8 +2332,6 @@ public class OfferRequest {
     @NotNull(message = "Le projet est obligatoire")
     private Long projectId;
 
-    @NotNull(message = "Le freelancer est obligatoire")
-    private Long freelancerId;
 }
 
 ```
@@ -2254,6 +2345,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.digipme.Enums.OfferStatus;
 
 import java.time.LocalDate;
 
@@ -2269,6 +2361,7 @@ public class OfferResponse {
     private LocalDate dateLivraison;
     private Long projectId;
     private Long freelancerId;
+    private OfferStatus status;
 
 }
 
@@ -2351,6 +2444,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.example.digipme.Enums.ActiviteType;
+import org.example.digipme.Enums.ProjectStatus;
 
 import java.time.LocalDate;
 
@@ -2374,6 +2468,8 @@ public class ProjectRequest {
 
     @NotNull(message = "La date est obligatoire")
     private LocalDate date;
+
+    private ProjectStatus status;
 }
 
 ```
@@ -2388,6 +2484,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.example.digipme.Enums.ActiviteType;
+import org.example.digipme.Enums.ProjectStatus;
 
 import java.time.LocalDate;
 
@@ -2403,6 +2500,7 @@ public class ProjectResponse {
     private String description;
     private Double prix;
     private LocalDate date;
+    private ProjectStatus status;
 }
 ```
 
@@ -2431,9 +2529,6 @@ public class ReviewRequest {
 
     @NotNull(message = "Le projet est obligatoire")
     private Long projectId;
-
-    @NotNull(message = "Le PME est obligatoire")
-    private Long pmeId;
 
     @NotNull(message = "Le freelancer est obligatoire")
     private Long freelancerId;
@@ -2479,6 +2574,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.digipme.Enums.RoleUser;
 
 @Data
 @Builder
@@ -2500,6 +2596,9 @@ public class UserRequest {
     private String telephone;
 
     private String adresse;
+
+    @NotBlank(message = "Le rôle est obligatoire")
+    private RoleUser role;
 }
 
 ```
@@ -2525,6 +2624,7 @@ public class UserResponse {
     private String email;
     private String telephone;
     private String adresse;
+    private String role;
 }
 
 ```
@@ -2535,9 +2635,16 @@ public class UserResponse {
 package org.example.digipme.Enums;
 
 public enum ActiviteType {
-    
+    DEVELOPPEMENT_WEB,
+    APPLICATION_MOBILE,
+    MARKETING_DIGITAL,
+    CRM_ERP,
+    CYBERSECURITE,
+    CLOUD_HEBERGEMENT,
+    AUTOMATISATION,
+    DESIGN_UI_UX,
+    AUTRE
 }
-
 ```
 
 # src\main\java\org\example\digipme\Enums\OfferStatus.java
@@ -2651,15 +2758,20 @@ import org.example.digipme.DTOs.ProjectRequest;
 import org.example.digipme.DTOs.ProjectResponse;
 import org.example.digipme.Model.Project;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring")
 public interface ProjectMapper {
+
+    @Mapping(target = "dateCreation", source = "date")
     Project toEntity(ProjectRequest request);
+
+    @Mapping(target = "date", source = "dateCreation")
     ProjectResponse toResponse(Project project);
 
+    @Mapping(target = "dateCreation", source = "date")
     void updateEntity(ProjectRequest request, Project project);
 }
-
 ```
 
 # src\main\java\org\example\digipme\Mappers\ReviewMapper.java
@@ -2727,6 +2839,8 @@ public class Freelancer extends UserApp{
 
     @NotBlank
     private String specialite ;
+
+    private Double noteMoyenne;
 
     @OneToMany(mappedBy = "freelancer")
     @Builder.Default
@@ -2896,6 +3010,7 @@ public class Project {
     @ManyToOne
     @JoinColumn(name = "pme_id")
     private PME pme;
+
     @OneToMany(
             mappedBy = "project",
             cascade = CascadeType.ALL,
@@ -3036,12 +3151,13 @@ public interface FreelancerRepository extends JpaRepository<Freelancer, Long> {
 ```java
 package org.example.digipme.Repository;
 
+import org.example.digipme.Enums.OfferStatus;
 import org.example.digipme.Model.Offer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.nio.channels.FileChannel;
+import java.util.List;
 
 public interface OfferRepository extends JpaRepository<Offer, Long> {
     Page<Offer> findByProjectId(Long projectId, Pageable pageable);
@@ -3049,8 +3165,13 @@ public interface OfferRepository extends JpaRepository<Offer, Long> {
     Page<Offer> findByFreelancerId(Long id, Pageable pageable);
 
     boolean existsByProjectIdAndFreelancerId(Long id, Long id1);
-}
 
+    long countByFreelancerId(Long freelancerId);
+    long countByFreelancerIdAndStatus(Long freelancerId, OfferStatus status);
+    long countByProject_Pme_Id(Long pmeId);
+
+    List<Offer> findTop5ByFreelancerIdOrderByIdDesc(Long freelancerId);
+}
 ```
 
 # src\main\java\org\example\digipme\Repository\PMERepository.java
@@ -3074,17 +3195,23 @@ public interface PMERepository extends JpaRepository<PME,Long> {
 ```java
 package org.example.digipme.Repository;
 
+import org.example.digipme.Enums.ProjectStatus;
 import org.example.digipme.Model.Project;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.nio.channels.FileChannel;
+import java.util.List;
 
 public interface ProjectRepository extends JpaRepository<Project, Long> {
     Page<Project> findByPmeId(Long id, Pageable pageable);
-}
 
+    long countByPmeId(Long pmeId);
+    long countByPmeIdAndStatus(Long pmeId, ProjectStatus status);
+
+    List<Project> findTop5ByPmeIdOrderByDateCreationDesc(Long pmeId);
+    List<Project> findTop5ByOrderByDateCreationDesc();
+}
 ```
 
 # src\main\java\org\example\digipme\Repository\ReviewRepository.java
@@ -3092,20 +3219,21 @@ public interface ProjectRepository extends JpaRepository<Project, Long> {
 ```java
 package org.example.digipme.Repository;
 
-import org.example.digipme.DTOs.ReviewResponse;
 import org.example.digipme.Model.Review;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.nio.channels.FileChannel;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 public interface ReviewRepository extends JpaRepository<Review, Long> {
     boolean existsByProjectIdAndFreelancerId(Long id, Long id1);
 
     Page<Review> findByFreelancerId(Long freelancerId, Pageable pageable);
-}
 
+    @Query("SELECT AVG(r.note) FROM Review r WHERE r.freelancer.id = :freelancerId")
+    Double findAverageNoteByFreelancerId(@Param("freelancerId") Long freelancerId);
+}
 ```
 
 # src\main\java\org\example\digipme\Repository\UserAppRepository.java
@@ -3113,26 +3241,27 @@ public interface ReviewRepository extends JpaRepository<Review, Long> {
 ```java
 package org.example.digipme.Repository;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 import org.example.digipme.Enums.RoleUser;
 import org.example.digipme.Model.UserApp;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.nio.channels.FileChannel;
+import java.util.List;
 
-public interface UserAppRepository extends JpaRepository<UserApp,Long> {
-    boolean findByEmail(@NotBlank @Email String email);
+public interface UserAppRepository extends JpaRepository<UserApp, Long> {
+    boolean findByEmail(String email);
 
-    UserApp findUserAppByNom(@NotBlank String nom);
+    UserApp findUserAppByNom(String nom);
 
-    UserApp findUserAppByEmail(@NotBlank @Email String email);
+    UserApp findUserAppByEmail(String email);
 
     Page<UserApp> findByRole(RoleUser role, Pageable pageable);
-}
 
+    long countByRole(RoleUser role);
+
+    List<UserApp> findTop5ByOrderByIdDesc();
+}
 ```
 
 # src\main\java\org\example\digipme\security\CustomUserDetailsService.java
@@ -3226,7 +3355,7 @@ import java.util.Date;
 @RequiredArgsConstructor
 public class JwtService {
 
-    private final String secretKey = "mySecretKeymySecretKeymySecretKeymySecretKey";
+    private final String secretKey = "${JWT_SECRET}";
     private final long expiration = 2592000000L;
 
 
@@ -3250,15 +3379,6 @@ public class JwtService {
     }
 
 
-//    public boolean validateToken(String token){
-//        try{
-//            Jwts.parserBuilder().setSigningKey(getKey()).build().parseClaimsJws(token);
-//            return true;
-//        } catch (RuntimeException e) {
-//            return false;
-//        }
-//    }
-
     public boolean isTokenValid(String token, UserDetails userDetails) {
         try {
             String username = extractUsername(token);
@@ -3275,80 +3395,9 @@ public class JwtService {
     }
 
     public boolean isTokenExpired(String token) {
+
         return extractExpiration(token).before(new Date());
     }
-
-//
-//package com.healthcare.security;
-//
-//import io.jsonwebtoken.*;
-//import io.jsonwebtoken.security.Keys;
-//import org.springframework.beans.factory.annotation.Value;
-//import org.springframework.security.core.userdetails.UserDetails;
-//import org.springframework.stereotype.Service;
-//
-//import javax.crypto.SecretKey;
-//import java.util.Date;
-//
-//@Service
-//public class JwtService {
-//
-//    @Value("${jwt.secret}")
-//    private String secret;
-//
-//    @Value("${jwt.expiration}")
-//    private long expiration;
-//
-//    private SecretKey getKey() {
-//        return Keys.hmacShaKeyFor(secret.getBytes());
-//    }
-//
-//    // Générer le token
-//    public String generateToken(String username) {
-//        return Jwts.builder()
-//                .setSubject(username)
-//                .setIssuedAt(new Date())
-//                .setExpiration(new Date(System.currentTimeMillis() + expiration))
-//                .signWith(getKey())
-//                .compact();
-//    }
-//
-//    // Extraire le username
-//    public String extractUsername(String token) {
-//        return Jwts.parserBuilder()
-//                .setSigningKey(getKey()).build()
-//                .parseClaimsJws(token).getBody().getSubject();
-//    }
-//
-//    // Valider le token
-//
-//
-//    private boolean isExpired(String token) {
-//        Date exp = Jwts.parserBuilder().setSigningKey(getKey()).build()
-//                .parseClaimsJws(token).getBody().getExpiration();
-//        return exp.before(new Date());
-//    }
-//}
-//
-
-//    public boolean validatToken(String token) {
-//        try {
-//            Jwts.parserBuilder().setSigningKey(getKey()).build().parseClaimsJws(token);
-//            return true;
-//        } catch (Exception e) {
-//            return false;
-//        }
-//    }
-//
-//    public Date extratExpiration(String token) {
-//        return Jwts.parserBuilder()
-//                .setSigningKey(getKey())
-//                .build()
-//                .parseClaimsJws(token)
-//                .getBody()
-//                .getExpiration();
-//    }
-
 
 
 
@@ -3357,24 +3406,89 @@ public class JwtService {
 
 ```
 
+# src\main\java\org\example\digipme\Service\AdminService.java
+
+```java
+package org.example.digipme.Service;
+
+import lombok.RequiredArgsConstructor;
+import org.example.digipme.DTOs.Dashboard.AdminDashboardResponse;
+import org.example.digipme.DTOs.ProjectResponse;
+import org.example.digipme.Enums.RoleUser;
+import org.example.digipme.Mappers.ProjectMapper;
+import org.example.digipme.Model.UserApp;
+import org.example.digipme.Repository.ProjectRepository;
+import org.example.digipme.Repository.UserAppRepository;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class AdminService {
+
+    private final UserAppRepository userRepository;
+    private final ProjectRepository projectRepository;
+    private final ProjectMapper projectMapper;
+
+    public AdminDashboardResponse getDashboard() {
+
+        long totalUsers = userRepository.count();
+        long totalPME = userRepository.countByRole(RoleUser.PME);
+        long totalFreelancers = userRepository.countByRole(RoleUser.FREELANCER);
+        long totalProjects = projectRepository.count();
+
+        List<AdminDashboardResponse.UserSummary> recentUsers = userRepository
+                .findTop5ByOrderByIdDesc()
+                .stream()
+                .map(this::toSummary)
+                .toList();
+
+        List<ProjectResponse> recentProjects = projectRepository
+                .findTop5ByOrderByDateCreationDesc()
+                .stream()
+                .map(projectMapper::toResponse)
+                .toList();
+
+        return AdminDashboardResponse.builder()
+                .totalUsers(totalUsers)
+                .totalPME(totalPME)
+                .totalFreelancers(totalFreelancers)
+                .totalProjects(totalProjects)
+                .recentUsers(recentUsers)
+                .recentProjects(recentProjects)
+                .build();
+    }
+
+    private AdminDashboardResponse.UserSummary toSummary(UserApp user) {
+        return AdminDashboardResponse.UserSummary.builder()
+                .id(user.getId())
+                .nom(user.getNom())
+                .email(user.getEmail())
+                .role(user.getRole())
+                .build();
+    }
+}
+```
+
 # src\main\java\org\example\digipme\Service\FreelancerService.java
 
 ```java
 package org.example.digipme.Service;
 
 import lombok.RequiredArgsConstructor;
+import org.example.digipme.DTOs.Dashboard.FreelancerDashboardResponse;
 import org.example.digipme.DTOs.FreelancerRequest;
 import org.example.digipme.DTOs.FreelancerResponse;
 import org.example.digipme.DTOs.OfferResponse;
 import org.example.digipme.DTOs.ProjectResponse;
+import org.example.digipme.Enums.OfferStatus;
 import org.example.digipme.Mappers.FreelancerMapper;
 import org.example.digipme.Mappers.OfferMapper;
 import org.example.digipme.Mappers.ProjectMapper;
 import org.example.digipme.Model.Freelancer;
 import org.example.digipme.Model.UserApp;
-import org.example.digipme.Repository.OfferRepository;
-import org.example.digipme.Repository.ProjectRepository;
-import org.example.digipme.Repository.UserAppRepository;
+import org.example.digipme.Repository.*;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
@@ -3384,6 +3498,8 @@ import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class FreelancerService {
@@ -3391,6 +3507,8 @@ public class FreelancerService {
     private final UserAppRepository userRepository;
     private final ProjectRepository projectRepository;
     private final OfferRepository offerRepository;
+    private final ReviewRepository reviewRepository;
+    private final FreelancerRepository freelancerRepository;
 
     private final FreelancerMapper freelancerMapper;
     private final OfferMapper offerMapper;
@@ -3398,91 +3516,47 @@ public class FreelancerService {
 
 
 
-    @Cacheable(
-            value = "freelancer",
-            key = "'profile:' + #authentication.name"
-    )
-    public FreelancerResponse getMyProfile(
-            Authentication authentication
-    ) {
+    @Cacheable(value = "freelancer", key = "'profile:' + #authentication.name")
+    public FreelancerResponse getMyProfile(Authentication authentication) {
 
-        Freelancer freelancer =
-                getCurrentFreelancer(authentication);
-
+        Freelancer freelancer = getCurrentFreelancer(authentication);
         return freelancerMapper.toResponse(freelancer);
     }
 
 
-    // =========================
-    // MODIFIER PROFIL
-    // =========================
 
-    @CacheEvict(
-            value = "freelancer",
-            key = "'profile:' + #authentication.name"
-    )
-    public FreelancerResponse updateMyProfile(
-            FreelancerRequest request,
-            Authentication authentication
-    ) {
 
-        Freelancer freelancer =
-                getCurrentFreelancer(authentication);
-
-        freelancerMapper.updateEntity(
-                request,
-                freelancer
-        );
-
-        Freelancer updated =
-                userRepository.save(freelancer);
+    @CacheEvict(value = "freelancer", key = "'profile:' + #authentication.name")
+    public FreelancerResponse updateMyProfile(FreelancerRequest request,
+                                               Authentication authentication) {
+        Freelancer freelancer = getCurrentFreelancer(authentication);
+        freelancerMapper.updateEntity(request, freelancer);
+        Freelancer updated = userRepository.save(freelancer);
 
         return freelancerMapper.toResponse(updated);
     }
 
 
-    // =========================
-    // PROJETS DISPONIBLES
-    // =========================
-
-    @Cacheable(
-            value = "projects",
-            key = "'available:page:' + #page + ':size:' + #size"
-    )
-    public Page<ProjectResponse> getAvailableProjects(
-            int page,
-            int size
-    ) {
-
+    @Cacheable(value = "projects",
+               key = "'available:page:' + #page + ':size:' + #size")
+    public Page<ProjectResponse> getAvailableProjects(int page, int size) {
         Pageable pageable =
                 PageRequest.of(page, size);
-
         return projectRepository
                 .findAll(pageable)
                 .map(projectMapper::toResponse);
     }
 
 
-    // =========================
-    // MES OFFRES
-    // =========================
 
-    @Cacheable(
-            value = "offers",
-            key = "'freelancer:' + #authentication.name + ':page:' + #page + ':size:' + #size"
-    )
-    public Page<OfferResponse> getMyOffers(
-            int page,
-            int size,
-            Authentication authentication
-    ) {
-
+    @Cacheable(value = "offers",
+                key = "'freelancer:' + #authentication.name + ':page:' + #page + ':size:' + #size")
+    public Page<OfferResponse> getMyOffers(int page, int size,
+                                             Authentication authentication) {
         Freelancer freelancer =
                 getCurrentFreelancer(authentication);
-
         Pageable pageable =
                 PageRequest.of(page, size);
-
         return offerRepository
                 .findByFreelancerId(
                         freelancer.getId(),
@@ -3491,10 +3565,6 @@ public class FreelancerService {
                 .map(offerMapper::toResponse);
     }
 
-
-    // =========================
-    // UTILITAIRE
-    // =========================
 
     private Freelancer getCurrentFreelancer(
             Authentication authentication
@@ -3510,8 +3580,43 @@ public class FreelancerService {
                     "Vous devez être un freelancer"
             );
         }
-
         return freelancer;
+    }
+
+
+
+
+    @Cacheable(value = "freelancer", key = "'dashboard:' + #authentication.name")
+    public FreelancerDashboardResponse getDashboard(Authentication authentication) {
+
+        Freelancer freelancer = getCurrentFreelancer(authentication);
+
+        long disponibles = projectRepository.count();
+        long envoyees = offerRepository.countByFreelancerId(freelancer.getId());
+        long enCours = offerRepository.countByFreelancerIdAndStatus(freelancer.getId(), OfferStatus.ACCEPTEE);
+        Double note = reviewRepository.findAverageNoteByFreelancerId(freelancer.getId());
+
+        List<ProjectResponse> recommended = projectRepository
+                .findTop5ByOrderByDateCreationDesc()
+                .stream()
+                .map(projectMapper::toResponse)
+                .toList();
+
+        List<OfferResponse> recentOffers = offerRepository
+                .findTop5ByFreelancerIdOrderByIdDesc(freelancer.getId())
+                .stream()
+                .map(offerMapper::toResponse)
+                .toList();
+
+        return FreelancerDashboardResponse.builder()
+                .profile(freelancerMapper.toResponse(freelancer))
+                .projetsDisponibles(disponibles)
+                .propositionsEnvoyees(envoyees)
+                .missionsEnCours(enCours)
+                .noteMoyenne(note)
+                .recommendedProjects(recommended)
+                .recentOffers(recentOffers)
+                .build();
     }
 }
 
@@ -3523,6 +3628,7 @@ public class FreelancerService {
 package org.example.digipme.Service;
 
 import lombok.RequiredArgsConstructor;
+import org.example.digipme.Enums.OfferStatus;
 import org.example.digipme.Model.Freelancer;
 import org.example.digipme.Model.Offer;
 import org.example.digipme.Model.Project;
@@ -3552,7 +3658,7 @@ public class OfferService {
     private final OfferMapper offerMapper;
 
 
-    @CacheEvict(value = "offers", allEntries = true)
+    @CacheEvict(value = {"offers", "freelancer"}, allEntries = true)
     public OfferResponse createOffer(
             OfferRequest request,
             Authentication authentication) {
@@ -3572,6 +3678,7 @@ public class OfferService {
                         ));
 
         Offer offer = offerMapper.toEntity(request);
+        offer.setStatus(OfferStatus.EN_ATTENTE);
         offer.setProject(project);
         offer.setFreelancer(freelancer);
         Offer savedOffer = offerRepository.save(offer);
@@ -3628,7 +3735,7 @@ public class OfferService {
     }
 
 
-    @CacheEvict(value = "offers", allEntries = true)
+    @CacheEvict(value = {"offers", "freelancer"}, allEntries = true)
     public void deleteOffer( Long id, Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
         if (!(user instanceof Freelancer freelancer)) {
@@ -3667,19 +3774,18 @@ public class OfferService {
 package org.example.digipme.Service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.digipme.DTOs.OfferResponse;
-import org.example.digipme.DTOs.PMERequest;
-import org.example.digipme.DTOs.PMEResponse;
+import org.example.digipme.DTOs.*;
+import org.example.digipme.DTOs.Dashboard.PMEDashboardResponse;
 import org.example.digipme.Enums.OfferStatus;
+import org.example.digipme.Enums.ProjectStatus;
 import org.example.digipme.Mappers.OfferMapper;
 import org.example.digipme.Mappers.PMEMapper;
+import org.example.digipme.Mappers.ProjectMapper;
 import org.example.digipme.Model.Offer;
 import org.example.digipme.Model.PME;
 import org.example.digipme.Model.Project;
 import org.example.digipme.Model.UserApp;
-import org.example.digipme.Repository.OfferRepository;
-import org.example.digipme.Repository.ProjectRepository;
-import org.example.digipme.Repository.UserAppRepository;
+import org.example.digipme.Repository.*;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
@@ -3689,6 +3795,8 @@ import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class PMEService {
@@ -3696,129 +3804,138 @@ public class PMEService {
     private final UserAppRepository userRepository;
     private final ProjectRepository projectRepository;
     private final OfferRepository offerRepository;
+    private final FreelancerRepository freelancerRepository;
+    private final ReviewRepository reviewRepository;
 
     private final PMEMapper pmeMapper;
     private final OfferMapper offerMapper;
+    private final ProjectMapper projectMapper;
 
 
-    @Cacheable(value = "pme", key = "'profile:' + #authentication.name"
-    )
-    public PMEResponse getMyProfile(
-            Authentication authentication
-    ) {
-
+    @Cacheable(value = "pme", key = "'profile:' + #authentication.name")
+    public PMEResponse getMyProfile(Authentication authentication) {
         PME pme = getCurrentPME(authentication);
-
         return pmeMapper.toResponse(pme);
     }
 
 
 
-    @CacheEvict(
-            value = "pme",
-            key = "'profile:' + #authentication.name"
-    )
-    public PMEResponse updateMyProfile(
-            PMERequest request,
-            Authentication authentication
-    ) {
-
+    @CacheEvict(value = "pme", key = "'profile:' + #authentication.name")
+    public PMEResponse updateMyProfile(PMERequest request,
+                                        Authentication authentication) {
         PME pme = getCurrentPME(authentication);
-
         pmeMapper.updateEntity(request, pme);
-
         PME updatedPME = userRepository.save(pme);
-
         return pmeMapper.toResponse(updatedPME);
     }
 
 
-    @Cacheable(
-            value = "offers",
-            key = "'pme-project:' + #projectId + ':page:' + #page + ':size:' + #size"
-    )
-    public Page<OfferResponse> getProjectOffers(
-            Long projectId,
-            int page,
-            int size,
-            Authentication authentication
-    ) {
-
+    @Cacheable(value = "offers",
+               key = "'pme-project:' + #projectId + ':page:' + #page + ':size:' + #size")
+    public Page<OfferResponse> getProjectOffers(Long projectId, int page, int size,
+                                                 Authentication authentication) {
         PME pme = getCurrentPME(authentication);
-
         Project project = projectRepository.findById(projectId)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Projet introuvable"
-                        )
-                );
-
-        // Vérifier que le projet appartient bien à cette PME
+                .orElseThrow(() -> new RuntimeException("Projet introuvable"));
         if (!project.getPme().getId().equals(pme.getId())) {
-            throw new AccessDeniedException(
-                    "Ce projet ne vous appartient pas"
-            );
+            throw new AccessDeniedException("Ce projet ne vous appartient pas");
         }
-
         Pageable pageable = PageRequest.of(page, size);
-
         return offerRepository
                 .findByProjectId(projectId, pageable)
                 .map(offerMapper::toResponse);
     }
 
 
+    @Cacheable(value = "freelancersList", key = "'page:' + #page + ':size:' + #size")
+    public Page<FreelancerResponse> getFreelancers(int page, int size) {
+        Pageable pageable = PageRequest.of(page, size);
 
-    @CacheEvict(
-            value = "offers",
-            allEntries = true
-    )
+        return freelancerRepository.findAll(pageable)
+                .map(f -> FreelancerResponse.builder()
+                        .id(f.getId())
+                        .nom(f.getNom())
+                        .specialite(f.getSpecialite())
+                        .telephone(f.getTelephone())
+                        .adresse(f.getAdresse())
+                        .noteMoyenne(reviewRepository.findAverageNoteByFreelancerId(f.getId()))
+                        .build());
+    }
+
+
+
+
+    @CacheEvict(value = {"offers", "pme", "freelancer"}, allEntries = true)
     public OfferResponse acceptOffer(
             Long offerId,
             Authentication authentication
     ) {
-
         PME pme = getCurrentPME(authentication);
-
         Offer offer = offerRepository.findById(offerId)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Offre introuvable"
-                        )
-                );
-
+                .orElseThrow(() -> new RuntimeException("Offre introuvable"));
         Project project = offer.getProject();
-
-        // Vérifier que le projet appartient à la PME
         if (!project.getPme().getId().equals(pme.getId())) {
-            throw new AccessDeniedException(
-                    "Vous ne pouvez pas accepter cette offre"
-            );
+            throw new AccessDeniedException("Vous ne pouvez pas accepter cette offre");
         }
-
         offer.setStatus(OfferStatus.ACCEPTEE);
-
+        project.getOffers().forEach(o -> {
+            if (!o.getId().equals(offerId)) {
+                o.setStatus(OfferStatus.REFUSEE);
+                offerRepository.save(o);
+            }
+        });
         Offer updatedOffer = offerRepository.save(offer);
 
+//        List<Offer> otherOffers = offerRepository.findByProjectId(project.getId(), Pageable.unpaged()).getContent();
+//        otherOffers.stream()
+//                .filter(o -> !o.getId().equals(offer.getId()))
+//                .filter(o -> o.getStatus() == OfferStatus.EN_ATTENTE)
+//                .forEach(o -> {
+//                    o.setStatus(OfferStatus.REFUSEE);
+//                    offerRepository.save(o);
+//                });
+
+        project.setStatus(ProjectStatus.EN_COURS);
+        projectRepository.save(project);
         return offerMapper.toResponse(updatedOffer);
     }
 
+
+
     private PME getCurrentPME(
-            Authentication authentication
-    ) {
-
+            Authentication authentication) {
         String email = authentication.getName();
-
-        UserApp user = userRepository
-                .findUserAppByEmail(email);
-
+        UserApp user = userRepository.findUserAppByEmail(email);
         if (!(user instanceof PME pme)) {
-            throw new AccessDeniedException(
-                    "Vous devez être une PME"
-            );
-        }
-
+            throw new AccessDeniedException("Vous devez être une PME");}
         return pme;
+    }
+
+
+    @Cacheable(value = "pme", key = "'dashboard:' + #authentication.name")
+    public PMEDashboardResponse getDashboard(Authentication authentication) {
+
+        PME pme = getCurrentPME(authentication);
+
+        long total = projectRepository.countByPmeId(pme.getId());
+        long enCours = projectRepository.countByPmeIdAndStatus(pme.getId(), ProjectStatus.EN_COURS);
+        long termines = projectRepository.countByPmeIdAndStatus(pme.getId(), ProjectStatus.TERMINE);
+        long totalOffres = offerRepository.countByProject_Pme_Id(pme.getId());
+
+        List<ProjectResponse> recentProjects = projectRepository
+                .findTop5ByPmeIdOrderByDateCreationDesc(pme.getId())
+                .stream()
+                .map(projectMapper::toResponse)
+                .toList();
+
+        return PMEDashboardResponse.builder()
+                .profile(pmeMapper.toResponse(pme))
+                .totalProjets(total)
+                .projetsEnCours(enCours)
+                .projetsTermines(termines)
+                .totalOffresRecues(totalOffres)
+                .recentProjects(recentProjects)
+                .build();
     }
 }
 ```
@@ -3828,6 +3945,7 @@ public class PMEService {
 ```java
 package org.example.digipme.Service;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.digipme.Model.PME;
 import org.example.digipme.Model.Project;
@@ -3855,37 +3973,24 @@ public class ProjectService {
     private final ProjectMapper projectMapper;
 
 
-    @CacheEvict(value = "projects", allEntries = true)
-    public ProjectResponse createProject(
-            ProjectRequest request,
-            Authentication authentication
-    ) {
-
+    @CacheEvict(value = {"projects", "pme"}, allEntries = true)
+    public ProjectResponse createProject(ProjectRequest request,
+                                         Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
-
         if (!(user instanceof PME pme)) {
-            throw new AccessDeniedException(
-                    "Seule une PME peut créer un projet"
-            );
+            throw new AccessDeniedException("Seule une PME peut créer un projet");
         }
-
         Project project = projectMapper.toEntity(request);
-
         project.setPme(pme);
-
+        project.setStatus(org.example.digipme.Enums.ProjectStatus.EN_ATTENTE);
         Project savedProject = projectRepository.save(project);
-
         return projectMapper.toResponse(savedProject);
     }
 
-    @Cacheable(
-            value = "projects",
-            key = "'page:' + #page + ':size:' + #size"
-    )
-    public Page<ProjectResponse> getAllProjects(
-            int page,
-            int size
-    ) {
+
+
+    @Cacheable(value = "projects", key = "'page:' + #page + ':size:' + #size")
+    public Page<ProjectResponse> getAllProjects(int page, int size) {
 
         Pageable pageable = PageRequest.of(page, size);
 
@@ -3895,87 +4000,45 @@ public class ProjectService {
     }
 
 
-    // =========================
-    // GET PROJECT BY ID
-    // =========================
 
-    @Cacheable(
-            value = "projects",
-            key = "'id:' + #id"
-    )
+    @Cacheable(value = "projects", key = "'id:' + #id")
     public ProjectResponse getProjectById(Long id) {
-
         Project project = projectRepository.findById(id)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Projet introuvable avec l'id : " + id
-                        )
-                );
+                .orElseThrow(() -> new RuntimeException("Projet introuvable avec l'id : " + id));
 
         return projectMapper.toResponse(project);
     }
 
 
-    // =========================
-    // GET MY PROJECTS
-    // =========================
 
-    public Page<ProjectResponse> getMyProjects(
-            int page,
-            int size,
-            Authentication authentication
-    ) {
-
+    public Page<ProjectResponse> getMyProjects(int page, int size,
+                                            Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
-
         if (!(user instanceof PME pme)) {
-            throw new AccessDeniedException(
-                    "Seule une PME peut consulter ses projets"
-            );
-        }
-
+            throw new AccessDeniedException("Seule une PME peut consulter ses projets");}
         Pageable pageable = PageRequest.of(page, size);
-
         return projectRepository
                 .findByPmeId(pme.getId(), pageable)
                 .map(projectMapper::toResponse);
     }
 
 
-    @CacheEvict(value = "projects", allEntries = true)
-    public ProjectResponse updateProject(
-            Long id,
-            ProjectRequest request,
-            Authentication authentication
-    ) {
-
+    @CacheEvict(value = {"projects", "pme"}, allEntries = true)
+    public ProjectResponse updateProject(Long id, ProjectRequest request,
+                                         Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
-
         Project project = projectRepository.findById(id)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Projet introuvable avec l'id : " + id
-                        )
-                );
+                .orElseThrow(() -> new RuntimeException("Projet introuvable avec l'id : " + id));
 
         if (user.getRole().name().equals("ADMIN")) {
-
             projectMapper.updateEntity(request, project);
-
         } else {
-
             if (!(user instanceof PME pme)) {
-                throw new AccessDeniedException(
-                        "Accès refusé"
-                );
+                throw new AccessDeniedException("Accès refusé");
             }
-
             if (!project.getPme().getId().equals(pme.getId())) {
-                throw new AccessDeniedException(
-                        "Vous ne pouvez pas modifier ce projet"
-                );
+                throw new AccessDeniedException("Vous ne pouvez pas modifier ce projet");
             }
-
             projectMapper.updateEntity(request, project);
         }
         Project updatedProject = projectRepository.save(project);
@@ -3984,17 +4047,10 @@ public class ProjectService {
 
 
     @CacheEvict(value = "projects", allEntries = true)
-    public void deleteProject(
-            Long id,
-            Authentication authentication
-    ) {
+    public void deleteProject(Long id, Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
         Project project = projectRepository.findById(id)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Projet introuvable avec l'id : " + id
-                        )
-                );
+                .orElseThrow(() -> new RuntimeException("Projet introuvable avec l'id : " + id));
 
         if (user.getRole().name().equals("ADMIN")) {
             projectRepository.delete(project);
@@ -4002,18 +4058,16 @@ public class ProjectService {
         }
 
         if (!(user instanceof PME pme)) {
-            throw new AccessDeniedException(
-                    "Accès refusé"
-            );
+            throw new AccessDeniedException("Accès refusé");
         }
 
         if (!project.getPme().getId().equals(pme.getId())) {
-            throw new AccessDeniedException(
-                    "Vous ne pouvez pas supprimer ce projet"
-            );
+            throw new AccessDeniedException("Vous ne pouvez pas supprimer ce projet");
         }
         projectRepository.delete(project);
     }
+
+
 
 
     private UserApp getCurrentUser(Authentication authentication) {
@@ -4021,6 +4075,8 @@ public class ProjectService {
         return userRepository.findUserAppByEmail(email);
 
     }
+
+
 }
 
 ```
@@ -4033,6 +4089,7 @@ package org.example.digipme.Service;
 import lombok.RequiredArgsConstructor;
 import org.example.digipme.DTOs.ReviewRequest;
 import org.example.digipme.DTOs.ReviewResponse;
+import org.example.digipme.Enums.ProjectStatus;
 import org.example.digipme.Enums.RoleUser;
 import org.example.digipme.Model.*;
 import org.example.digipme.Repository.*;
@@ -4059,248 +4116,129 @@ public class ReviewService {
 
 
     @CacheEvict(value = "reviews", allEntries = true)
-    public ReviewResponse createReview(
-            ReviewRequest request,
-            Authentication authentication
-    ) {
+    public ReviewResponse createReview(ReviewRequest request,
+                                       Authentication authentication) {
 
-        // Récupérer l'utilisateur connecté
         UserApp user = getCurrentUser(authentication);
 
-        // Vérifier que c'est une PME
         if (!(user instanceof PME pme)) {
-            throw new AccessDeniedException(
-                    "Seule une PME peut créer une review"
-            );
+            throw new AccessDeniedException("Seule une PME peut créer une review");
         }
 
-
-        // Vérifier le projet
         Project project = projectRepository
                 .findById(request.getProjectId())
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Projet introuvable avec l'id : "
-                                        + request.getProjectId()
-                        )
-                );
+                .orElseThrow(() -> new RuntimeException(
+                                "Projet introuvable avec l'id : " + request.getProjectId()));
 
-
-        // Vérifier que le projet appartient à la PME
-        if (!project.getPme().getId().equals(pme.getId())) {
-
-            throw new AccessDeniedException(
-                    "Ce projet ne vous appartient pas"
-            );
+        if (project.getStatus() != ProjectStatus.TERMINE) {
+            throw new RuntimeException
+                    ("Vous ne pouvez évaluer un freelancer qu'une fois le projet terminé");
         }
 
+        if (!project.getPme().getId().equals(pme.getId())) {
+            throw new AccessDeniedException("Ce projet ne vous appartient pas");
+        }
 
-        // Vérifier que le freelancer existe
         UserApp freelancerUser = userRepository
                 .findById(request.getFreelancerId())
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Freelancer introuvable"
-                        )
-                );
+                .orElseThrow(() -> new RuntimeException("Freelancer introuvable"));
 
 
         if (!(freelancerUser instanceof Freelancer freelancer)) {
-
-            throw new RuntimeException(
-                    "L'utilisateur sélectionné n'est pas un freelancer"
-            );
+            throw new RuntimeException("L'utilisateur sélectionné n'est pas un freelancer");
         }
 
-
-        // Vérifier que le freelancer a bien fait une offre
         boolean hasOffer = offerRepository
-                .existsByProjectIdAndFreelancerId(
-                        project.getId(),
-                        freelancer.getId()
-                );
-
+            .existsByProjectIdAndFreelancerId(project.getId(), freelancer.getId());
 
         if (!hasOffer) {
-
             throw new AccessDeniedException(
                     "Vous ne pouvez pas évaluer ce freelancer " +
-                            "car il n'a pas fait d'offre sur ce projet"
-            );
+                            "car il n'a pas fait d'offre sur ce projet");
         }
 
-
-        // Vérifier si une review existe déjà
-        boolean alreadyReviewed =
-                reviewRepository.existsByProjectIdAndFreelancerId(
-                        project.getId(),
-                        freelancer.getId()
-                );
+        boolean alreadyReviewed = reviewRepository
+            .existsByProjectIdAndFreelancerId(project.getId(), freelancer.getId());
 
 
         if (alreadyReviewed) {
-
-            throw new RuntimeException(
-                    "Vous avez déjà évalué ce freelancer pour ce projet"
-            );
+            throw new RuntimeException("Vous avez déjà évalué ce freelancer pour ce projet");
         }
 
-
-        // Créer la review
         Review review = reviewMapper.toEntity(request);
 
         review.setPme(pme);
         review.setProject(project);
         review.setFreelancer(freelancer);
 
-
-        Review savedReview =
-                reviewRepository.save(review);
-
+        Review savedReview = reviewRepository.save(review);
 
         return reviewMapper.toResponse(savedReview);
     }
 
 
-    // =========================
-    // CONSULTER UNE REVIEW
-    // =========================
 
-    @Cacheable(
-            value = "reviews",
-            key = "'id:' + #id"
-    )
+    @Cacheable(value = "reviews", key = "'id:' + #id")
     public ReviewResponse getReviewById(Long id) {
 
-        Review review = reviewRepository
-                .findById(id)
+        Review review = reviewRepository.findById(id)
                 .orElseThrow(() ->
-                        new RuntimeException(
-                                "Review introuvable avec l'id : "
-                                        + id
-                        )
-                );
+                        new RuntimeException("Review introuvable avec l'id : " + id));
 
         return reviewMapper.toResponse(review);
     }
 
 
-    // =========================
-    // TOUTES LES REVIEWS
-    // =========================
 
-    @Cacheable(
-            value = "reviews",
-            key = "'page:' + #page + ':size:' + #size"
-    )
-    public Page<ReviewResponse> getAllReviews(
-            int page,
-            int size
-    ) {
+    @Cacheable(value = "reviews", key = "'page:' + #page + ':size:' + #size")
+    public Page<ReviewResponse> getAllReviews(int page, int size) {
 
-        Pageable pageable =
-                PageRequest.of(page, size);
-
-        return reviewRepository
-                .findAll(pageable)
-                .map(reviewMapper::toResponse);
+        Pageable pageable = PageRequest.of(page, size);
+        return reviewRepository.findAll(pageable).map(reviewMapper::toResponse);
     }
 
 
-    // =========================
-    // REVIEWS D'UN FREELANCER
-    // =========================
 
-    @Cacheable(
-            value = "reviews",
+    @Cacheable(value = "reviews",
             key = "'freelancer:' + #freelancerId + ':page:' + #page + ':size:' + #size" )
-    public Page<ReviewResponse> getReviewsByFreelancer(
-            Long freelancerId,
-            int page,
-            int size
-    ) {
+    public Page<ReviewResponse> getReviewsByFreelancer(Long freelancerId,
+                                                       int page, int size) {
 
-        // Vérifier que le freelancer existe
-        UserApp user = userRepository
-                .findById(freelancerId)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Freelancer introuvable"
-                        )
-                );
-
+        UserApp user = userRepository.findById(freelancerId)
+                .orElseThrow(() -> new RuntimeException("Freelancer introuvable"));
 
         if (!(user instanceof Freelancer)) {
-
-            throw new RuntimeException(
-                    "L'utilisateur n'est pas un freelancer"
-            );
+            throw new RuntimeException("L'utilisateur n'est pas un freelancer");
         }
 
+        Pageable pageable = PageRequest.of(page, size);
 
-        Pageable pageable =
-                PageRequest.of(page, size);
-
-
-        return reviewRepository
-                .findByFreelancerId(
-                        freelancerId,
-                        pageable)
+        return reviewRepository.findByFreelancerId(freelancerId, pageable)
                 .map(reviewMapper::toResponse);
     }
 
 
-    // =========================
-    // SUPPRIMER UNE REVIEW
-    // =========================
 
-    @CacheEvict(
-            value = "reviews",
-            allEntries = true
-    )
-    public void deleteReview(
-            Long id,
-            Authentication authentication
-    ) {
+    @CacheEvict(value = "reviews", allEntries = true)
+    public void deleteReview(Long id,
+                             Authentication authentication) {
 
-        UserApp user =
-                getCurrentUser(authentication);
+        UserApp user = getCurrentUser(authentication);
+        Review review = reviewRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Review introuvable"));
 
-
-        Review review = reviewRepository
-                .findById(id)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Review introuvable"
-                        )
-                );
-
-
-        // ADMIN peut supprimer
         if (user.getRole() == RoleUser.ADMIN) {
-
             reviewRepository.delete(review);
             return;
         }
 
-
-        // PME uniquement
         if (!(user instanceof PME pme)) {
-
-            throw new AccessDeniedException(
-                    "Accès refusé"
-            );
+            throw new AccessDeniedException("Accès refusé");
         }
 
-
-        // Vérifier que la review appartient à cette PME
         if (!review.getPme().getId().equals(pme.getId())) {
-
-            throw new AccessDeniedException(
-                    "Vous ne pouvez pas supprimer cette review"
-            );
+            throw new AccessDeniedException("Vous ne pouvez pas supprimer cette review");
         }
-
 
         reviewRepository.delete(review);
     }
@@ -4308,14 +4246,10 @@ public class ReviewService {
 
 
 
-    private UserApp getCurrentUser(
-            Authentication authentication
-    ) {
+    private UserApp getCurrentUser(Authentication authentication) {
 
         String email = authentication.getName();
-
-        return userRepository
-                .findUserAppByEmail(email);
+        return userRepository.findUserAppByEmail(email);
     }
 }
 ```
@@ -4404,8 +4338,8 @@ public class UserService {
 
 ```properties
 spring.application.name=DigiPME
-
-
+server.port=8081
+jwt.secret=${JWT_SECRET:mySecretKeymySecretKeymySecretKeymySecretKey}
 
 ```
 
