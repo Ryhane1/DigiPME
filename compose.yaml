@@ -1,0 +1,71 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: digipme-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: digipme_db
+      MYSQL_ROOT_PASSWORD: uxui2025
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - digipme-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: digipme-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    networks:
+      - digipme-network
+
+  backend:
+    build:
+      context: ./DigiPME
+      dockerfile: Dockerfile
+    container_name: digipme-backend
+    restart: unless-stopped
+    environment:
+      DB_URL: jdbc:mysql://mysql:3306/digipme_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      DB_USERNAME: root
+      DB_PASSWORD: uxui2025
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      JWT_SECRET: sdXKFTPKtSMaNV8G9fZdT3kKEsiJlCZTzF46RxXMQhnPUKhcA==
+    ports:
+      - "8083:8083"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    networks:
+      - digipme-network
+
+  frontend:
+    build:
+      context: ./digipmefront
+      dockerfile: Dockerfile
+    container_name: digipme-frontend
+    restart: unless-stopped
+    ports:
+      - "8082:80"
+    depends_on:
+      - backend
+    networks:
+      - digipme-network
+
+networks:
+  digipme-network:
+    driver: bridge
+
+volumes:
+  mysql_data:

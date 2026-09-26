@@ -11,7 +11,7 @@ function MyReviews() {
     }, []);
 
     return (
-        <DashboardLayout role="FREELANCE">
+        <DashboardLayout role="FREELANCER">
             <div className="dashboard-header">
                 <div>
                     <h1>Mes évaluations</h1>

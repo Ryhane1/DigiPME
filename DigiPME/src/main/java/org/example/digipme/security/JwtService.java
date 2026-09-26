@@ -3,6 +3,7 @@ package org.example.digipme.security;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
@@ -11,11 +12,14 @@ import java.util.Date;
 
 
 @Service
-@RequiredArgsConstructor
 public class JwtService {
 
-    private final String secretKey = "${JWT_SECRET}";
+    private final String secretKey="sdXKFTPKtSMaNV8G9fZdT3kKEsiJlCZTzF46RxXMQhnPUKhcA==";
     private final long expiration = 2592000000L;
+
+//    public JwtService(@Value("${jwt.secret}") String secretKey) {
+//        this.secretKey = secretKey;
+//    }
 
 
     private SecretKey getKey() {

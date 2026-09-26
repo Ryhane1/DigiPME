@@ -40,7 +40,7 @@ public class FreelancerService {
 
 
 
-    @Cacheable(value = "freelancer", key = "'profile:' + #authentication.name")
+//    @Cacheable(value = "freelancer", key = "'profile:' + #authentication.name")
     public FreelancerResponse getMyProfile(Authentication authentication) {
 
         Freelancer freelancer = getCurrentFreelancer(authentication);
@@ -50,7 +50,7 @@ public class FreelancerService {
 
 
 
-    @CacheEvict(value = "freelancer", key = "'profile:' + #authentication.name")
+//    @CacheEvict(value = "freelancer", key = "'profile:' + #authentication.name")
     public FreelancerResponse updateMyProfile(FreelancerRequest request,
                                                Authentication authentication) {
         Freelancer freelancer = getCurrentFreelancer(authentication);
@@ -60,9 +60,9 @@ public class FreelancerService {
         return freelancerMapper.toResponse(updated);
     }
 
-
-    @Cacheable(value = "projects",
-               key = "'available:page:' + #page + ':size:' + #size")
+//
+//    @Cacheable(value = "projects",
+//               key = "'available:page:' + #page + ':size:' + #size")
     public Page<ProjectResponse> getAvailableProjects(int page, int size) {
         Pageable pageable =
                 PageRequest.of(page, size);
@@ -72,9 +72,9 @@ public class FreelancerService {
     }
 
 
-
-    @Cacheable(value = "offers",
-                key = "'freelancer:' + #authentication.name + ':page:' + #page + ':size:' + #size")
+//
+//    @Cacheable(value = "offers",
+//                key = "'freelancer:' + #authentication.name + ':page:' + #page + ':size:' + #size")
     public Page<OfferResponse> getMyOffers(int page, int size,
                                              Authentication authentication) {
         Freelancer freelancer =
@@ -110,7 +110,7 @@ public class FreelancerService {
 
 
 
-    @Cacheable(value = "freelancer", key = "'dashboard:' + #authentication.name")
+//    @Cacheable(value = "freelancer", key = "'dashboard:' + #authentication.name")
     public FreelancerDashboardResponse getDashboard(Authentication authentication) {
 
         Freelancer freelancer = getCurrentFreelancer(authentication);

@@ -7,6 +7,8 @@ import { typeLabel } from "./ActiviteTypes";
 import "../Dashboard/Dashboard.css";
 import "./Projects.css";
 import FreelancerOfferBox from "./FreelancerOfferBox.jsx";
+import ReviewForm from "../Reviews/ReviewForm";
+
 
 const statusLabel = {
     EN_ATTENTE: { text: "En attente", className: "pending-status" },
@@ -40,6 +42,15 @@ function ProjectDetails() {
         } catch (err) {
             console.error(err);
         }
+    };
+
+    const handleComplete = async () => {
+        if (!window.confirm("Marquer ce projet comme terminé ?")) return;
+        try {
+            const res = await api.put(`/api/projects/${id}/complete`);
+            setProject(res.data);
+            toast.success("Projet terminé.");
+        } catch (err) { console.error(err); }
     };
 
     if (loading) {
@@ -98,11 +109,16 @@ function ProjectDetails() {
                             <button className="small-button btn-danger" onClick={handleDelete}>
                                 Supprimer
                             </button>
+                            {project.status === "EN_COURS" && (
+                                <button className="small-button" onClick={handleComplete}>Marquer comme terminé</button>
+                            )}
                         </div>
                     )}
 
+                    {role === "PME" && project.status === "TERMINE" && <ReviewForm projectId={id} />}
+
                     {role === "FREELANCER" && (
-                        <FreelancerOfferBox projectId={id} />
+                        <FreelancerOfferBox projectId={id} projectStatus={project.status} />
                     )}
 
                 </div>

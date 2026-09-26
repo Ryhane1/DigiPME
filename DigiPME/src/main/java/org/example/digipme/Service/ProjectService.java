@@ -1,7 +1,9 @@
 package org.example.digipme.Service;
 
+import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.example.digipme.Enums.ProjectStatus;
 import org.example.digipme.Model.PME;
 import org.example.digipme.Model.Project;
 import org.example.digipme.Model.UserApp;
@@ -10,6 +12,7 @@ import org.example.digipme.DTOs.ProjectResponse;
 import org.example.digipme.Mappers.ProjectMapper;
 import org.example.digipme.Repository.ProjectRepository;
 import org.example.digipme.Repository.UserAppRepository;
+import org.example.digipme.exception.ApiException;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
@@ -18,6 +21,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
+
 
 @Service
 @RequiredArgsConstructor
@@ -28,7 +32,7 @@ public class ProjectService {
     private final ProjectMapper projectMapper;
 
 
-    @CacheEvict(value = {"projects", "pme"}, allEntries = true)
+//    @CacheEvict(value = {"projects", "pme"}, allEntries = true)
     public ProjectResponse createProject(ProjectRequest request,
                                          Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
@@ -44,7 +48,7 @@ public class ProjectService {
 
 
 
-    @Cacheable(value = "projects", key = "'page:' + #page + ':size:' + #size")
+//    @Cacheable(value = "projects", key = "'page:' + #page + ':size:' + #size")
     public Page<ProjectResponse> getAllProjects(int page, int size) {
 
         Pageable pageable = PageRequest.of(page, size);
@@ -56,7 +60,7 @@ public class ProjectService {
 
 
 
-    @Cacheable(value = "projects", key = "'id:' + #id")
+//    @Cacheable(value = "projects", key = "'id:' + #id")
     public ProjectResponse getProjectById(Long id) {
         Project project = projectRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Projet introuvable avec l'id : " + id));
@@ -78,7 +82,7 @@ public class ProjectService {
     }
 
 
-    @CacheEvict(value = {"projects", "pme"}, allEntries = true)
+//    @CacheEvict(value = {"projects", "pme"}, allEntries = true)
     public ProjectResponse updateProject(Long id, ProjectRequest request,
                                          Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
@@ -101,7 +105,7 @@ public class ProjectService {
     }
 
 
-    @CacheEvict(value = "projects", allEntries = true)
+//    @CacheEvict(value = "projects", allEntries = true)
     public void deleteProject(Long id, Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
         Project project = projectRepository.findById(id)
@@ -122,6 +126,22 @@ public class ProjectService {
         projectRepository.delete(project);
     }
 
+
+    @Transactional
+    public ProjectResponse completeProject(Long id, Authentication authentication) throws Exception {
+        UserApp user = getCurrentUser(authentication);
+        Project project = projectRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Projet introuvable avec l'id : " + id));
+
+        if (!(user instanceof PME pme) || !project.getPme().getId().equals(pme.getId())) {
+            throw new AccessDeniedException("Ce projet ne vous appartient pas");
+        }
+        if (project.getStatus() != ProjectStatus.EN_COURS) {
+            throw new RuntimeException("Seul un projet en cours peut être terminé");
+        }
+        project.setStatus(ProjectStatus.TERMINE);
+        return projectMapper.toResponse(projectRepository.save(project));
+    }
 
 
 

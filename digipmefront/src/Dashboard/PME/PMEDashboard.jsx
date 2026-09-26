@@ -53,7 +53,7 @@ function PMEDashboard() {
             <p>Voici un aperçu de vos projets sur DigiPME.</p>
           </div>
 
-          <a href="#" className="dashboard-primary-button">
+          <a href="/projects/new" className="dashboard-primary-button">
             Nouveau projet
             <ArrowRight size={17} />
           </a>

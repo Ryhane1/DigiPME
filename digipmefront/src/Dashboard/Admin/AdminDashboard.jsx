@@ -47,7 +47,7 @@ function AdminDashboard() {
             <p>Vue globale de la plateforme DigiPME.</p>
           </div>
 
-          <a href="#" className="dashboard-primary-button">
+          <a href="/admin/users" className="dashboard-primary-button">
             Gérer les utilisateurs
             <ArrowRight size={17} />
           </a>

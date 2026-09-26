@@ -66,7 +66,7 @@ public class ProjectController {
     @PreAuthorize("hasRole('PME')")
     public ResponseEntity<ProjectResponse> updateProject(
             @PathVariable Long id,
-            @RequestBody ProjectRequest request,
+            @Valid @RequestBody ProjectRequest request,
             Authentication authentication) {
 
         return ResponseEntity.ok(projectService.updateProject(id, request, authentication));
@@ -80,6 +80,13 @@ public class ProjectController {
 
         projectService.deleteProject(id, authentication);
         return ResponseEntity.noContent().build();
+    }
+
+    @PutMapping("/{id}/complete")
+    @PreAuthorize("hasRole('PME')")
+    public ResponseEntity<ProjectResponse> completeProject(@PathVariable Long id,
+                                                           Authentication authentication) throws Exception {
+        return ResponseEntity.ok(projectService.completeProject(id, authentication));
     }
 }
 

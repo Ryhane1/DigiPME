@@ -56,7 +56,7 @@
 
 .projects-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 18px;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .project-card h3 {
-    font-size: 17px;
+    font-size: 13px;
     color: #172033;
 }
 
@@ -88,13 +88,13 @@
     color: #596273;
     padding: 4px 9px;
     border-radius: 6px;
-    font-size: 11px;
+    font-size: 10px;
     width: fit-content;
 }
 
 .project-card p {
     color: #707a8b;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.5;
     flex: 1;
 }
@@ -112,6 +112,11 @@
     color: #10b981;
     font-weight: 700;
     font-size: 16px;
+}
+
+.dashboard-primary-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .project-card-actions {

@@ -4,7 +4,7 @@ import api from "../api/axios";
 import { toast } from "react-toastify";
 import DashboardLayout from "../Dashboard/DashboardLayout";
 import Pagination from "./Pagination";
-import { typeLabel } from "./activiteTypes";
+import { typeLabel } from "./ActiviteTypes";
 import "../Dashboard/Dashboard.css";
 import "./Projects.css";
 
@@ -93,10 +93,10 @@ function MyProjects() {
 
                                         <div className="project-card-actions">
                                             <button className="small-button" onClick={() => navigate(`/projects/${project.id}`)}>Voir</button>
-                                            <button className="small-button" onClick={() => navigate(`/projects/${project.id}/offers`)}>Offres</button>
                                             <button className="small-button" onClick={() => navigate(`/projects/${project.id}/edit`)}>Modifier</button>
                                             <button className="small-button btn-danger" onClick={() => handleDelete(project.id)}>Supprimer</button>
                                         </div>
+                                        <button className="offer-button" onClick={() => navigate(`/projects/${project.id}/offers`)}>Offres</button>
                                     </div>
                                 </div>
                             );

@@ -36,9 +36,9 @@ public class AuthService {
          if(userAppRepository.findUserAppByNom(userSignUp.getNom()) != null){
              throw new RuntimeException("Nom déjà utilisé");
          }
-         if (userAppRepository.findUserAppByEmail(userSignUp.getEmail())!=null){
-             throw new RuntimeException("Email déjà utilisé");
-         }
+//         if (userAppRepository.findUserAppByEmail(userSignUp.getEmail())!=null){
+//             throw new RuntimeException("Email déjà utilisé");
+//         }
          isEmailRegistered(userSignUp);
 
          if (userSignUp.getRole() == RoleUser.PME){
@@ -56,20 +56,7 @@ public class AuthService {
              UserDetails userDetails = customUserDetailsService.loadUserByUsername(pme.getEmail());
              String token = jwtService.generateToken(userDetails);
              return new TokenResponse(token);
-         } else if (userSignUp.getRole() == RoleUser.ADMIN) {
-             UserApp User = new UserApp();
-             User.setNom(userSignUp.getNom());
-             User.setEmail(userSignUp.getEmail());
-             User.setPassword(motdePasseEncoder.encode(userSignUp.getPassword()));
-             User.setTelephone(userSignUp.getTelephone());
-             User.setAdresse(userSignUp.getAdresse());
-             User.setRole(RoleUser.ADMIN);
-             userAppRepository.save(User);
-
-             UserDetails userDetails = customUserDetailsService.loadUserByUsername(User.getEmail());
-             String token = jwtService.generateToken(userDetails);
-             return new TokenResponse(token);
-         } else {
+         } else if (userSignUp.getRole() == RoleUser.FREELANCER) {
              Freelancer freelancer = new Freelancer();
              freelancer.setNom(userSignUp.getNom());
              freelancer.setEmail(userSignUp.getEmail());
@@ -83,6 +70,8 @@ public class AuthService {
              UserDetails userDetails = customUserDetailsService.loadUserByUsername(freelancer.getEmail());
              String token = jwtService.generateToken(userDetails);
              return new TokenResponse(token);
+         } else {
+             throw new RuntimeException("Role est incorrect");
          }
      }
 
@@ -118,13 +107,13 @@ public class AuthService {
 
 
     public void isEmailRegistered(UserSignUp userSignUp) {
-        if(userAppRepository.findByEmail(userSignUp.getEmail())){
+        if(userAppRepository.existsByEmail(userSignUp.getEmail())){
             throw new RuntimeException("Email déjà utilisé");
         }
-        if(pmeRepository.findByEmail(userSignUp.getEmail())){
+        if(pmeRepository.existsByEmail(userSignUp.getEmail())){
             throw new RuntimeException("Email déjà utilisé par une PME");
         }
-        if(freelancerRepository.findByEmail(userSignUp.getEmail())){
+        if(freelancerRepository.existsByEmail(userSignUp.getEmail())){
             throw new RuntimeException("Email déjà utilisé par un Freelancer");
         }
     }

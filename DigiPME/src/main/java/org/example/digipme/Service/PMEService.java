@@ -1,5 +1,6 @@
 package org.example.digipme.Service;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.example.digipme.DTOs.*;
 import org.example.digipme.DTOs.Dashboard.PMEDashboardResponse;
@@ -13,6 +14,7 @@ import org.example.digipme.Model.PME;
 import org.example.digipme.Model.Project;
 import org.example.digipme.Model.UserApp;
 import org.example.digipme.Repository.*;
+import org.example.digipme.exception.ApiException;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
@@ -39,7 +41,7 @@ public class PMEService {
     private final ProjectMapper projectMapper;
 
 
-    @Cacheable(value = "pme", key = "'profile:' + #authentication.name")
+//    @Cacheable(value = "pme", key = "'profile:' + #authentication.name")
     public PMEResponse getMyProfile(Authentication authentication) {
         PME pme = getCurrentPME(authentication);
         return pmeMapper.toResponse(pme);
@@ -47,7 +49,7 @@ public class PMEService {
 
 
 
-    @CacheEvict(value = "pme", key = "'profile:' + #authentication.name")
+//    @CacheEvict(value = "pme", key = "'profile:' + #authentication.name")
     public PMEResponse updateMyProfile(PMERequest request,
                                         Authentication authentication) {
         PME pme = getCurrentPME(authentication);
@@ -56,9 +58,9 @@ public class PMEService {
         return pmeMapper.toResponse(updatedPME);
     }
 
-
-    @Cacheable(value = "offers",
-               key = "'pme-project:' + #projectId + ':page:' + #page + ':size:' + #size")
+//
+//    @Cacheable(value = "offers",
+//               key = "'pme-project:' + #projectId + ':page:' + #page + ':size:' + #size")
     public Page<OfferResponse> getProjectOffers(Long projectId, int page, int size,
                                                  Authentication authentication) {
         PME pme = getCurrentPME(authentication);
@@ -74,7 +76,7 @@ public class PMEService {
     }
 
 
-    @Cacheable(value = "freelancersList", key = "'page:' + #page + ':size:' + #size")
+//    @Cacheable(value = "freelancersList", key = "'page:' + #page + ':size:' + #size")
     public Page<FreelancerResponse> getFreelancers(int page, int size) {
         Pageable pageable = PageRequest.of(page, size);
 
@@ -92,39 +94,28 @@ public class PMEService {
 
 
 
-    @CacheEvict(value = {"offers", "pme", "freelancer"}, allEntries = true)
-    public OfferResponse acceptOffer(
-            Long offerId,
-            Authentication authentication
-    ) {
+//    @CacheEvict(value = {"offers", "pme", "freelancer"}, allEntries = true)
+    @Transactional
+    public OfferResponse acceptOffer(Long offerId, Authentication authentication) {
         PME pme = getCurrentPME(authentication);
         Offer offer = offerRepository.findById(offerId)
                 .orElseThrow(() -> new RuntimeException("Offre introuvable"));
         Project project = offer.getProject();
+
         if (!project.getPme().getId().equals(pme.getId())) {
             throw new AccessDeniedException("Vous ne pouvez pas accepter cette offre");
         }
+        if (project.getStatus() != ProjectStatus.EN_ATTENTE || offer.getStatus() != OfferStatus.EN_ATTENTE) {
+            throw new RuntimeException("Cette offre ne peut plus être acceptée");
+        }
+
         offer.setStatus(OfferStatus.ACCEPTEE);
-        project.getOffers().forEach(o -> {
-            if (!o.getId().equals(offerId)) {
-                o.setStatus(OfferStatus.REFUSEE);
-                offerRepository.save(o);
-            }
-        });
-        Offer updatedOffer = offerRepository.save(offer);
-
-//        List<Offer> otherOffers = offerRepository.findByProjectId(project.getId(), Pageable.unpaged()).getContent();
-//        otherOffers.stream()
-//                .filter(o -> !o.getId().equals(offer.getId()))
-//                .filter(o -> o.getStatus() == OfferStatus.EN_ATTENTE)
-//                .forEach(o -> {
-//                    o.setStatus(OfferStatus.REFUSEE);
-//                    offerRepository.save(o);
-//                });
-
+        project.getOffers().stream()
+                .filter(o -> !o.getId().equals(offerId))
+                .forEach(o -> o.setStatus(OfferStatus.REFUSEE));
         project.setStatus(ProjectStatus.EN_COURS);
-        projectRepository.save(project);
-        return offerMapper.toResponse(updatedOffer);
+
+        return offerMapper.toResponse(offer);
     }
 
 
@@ -139,7 +130,7 @@ public class PMEService {
     }
 
 
-    @Cacheable(value = "pme", key = "'dashboard:' + #authentication.name")
+//    @Cacheable(value = "pme", key = "'dashboard:' + #authentication.name")
     public PMEDashboardResponse getDashboard(Authentication authentication) {
 
         PME pme = getCurrentPME(authentication);

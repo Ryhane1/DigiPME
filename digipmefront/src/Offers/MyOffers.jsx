@@ -28,7 +28,7 @@ function MyOffers() {
     }, [page]);
 
     return (
-        <DashboardLayout role="FREELANCE">
+        <DashboardLayout role="FREELANCER">
             <div className="dashboard-header">
                 <div>
                     <h1>Mes offres</h1>

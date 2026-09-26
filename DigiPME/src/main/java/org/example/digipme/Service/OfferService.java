@@ -2,6 +2,7 @@ package org.example.digipme.Service;
 
 import lombok.RequiredArgsConstructor;
 import org.example.digipme.Enums.OfferStatus;
+import org.example.digipme.Enums.ProjectStatus;
 import org.example.digipme.Model.Freelancer;
 import org.example.digipme.Model.Offer;
 import org.example.digipme.Model.Project;
@@ -12,6 +13,7 @@ import org.example.digipme.Repository.OfferRepository;
 import org.example.digipme.Repository.ProjectRepository;
 import org.example.digipme.Repository.UserAppRepository;
 import org.example.digipme.Model.UserApp;
+import org.example.digipme.exception.ApiException;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
@@ -31,7 +33,7 @@ public class OfferService {
     private final OfferMapper offerMapper;
 
 
-    @CacheEvict(value = {"offers", "freelancer"}, allEntries = true)
+//    @CacheEvict(value = {"offers", "freelancer"}, allEntries = true)
     public OfferResponse createOffer(
             OfferRequest request,
             Authentication authentication) {
@@ -50,6 +52,13 @@ public class OfferService {
                                         + request.getProjectId()
                         ));
 
+        if (project.getStatus() != ProjectStatus.EN_ATTENTE) {
+            throw new RuntimeException("Ce projet n'accepte plus d'offres");
+        }
+        if (offerRepository.existsByProjectIdAndFreelancerId(project.getId(), freelancer.getId())) {
+            throw new RuntimeException("Vous avez déjà postulé à ce projet");
+        }
+
         Offer offer = offerMapper.toEntity(request);
         offer.setStatus(OfferStatus.EN_ATTENTE);
         offer.setProject(project);
@@ -59,7 +68,7 @@ public class OfferService {
     }
 
 
-    @Cacheable(value = "offers", key = "'page:' + #page + ':size:' + #size")
+//    @Cacheable(value = "offers", key = "'page:' + #page + ':size:' + #size")
     public Page<OfferResponse> getAllOffers(int page, int size) {
         Pageable pageable = PageRequest.of(page, size);
         return offerRepository
@@ -68,7 +77,7 @@ public class OfferService {
     }
 
 
-    @Cacheable(value = "offers", key = "'id:' + #id")
+//    @Cacheable(value = "offers", key = "'id:' + #id")
     public OfferResponse getOfferById(Long id) {
         Offer offer = offerRepository.findById(id)
                 .orElseThrow(() ->
@@ -79,8 +88,8 @@ public class OfferService {
     }
 
 
-    @Cacheable(value = "offers",
-            key = "'project:' + #projectId + ':page:' + #page + ':size:' + #size")
+//    @Cacheable(value = "offers",
+//            key = "'project:' + #projectId + ':page:' + #page + ':size:' + #size")
     public Page<OfferResponse> getOffersByProject(Long projectId, int page, int size) {
         if (!projectRepository.existsById(projectId)) {
             throw new RuntimeException(
@@ -108,7 +117,7 @@ public class OfferService {
     }
 
 
-    @CacheEvict(value = {"offers", "freelancer"}, allEntries = true)
+//    @CacheEvict(value = {"offers", "freelancer"}, allEntries = true)
     public void deleteOffer( Long id, Authentication authentication) {
         UserApp user = getCurrentUser(authentication);
         if (!(user instanceof Freelancer freelancer)) {
@@ -118,16 +127,14 @@ public class OfferService {
         }
         Offer offer = offerRepository.findById(id)
                 .orElseThrow(() ->
-                        new RuntimeException(
-                                "Offre introuvable avec l'id : " + id
-                        )
-                );
+                        new RuntimeException("Offre introuvable avec l'id : " + id));
         if (!offer.getFreelancer()
                 .getId()
                 .equals(freelancer.getId())) {
-            throw new AccessDeniedException(
-                    "Vous ne pouvez pas supprimer cette offre"
-            );
+            throw new AccessDeniedException("Vous ne pouvez pas supprimer cette offre");
+        }
+        if (offer.getStatus() != OfferStatus.EN_ATTENTE) {
+            throw new RuntimeException("Seule une offre en attente peut être supprimée");
         }
         offerRepository.delete(offer);
     }

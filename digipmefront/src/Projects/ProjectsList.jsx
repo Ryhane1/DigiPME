@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import api from "../api/axios";
 import DashboardLayout from "../Dashboard/DashboardLayout";
 import Pagination from "./Pagination";
-import { typeLabel } from "./activiteTypes";
+import { typeLabel } from "./ActiviteTypes";
 import "../Dashboard/Dashboard.css";
 import "./Projects.css";
 

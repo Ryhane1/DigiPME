@@ -1,0 +1,38 @@
+.role-filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.role-filter {
+    border: 1px solid #d9dee7;
+    background: white;
+    color: #667085;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.role-filter:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.role-filter.active {
+    background: #eaf2ff;
+    border-color: #2563eb;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.row-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.project-row .status {
+    justify-self: start;
+    margin-top: 0;
+}

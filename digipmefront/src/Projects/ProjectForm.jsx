@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import api from "../api/axios";
 import DashboardLayout from "../Dashboard/DashboardLayout";
-import { ACTIVITE_TYPES } from "./activiteTypes";
+import { ACTIVITE_TYPES } from "./ActiviteTypes";
 import "../Auth/Auth.css";
 import "./Projects.css";
 

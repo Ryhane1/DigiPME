@@ -1,9 +1,8 @@
-// nouveau fichier: src/Projects/FreelancerOfferBox.jsx
 import { useState } from "react";
 import api from "../api/axios";
 import { toast } from "react-toastify";
 
-function FreelancerOfferBox({ projectId }) {
+function FreelancerOfferBox({ projectId , projectStatus }) {
     const [open, setOpen] = useState(false);
     const [saving, setSaving] = useState(false);
     const [form, setForm] = useState({ description: "", prixProposer: "", dateLivraison: "" });
@@ -32,8 +31,9 @@ function FreelancerOfferBox({ projectId }) {
 
     if (!open) {
         return (
-            <div className="project-details-actions">
-                <button className="dashboard-primary-button" onClick={() => setOpen(true)}>
+            <div  className="project-details-actions">
+                <button className="dashboard-primary-button" onClick={() => setOpen(true)}
+                        disabled={projectStatus ==="TERMINE"}>
                     Proposer une offre
                 </button>
             </div>

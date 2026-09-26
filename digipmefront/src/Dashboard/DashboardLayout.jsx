@@ -1,3 +1,5 @@
+import { NavLink, Link, useNavigate, useLocation } from "react-router-dom";
+
 import {
   LayoutDashboard,
   FolderKanban,
@@ -11,7 +13,20 @@ import {
   BriefcaseBusiness,
 } from "lucide-react";
 
+
 function DashboardLayout({ role, children }) {
+
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("nom");
+    localStorage.removeItem("role");
+    navigate("/login");
+  };
+
+
   const getMenu = () => {
     if (role === "PME") {
       return [
@@ -35,8 +50,7 @@ function DashboardLayout({ role, children }) {
     }
     return [
       { icon: LayoutDashboard, label: "Tableau de bord", path: "/dashboard" },
-      { icon: Users, label: "Utilisateurs", path: "#" },
-      { icon: FolderKanban, label: "Projets", path: "#" },
+      { icon: Users, label: "Utilisateurs", path: "/admin/users" },      { icon: FolderKanban, label: "Projets", path: "#" },
       { icon: BriefcaseBusiness, label: "Prestataires", path: "#" },
       { icon: Settings, label: "Paramètres", path: "#" },
     ];
@@ -62,45 +76,41 @@ function DashboardLayout({ role, children }) {
 
         <div className="dashboard-role">
           {role === "PME" && "Espace PME"}
-          {role === "FREELANCE" && "Espace Freelance"}
+          {role === "FREELANCER" && "Espace Freelance"}
           {role === "ADMIN" && "Administration"}
         </div>
 
         <nav className="dashboard-menu">
-          {menu.map((item, index) => {
+          {menu.map((item) => {
             const Icon = item.icon;
 
+            if (item.path === "#") {
+              return (
+                  <span className="dashboard-menu-item disabled" key={item.label}>
+          <Icon size={19} /><span>{item.label}</span>
+        </span>
+              );
+            }
             return (
-              <a
-                href={item.path}
-                className={`dashboard-menu-item ${
-    index === 0 ? "active" : ""
-}`}
-                key={item.label}
-              >
-                <Icon size={19} />
-                <span>{item.label}</span>
-              </a>
+                <NavLink
+                    to={item.path}
+                    key={item.label}
+                    className={({ isActive }) => `dashboard-menu-item ${isActive ? "active" : ""}`}
+                >
+                  <Icon size={19} /><span>{item.label}</span>
+                </NavLink>
             );
           })}
         </nav>
 
         <div className="dashboard-sidebar-bottom">
+          <NavLink to="/profile" className={({ isActive }) => `dashboard-menu-item ${isActive ? "active" : ""}`}>
+            <User size={19} /><span>Mon profil</span>
+          </NavLink>
 
-          <a href="#" className="dashboard-menu-item">
-            <User size={19} />
-            <span>Mon profil</span>
-          </a>
-
-          <a href="#" className="dashboard-menu-item">
-            <Settings size={19} />
-            <span>Paramètres</span>
-          </a>
-
-          <a href="/" className="dashboard-menu-item logout">
-            <LogOut size={19} />
-            <span>Déconnexion</span>
-          </a>
+          <Link to="/login" className="dashboard-menu-item logout" onClick={handleLogout}>
+            <LogOut size={19} /><span>Déconnexion</span>
+          </Link>
 
         </div>
       </aside>

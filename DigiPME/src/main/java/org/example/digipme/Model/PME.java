@@ -2,19 +2,21 @@ package org.example.digipme.Model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Builder
+@SuperBuilder
 @DiscriminatorValue("PME")
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Getter
+@Setter
 public class PME extends UserApp {
 
     @NotBlank
@@ -23,7 +25,9 @@ public class PME extends UserApp {
     private String activite ;
 
     @OneToMany(mappedBy = "pme")
-    private List<Project> projects;
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @Builder.Default
+    private List<Project> projects = new ArrayList<>();
 
 
 

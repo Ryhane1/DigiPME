@@ -6,5 +6,5 @@ import org.example.digipme.Model.PME;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PMERepository extends JpaRepository<PME,Long> {
-    boolean findByEmail(@NotBlank @Email String email);
+    boolean existsByEmail(@NotBlank @Email String email);
 }

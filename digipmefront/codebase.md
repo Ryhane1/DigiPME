@@ -103,62 +103,66 @@ dist-ssr
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27b7f0b8-91d6-4e4b-91de-058a7d4bd0c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Dashboard/useDashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Freelancers/FreelancersList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Offers/MyOffers.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Offers/ProjectOffers.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Projects/ActiviteTypes.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Projects/FreelancerOfferBox.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Projects/MyProjects.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Projects/Pagination.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Projects/ProjectDetails.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Projects/ProjectForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Projects/Projects.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Projects/ProjectsList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reviews/FreelancerReviewsPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reviews/MyReviews.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reviews/ReviewForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reviews/ReviewsList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reviews/StarRating.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ProfileUpdateResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/UserUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/exception/ApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiPME/src/main/resources/db/migration/V1__create_tables.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DigiPME/src/main/resources/db/migration/V2__seed_test_data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Admin/Admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Admin/UserForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Admin/UsersList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Profile/Profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Profile/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guards/AuthGuard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guards/AuthRedirect.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guards/RoleGuard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/codebase.md" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/codebase.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/FreelancerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/FreelancerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/PMEController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/PMEController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/FreelancerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/FreelancerResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/OfferRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/OfferRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/OfferResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/OfferResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ProjectRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ProjectRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ProjectResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ProjectResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ReviewRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/ReviewRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/UserRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/DTOs/UserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Enums/ActiviteType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Enums/ActiviteType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Mappers/FreelancerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Mappers/FreelancerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Mappers/PMEMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Mappers/PMEMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Mappers/ProjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Mappers/ProjectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Mappers/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Mappers/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/Freelancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/Freelancer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/Offer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/PME.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/PME.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/OfferRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/OfferRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/ProjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/UserApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Model/UserApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/FreelancerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/FreelancerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/PMERepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/PMERepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/UserAppRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Repository/UserAppRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/FreelancerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/FreelancerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/OfferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/OfferService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/PMEService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/PMEService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/ProjectService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/ReviewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/config/CacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/config/CacheConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/auth/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/auth/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/java/org/example/digipme/security/JwtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DigiPME/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../DigiPME/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codebase.md" beforeDir="false" afterPath="$PROJECT_DIR$/codebase.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Auth/Auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auth/Auth.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard/Admin/AdminDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/Admin/AdminDashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard/Dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/Dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard/DashboardLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/DashboardLayout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard/Freelancer/FreelancerDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/Freelancer/FreelancerDashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard/PME/PMEDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/PME/PMEDashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Offers/MyOffers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Offers/MyOffers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Projects/FreelancerOfferBox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projects/FreelancerOfferBox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Projects/MyProjects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projects/MyProjects.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Projects/ProjectForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projects/ProjectForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Projects/Projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projects/Projects.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Projects/ProjectsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projects/ProjectsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reviews/MyReviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reviews/MyReviews.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/axios.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/axios.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,79 +177,79 @@ dist-ssr
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Ryhane1"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ryhane1&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Ryhane1/DigiPME.git",
-    "accountId": "9496ee63-fbfc-4ad7-95b3-3d1bf0661724"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ryhane1/DigiPME.git&quot;,
+    &quot;accountId&quot;: &quot;9496ee63-fbfc-4ad7-95b3-3d1bf0661724&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.6123694544992306E-67" />
-      <entry key="MS500" value="4.380189627445407E-14" />
-      <entry key="S2" value="4.575289061710895E-4" />
-      <entry key="S5" value="0.04732697896402401" />
-      <entry key="S10" value="0.24975815648885136" />
-      <entry key="S30" value="1.033877329745025" />
-      <entry key="S60" value="1.8389606559195957" />
-      <entry key="M2" value="2.867437307755492" />
-      <entry key="M5" value="4.238795762152636" />
-      <entry key="M10" value="4.991394104779122" />
-      <entry key="M15" value="5.294460184839943" />
-      <entry key="M30" value="5.629287193911916" />
-      <entry key="H1" value="5.809920329859804" />
-      <entry key="H2" value="5.923176196421232" />
-      <entry key="H4" value="6.369923821508643" />
-      <entry key="D1" value="11.388285248177676" />
-      <entry key="W1" value="14.364646443212662" />
+      <entry key="MS100" value="5.303678514887952E-14" />
+      <entry key="MS500" value="0.002212663838468356" />
+      <entry key="S2" value="0.21688467178947957" />
+      <entry key="S5" value="0.5426455770827463" />
+      <entry key="S10" value="0.7469287301965916" />
+      <entry key="S30" value="1.513364645777607" />
+      <entry key="S60" value="2.8001396725168504" />
+      <entry key="M2" value="4.323486259750931" />
+      <entry key="M5" value="6.008735015273807" />
+      <entry key="M10" value="6.864752231420817" />
+      <entry key="M15" value="7.205685647016575" />
+      <entry key="M30" value="7.5820958272287" />
+      <entry key="H1" value="7.785440202077837" />
+      <entry key="H2" value="7.892587751854686" />
+      <entry key="H4" value="8.244858264858676" />
+      <entry key="D1" value="39.392317012082124" />
+      <entry key="W1" value="80.1165374677011" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000328898054518" />
-      <entry key="S2" value="1.0757298568048297" />
-      <entry key="S5" value="1.359956700783868" />
-      <entry key="S10" value="1.6832144915704776" />
-      <entry key="S30" value="2.5777686285943995" />
-      <entry key="S60" value="3.2878020703019604" />
-      <entry key="M2" value="3.9281730862737723" />
-      <entry key="M5" value="4.498287129363168" />
-      <entry key="M10" value="4.7345196236166505" />
-      <entry key="M15" value="4.819548151025783" />
-      <entry key="M30" value="4.907984144559048" />
-      <entry key="H1" value="4.953583830579342" />
-      <entry key="H2" value="5.000180414927377" />
-      <entry key="H4" value="5.496982655934542" />
-      <entry key="D1" value="11.588183818377319" />
-      <entry key="W1" value="15.223395901727125" />
+      <entry key="MS500" value="1.000000175585572" />
+      <entry key="S2" value="1.0286851537080985" />
+      <entry key="S5" value="1.358009494211958" />
+      <entry key="S10" value="1.8442170150284238" />
+      <entry key="S30" value="2.7049475422874427" />
+      <entry key="S60" value="3.5163472505247753" />
+      <entry key="M2" value="4.594229008273118" />
+      <entry key="M5" value="6.779429070004332" />
+      <entry key="M10" value="8.632462401592923" />
+      <entry key="M15" value="9.534154113509244" />
+      <entry key="M30" value="10.639427982971487" />
+      <entry key="H1" value="11.284078028677701" />
+      <entry key="H2" value="11.63299493757157" />
+      <entry key="H4" value="11.913884325230969" />
+      <entry key="D1" value="24.70913952974112" />
+      <entry key="W1" value="43.65350260176061" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="4.6194221031523215E-4" />
-      <entry key="MS500" value="0.21524487377917972" />
-      <entry key="S2" value="0.7336399478704979" />
-      <entry key="S5" value="1.1873578168623125" />
-      <entry key="S10" value="1.7231226039840162" />
-      <entry key="S30" value="3.4343033318062055" />
-      <entry key="S60" value="4.998262354220126" />
-      <entry key="M2" value="6.712600420734735" />
-      <entry key="M5" value="8.696036879137827" />
-      <entry key="M10" value="9.703486975922782" />
-      <entry key="M15" value="10.098565959048186" />
-      <entry key="M30" value="10.529284008182133" />
-      <entry key="H1" value="10.759439681692177" />
-      <entry key="H2" value="10.921297693462856" />
-      <entry key="H4" value="11.865784361676116" />
-      <entry key="D1" value="22.976095588840813" />
-      <entry key="W1" value="29.587973049796048" />
+      <entry key="MS100" value="5.966948513413744E-14" />
+      <entry key="MS500" value="0.0022832516475209098" />
+      <entry key="S2" value="0.30160224901995214" />
+      <entry key="S5" value="1.169789623637527" />
+      <entry key="S10" value="2.0825732846677156" />
+      <entry key="S30" value="3.976060870399672" />
+      <entry key="S60" value="6.158557396959521" />
+      <entry key="M2" value="8.814933484170783" />
+      <entry key="M5" value="12.730906948156074" />
+      <entry key="M10" value="15.462397476743522" />
+      <entry key="M15" value="16.714676159138868" />
+      <entry key="M30" value="18.207760245467043" />
+      <entry key="H1" value="19.062294620314237" />
+      <entry key="H2" value="19.52187854395681" />
+      <entry key="H4" value="20.156828896527205" />
+      <entry key="D1" value="64.10040132655732" />
+      <entry key="W1" value="123.76974503153644" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -263,6 +267,7 @@ dist-ssr
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
@@ -270,15 +275,21 @@ dist-ssr
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/enaaj/OneDrive/Desktop/FileRouge/digipmefront",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true"
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\enaaj\OneDrive\Desktop\FileRouge\digipmefront" />
+      <recent name="C:\Users\enaaj\OneDrive\Desktop\FileRouge\digipmefront\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\enaaj\OneDrive\Desktop\FileRouge\digipmefront\src" />
     </key>
@@ -318,6 +329,30 @@ dist-ssr
     "react/only-export-components": ["warn", { "allowConstantExport": true }]
   }
 }
+
+```
+
+# Dockerfile
+
+```
+FROM node:20-alpine AS build
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+RUN npm run build
+
+FROM nginx:alpine
+
+COPY --from=build /app/dist  /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
 
 ```
 
@@ -404,6 +439,403 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ```
 
+# src\Admin\Admin.css
+
+```css
+.role-filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.role-filter {
+    border: 1px solid #d9dee7;
+    background: white;
+    color: #667085;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.role-filter:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.role-filter.active {
+    background: #eaf2ff;
+    border-color: #2563eb;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.row-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.project-row .status {
+    justify-self: start;
+    margin-top: 0;
+}
+```
+
+# src\Admin\UserForm.jsx
+
+```jsx
+import { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
+import api from "../api/axios";
+import DashboardLayout from "../Dashboard/DashboardLayout";
+import "../Auth/Auth.css";
+import "../Dashboard/Dashboard.css";
+import "../Projects/Projects.css";
+import "../Profile/Profile.css";
+import "./Admin.css";
+
+const ROLES = [
+    { value: "ADMIN", label: "Administrateur" },
+    { value: "PME", label: "PME" },
+    { value: "FREELANCER", label: "Freelancer" },
+];
+
+const INITIAL = {
+    nom: "", email: "", password: "", telephone: "", adresse: "",
+    role: "PME", rc: "", activite: "", specialite: "",
+};
+
+function UserForm() {
+    const { id } = useParams();
+    const navigate = useNavigate();
+    const isEditing = Boolean(id);
+
+    const [form, setForm] = useState(INITIAL);
+    const [loading, setLoading] = useState(isEditing);
+    const [saving, setSaving] = useState(false);
+    const [error, setError] = useState("");
+
+    useEffect(() => {
+        if (!isEditing) return;
+
+        api
+            .get(`/api/users/${id}`)
+            .then((res) => {
+                const u = res.data;
+                setForm({
+                    nom: u.nom || "",
+                    email: u.email || "",
+                    password: "",
+                    telephone: u.telephone || "",
+                    adresse: u.adresse || "",
+                    role: u.role,
+                    rc: u.rc || "",
+                    activite: u.activite || "",
+                    specialite: u.specialite || "",
+                });
+            })
+            .catch(() => setError("Impossible de charger cet utilisateur."))
+            .finally(() => setLoading(false));
+    }, [id, isEditing]);
+
+    const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError("");
+        setSaving(true);
+
+        const payload = {
+            nom: form.nom,
+            email: form.email,
+            telephone: form.telephone,
+            adresse: form.adresse,
+            ...(form.password && { password: form.password }),
+            ...(form.role === "PME" && { rc: form.rc, activite: form.activite }),
+            ...(form.role === "FREELANCER" && { specialite: form.specialite }),
+        };
+
+        try {
+            if (isEditing) {
+                await api.put(`/api/users/${id}`, payload);
+                toast.success("Utilisateur modifié.");
+            } else {
+                await api.post("/api/users", { ...payload, role: form.role });
+                toast.success("Utilisateur créé.");
+            }
+            navigate("/admin/users");
+        } catch (err) {
+            setError(err.response?.data?.message || "Erreur lors de l'enregistrement.");
+        } finally {
+            setSaving(false);
+        }
+    };
+
+    if (loading) {
+        return (
+            <DashboardLayout role="ADMIN">
+                <p>Chargement...</p>
+            </DashboardLayout>
+        );
+    }
+
+    return (
+        <DashboardLayout role="ADMIN">
+            <div className="page-container">
+                <div className="page-header">
+                    <div>
+                        <h1>{isEditing ? "Modifier l'utilisateur" : "Nouvel utilisateur"}</h1>
+                        <p>
+                            {isEditing
+                                ? "Le rôle ne peut pas être modifié après la création."
+                                : "Créez un compte administrateur, PME ou freelancer."}
+                        </p>
+                    </div>
+                </div>
+
+                <form onSubmit={handleSubmit} className="auth-form" style={{ maxWidth: 600 }}>
+                    {error && <p className="auth-error">{error}</p>}
+
+                    <div className="form-group">
+                        <label>Rôle</label>
+                        <select
+                            name="role"
+                            className="form-select"
+                            value={form.role}
+                            onChange={handleChange}
+                            disabled={isEditing}
+                        >
+                            {ROLES.map((r) => (
+                                <option key={r.value} value={r.value}>{r.label}</option>
+                            ))}
+                        </select>
+                    </div>
+
+                    <div className="form-group">
+                        <label>{form.role === "PME" ? "Nom de l'entreprise" : "Nom complet"}</label>
+                        <input className="form-input" name="nom" value={form.nom} onChange={handleChange} required />
+                    </div>
+
+                    <div className="form-row">
+                        <div className="form-group">
+                            <label>Email</label>
+                            <input className="form-input" type="email" name="email" value={form.email} onChange={handleChange} required />
+                        </div>
+                        <div className="form-group">
+                            <label>Téléphone</label>
+                            <input className="form-input" type="tel" name="telephone" value={form.telephone} onChange={handleChange} required />
+                        </div>
+                    </div>
+
+                    <div className="form-group">
+                        <label>Adresse / Ville</label>
+                        <input className="form-input" name="adresse" value={form.adresse} onChange={handleChange} />
+                    </div>
+
+                    <div className="form-group">
+                        <label>Mot de passe</label>
+                        <input
+                            className="form-input"
+                            type="password"
+                            name="password"
+                            minLength={4}
+                            value={form.password}
+                            onChange={handleChange}
+                            required={!isEditing}
+                            placeholder={isEditing ? "Laisser vide pour ne pas le changer" : "••••••••"}
+                        />
+                    </div>
+
+                    {form.role === "PME" && (
+                        <>
+                            <div className="form-group">
+                                <label>Registre de commerce</label>
+                                <input className="form-input" name="rc" value={form.rc} onChange={handleChange} required />
+                            </div>
+                            <div className="form-group">
+                                <label>Activité</label>
+                                <input className="form-input" name="activite" value={form.activite} onChange={handleChange} required />
+                            </div>
+                        </>
+                    )}
+
+                    {form.role === "FREELANCER" && (
+                        <div className="form-group">
+                            <label>Spécialité</label>
+                            <input className="form-input" name="specialite" value={form.specialite} onChange={handleChange} required />
+                        </div>
+                    )}
+
+                    <div className="profile-actions">
+                        <button type="submit" className="auth-button" disabled={saving}>
+                            {saving ? "Enregistrement..." : isEditing ? "Enregistrer" : "Créer l'utilisateur"}
+                        </button>
+                        <button type="button" className="small-button" onClick={() => navigate("/admin/users")}>
+                            Annuler
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </DashboardLayout>
+    );
+}
+
+export default UserForm;
+```
+
+# src\Admin\UsersList.jsx
+
+```jsx
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import api from "../api/axios";
+import DashboardLayout from "../Dashboard/DashboardLayout";
+import Pagination from "../Projects/Pagination";
+import "../Dashboard/Dashboard.css";
+import "../Projects/Projects.css";
+import "./Admin.css";
+
+const FILTERS = [
+    { value: "ALL", label: "Tous" },
+    { value: "ADMIN", label: "Administrateurs" },
+    { value: "PME", label: "PME" },
+    { value: "FREELANCER", label: "Freelancers" },
+];
+
+const ROLE_BADGE = {
+    ADMIN: { text: "Admin", className: "pending-status" },
+    PME: { text: "PME", className: "completed-status" },
+    FREELANCER: { text: "Freelancer", className: "active-status" },
+};
+
+function UsersList() {
+    const navigate = useNavigate();
+    const myEmail = localStorage.getItem("nom"); // "nom" contient l'email (subject du JWT)
+
+    const [users, setUsers] = useState([]);
+    const [roleFilter, setRoleFilter] = useState("ALL");
+    const [page, setPage] = useState(0);
+    const [totalPages, setTotalPages] = useState(0);
+    const [loading, setLoading] = useState(true);
+    const [reloadKey, setReloadKey] = useState(0);
+
+    useEffect(() => {
+        setLoading(true);
+
+        const url =
+            roleFilter === "ALL"
+                ? `/api/users?page=${page}&size=10`
+                : `/api/users/role/${roleFilter}?page=${page}&size=10`;
+
+        api
+            .get(url)
+            .then((res) => {
+                setUsers(res.data.content);
+                setTotalPages(res.data.totalPages);
+            })
+            .catch((err) => console.error(err))
+            .finally(() => setLoading(false));
+    }, [roleFilter, page, reloadKey]);
+
+    const changeFilter = (value) => {
+        setRoleFilter(value);
+        setPage(0);
+    };
+
+    const handleDelete = async (user) => {
+        if (!window.confirm(`Supprimer ${user.nom} ? Ses projets, offres et avis seront aussi supprimés.`)) return;
+
+        try {
+            await api.delete(`/api/users/${user.id}`);
+            toast.success("Utilisateur supprimé.");
+
+            if (users.length === 1 && page > 0) setPage(page - 1);
+            else setReloadKey((k) => k + 1);
+        } catch (err) {
+            console.error(err);
+        }
+    };
+
+    return (
+        <DashboardLayout role="ADMIN">
+            <div className="page-container">
+                <div className="page-header">
+                    <div>
+                        <h1>Utilisateurs</h1>
+                        <p>Gérez les comptes administrateurs, PME et freelancers.</p>
+                    </div>
+
+                    <button className="dashboard-primary-button" onClick={() => navigate("/admin/users/new")}>
+                        Ajouter un utilisateur
+                    </button>
+                </div>
+
+                <div className="role-filters">
+                    {FILTERS.map((f) => (
+                        <button
+                            key={f.value}
+                            className={`role-filter ${roleFilter === f.value ? "active" : ""}`}
+                            onClick={() => changeFilter(f.value)}
+                        >
+                            {f.label}
+                        </button>
+                    ))}
+                </div>
+
+                {loading && <p>Chargement...</p>}
+
+                {!loading && users.length === 0 && (
+                    <div className="empty-state">Aucun utilisateur trouvé.</div>
+                )}
+
+                {!loading && users.length > 0 && (
+                    <div className="dashboard-card projects-card">
+                        <div className="project-list">
+                            {users.map((u) => {
+                                const badge = ROLE_BADGE[u.role];
+                                const isMe = u.email === myEmail;
+
+                                return (
+                                    <div className="project-row" key={u.id}>
+                                        <div>
+                                            <strong>{u.nom}{isMe && " (vous)"}</strong>
+                                            <span>{u.email}</span>
+                                        </div>
+
+                                        <span className={`status ${badge.className}`}>{badge.text}</span>
+
+                                        <div className="row-actions">
+                                            <button
+                                                className="small-button"
+                                                onClick={() => navigate(isMe ? "/profile" : `/admin/users/${u.id}/edit`)}
+                                            >
+                                                Modifier
+                                            </button>
+                                            {!isMe && (
+                                                <button className="small-button btn-danger" onClick={() => handleDelete(u)}>
+                                                    Supprimer
+                                                </button>
+                                            )}
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                )}
+
+                <Pagination page={page} totalPages={totalPages} onPageChange={setPage} />
+            </div>
+        </DashboardLayout>
+    );
+}
+
+export default UsersList;
+```
+
 # src\api\axios.jsx
 
 ```jsx
@@ -411,7 +843,7 @@ import axios from "axios";
 import {toast} from "react-toastify";
 
 const api = axios.create({
-    baseURL: "http://localhost:8081",
+    baseURL: "http://localhost:8083",
     headers: {
         "Content-Type": "application/json",
     },
@@ -499,6 +931,7 @@ export default api;
     outline-offset: 2px;
   }
 }
+
 
 .hero {
   position: relative;
@@ -688,6 +1121,14 @@ import ProjectOffers from "./Offers/ProjectOffers";
 import FreelancersList from "./Freelancers/FreelancersList.jsx";
 import FreelancerReviewsPage from "./Reviews/FreelancerReviewsPage";
 import MyReviews from "./Reviews/MyReviews";
+import Profile from "./Profile/Profile";
+import UsersList from "./Admin/UsersList";
+import UserForm from "./Admin/UserForm";
+
+import AuthGuard from "./guards/AuthGuard";
+import AuthRedirect from "./guards/AuthRedirect";
+import RoleGuard from "./guards/RoleGuard";
+import AccessDeniedPage from "./guards/AccessDeniedPage";
 
 
 function App() {
@@ -695,23 +1136,49 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/register/pme" element={<RegisterPME />} />
-                <Route path="/register/freelance" element={<RegisterFreelance />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/access-denied" element={<AccessDeniedPage />} />
 
-                <Route path="/projects" element={<ProjectsList />} />
-                <Route path="/projects/new" element={<ProjectForm />} />
-                <Route path="/projects/:id" element={<ProjectDetails />} />
-                <Route path="/projects/:id/edit" element={<ProjectForm />} />
-                <Route path="/my-projects" element={<MyProjects />} />
-                <Route path="/my-offers" element={<MyOffers />} />
-                <Route path="/projects/:projectId/offers" element={<ProjectOffers />} />
-                <Route path="/my-offers" element={<MyOffers />} />
-                <Route path="/projects/:projectId/offers" element={<ProjectOffers />} />
-                <Route path="/freelancers" element={<FreelancersList />} />
-                <Route path="/freelancers/:freelancerId/reviews" element={<FreelancerReviewsPage />} />
-                <Route path="/my-reviews" element={<MyReviews />} />
+                {/* AUTH (redirect si déjà connecté) */}
+                <Route path="/register/pme" element={<AuthRedirect><RegisterPME /></AuthRedirect>} />
+                <Route path="/register/freelance" element={<AuthRedirect><RegisterFreelance /></AuthRedirect>} />
+                <Route path="/login" element={<AuthRedirect><Login /></AuthRedirect>} />
+
+                {/* PROTÉGÉ (token requis) */}
+                <Route element={<AuthGuard />}>
+                    <Route path="/dashboard" element={<Dashboard />} />
+
+                    {/* Accès PME uniquement */}
+                    <Route element={<RoleGuard roles={["PME"]} />}>
+                        <Route path="/my-projects" element={<MyProjects />} />
+                        <Route path="/projects/new" element={<ProjectForm />} />
+                        <Route path="/projects/:id/edit" element={<ProjectForm />} />
+                        <Route path="/projects/:projectId/offers" element={<ProjectOffers />} />
+                        <Route path="/freelancers" element={<FreelancersList />} />
+                    </Route>
+
+                    {/* Accès FREELANCER / PME */}
+                    <Route element={<RoleGuard roles={["PME", "FREELANCER"]} />}>
+                        <Route path="/projects" element={<ProjectsList />} />
+                        <Route path="/projects/:id" element={<ProjectDetails />} />
+                        <Route path="/my-offers" element={<MyOffers />} />
+                    </Route>
+
+                    {/* Profil : tous les rôles connectés */}
+                    <Route path="/profile" element={<Profile />} />
+
+                    {/* Accès ADMIN uniquement */}
+                    <Route element={<RoleGuard roles={["ADMIN"]} />}>
+                        <Route path="/admin/users" element={<UsersList />} />
+                        <Route path="/admin/users/new" element={<UserForm />} />
+                        <Route path="/admin/users/:id/edit" element={<UserForm />} />
+                    </Route>
+
+                    {/* Accès FREELANCER uniquement */}
+                    <Route element={<RoleGuard roles={["FREELANCER"]} />}>
+                        <Route path="/my-reviews" element={<MyReviews />} />
+                        <Route path="/freelancers/:freelancerId/reviews" element={<FreelancerReviewsPage />} />
+                    </Route>
+                </Route>
 
             </Routes>
         </BrowserRouter>
@@ -719,6 +1186,7 @@ function App() {
 }
 
 export default App;
+
 ```
 
 # src\assets\hero.png
@@ -1558,7 +2026,7 @@ function AdminDashboard() {
             <p>Vue globale de la plateforme DigiPME.</p>
           </div>
 
-          <a href="#" className="dashboard-primary-button">
+          <a href="/admin/users" className="dashboard-primary-button">
             Gérer les utilisateurs
             <ArrowRight size={17} />
           </a>
@@ -1688,6 +2156,29 @@ export default AdminDashboard;
     min-height: 100vh;
     display: flex;
     background: #f5f7fb;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    gap: 20px;
+    margin-bottom: 35px;}
+
+.MyOffers-Cards{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.offer-button{
+    border: 1px solid #2563eb;
+    background: white;
+    color: #2563eb;
+    padding: 7px 11px;
+    border-radius: 6px;
+    font-size: 11px;
+    cursor: pointer;
+    width: stretch;
 }
 
 /* SIDEBAR */
@@ -2323,6 +2814,7 @@ export default Dashboard;
 # src\Dashboard\DashboardLayout.jsx
 
 ```jsx
+import { useNavigate, useLocation } from "react-router-dom";
 import {
   LayoutDashboard,
   FolderKanban,
@@ -2336,7 +2828,20 @@ import {
   BriefcaseBusiness,
 } from "lucide-react";
 
+
 function DashboardLayout({ role, children }) {
+
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("nom");
+    localStorage.removeItem("role");
+    navigate("/login");
+  };
+
+
   const getMenu = () => {
     if (role === "PME") {
       return [
@@ -2360,8 +2865,7 @@ function DashboardLayout({ role, children }) {
     }
     return [
       { icon: LayoutDashboard, label: "Tableau de bord", path: "/dashboard" },
-      { icon: Users, label: "Utilisateurs", path: "#" },
-      { icon: FolderKanban, label: "Projets", path: "#" },
+      { icon: Users, label: "Utilisateurs", path: "/admin/users" },      { icon: FolderKanban, label: "Projets", path: "#" },
       { icon: BriefcaseBusiness, label: "Prestataires", path: "#" },
       { icon: Settings, label: "Paramètres", path: "#" },
     ];
@@ -2387,7 +2891,7 @@ function DashboardLayout({ role, children }) {
 
         <div className="dashboard-role">
           {role === "PME" && "Espace PME"}
-          {role === "FREELANCE" && "Espace Freelance"}
+          {role === "FREELANCER" && "Espace Freelance"}
           {role === "ADMIN" && "Administration"}
         </div>
 
@@ -2399,8 +2903,7 @@ function DashboardLayout({ role, children }) {
               <a
                 href={item.path}
                 className={`dashboard-menu-item ${
-    index === 0 ? "active" : ""
-}`}
+                index === 0 ? "active" : ""}`}
                 key={item.label}
               >
                 <Icon size={19} />
@@ -2412,7 +2915,7 @@ function DashboardLayout({ role, children }) {
 
         <div className="dashboard-sidebar-bottom">
 
-          <a href="#" className="dashboard-menu-item">
+          <a href="/profile" className={`dashboard-menu-item ${pathname === "/profile" ? "active" : ""}`}>
             <User size={19} />
             <span>Mon profil</span>
           </a>
@@ -2422,7 +2925,7 @@ function DashboardLayout({ role, children }) {
             <span>Paramètres</span>
           </a>
 
-          <a href="/" className="dashboard-menu-item logout">
+          <a href="/" className="dashboard-menu-item logout" onClick={handleLogout}>
             <LogOut size={19} />
             <span>Déconnexion</span>
           </a>
@@ -2458,23 +2961,20 @@ export default DashboardLayout;
 # src\Dashboard\Freelancer\FreelancerDashboard.jsx
 
 ```jsx
-import {
-  BriefcaseBusiness,
-  Send,
-  FolderKanban,
-  Star,
-  ArrowRight,
-} from "lucide-react";
+import {BriefcaseBusiness, Send, FolderKanban, Star, ArrowRight,} from "lucide-react";
 
 import DashboardLayout from "../DashboardLayout";
 import { useDashboard } from "../useDashboard";
+import {useNavigate} from "react-router-dom";
 
 function FreelancerDashboard() {
   const { data, loading, error } = useDashboard("/api/freelancers/dashboard");
 
+  const navigate = useNavigate();
+
   if (loading) {
     return (
-        <DashboardLayout role="FREELANCE">
+        <DashboardLayout role="FREELANCER">
           <p>Chargement du tableau de bord...</p>
         </DashboardLayout>
     );
@@ -2482,7 +2982,7 @@ function FreelancerDashboard() {
 
   if (error || !data) {
     return (
-        <DashboardLayout role="FREELANCE">
+        <DashboardLayout role="FREELANCER">
           <p>Impossible de charger votre tableau de bord.</p>
         </DashboardLayout>
     );
@@ -2499,7 +2999,7 @@ function FreelancerDashboard() {
   } = data;
 
   return (
-      <DashboardLayout role="FREELANCE">
+      <DashboardLayout role="FREELANCER">
 
         {/* HEADER */}
         <div className="dashboard-header">
@@ -2508,7 +3008,7 @@ function FreelancerDashboard() {
             <p>Retrouvez vos projets et vos missions.</p>
           </div>
 
-          <a href="#" className="dashboard-primary-button">
+          <a href="/projects" className="dashboard-primary-button">
             Voir les projets
             <ArrowRight size={17} />
           </a>
@@ -2558,7 +3058,7 @@ function FreelancerDashboard() {
           </div>
 
         </div>
-
+      <div className={"dashboard-cards"}>
         {/* PROJETS RECOMMANDÉS */}
         <div className="dashboard-card">
 
@@ -2590,7 +3090,8 @@ function FreelancerDashboard() {
                     <strong>{project.prix} DH</strong>
                     <span>Budget estimé</span>
 
-                    <button className="small-button">Voir le projet</button>
+                    <button className="small-button" onClick={() => navigate(`/projects/${project.id}`)}>
+                      Voir le projet</button>
                   </div>
                 </div>
             ))}
@@ -2615,8 +3116,8 @@ function FreelancerDashboard() {
                 <p>Vous n'avez pas encore envoyé de proposition.</p>
             )}
 
-            {recentOffers.map((offer) => (
-                <div className="project-row" key={offer.id}>
+            {recentOffers.map((offer) =>(
+              <div className="project-row" key={offer.id}>
                   <div>
                     <strong>{offer.description}</strong>
                     <span>Livraison : {offer.dateLivraison}</span>
@@ -2624,6 +3125,7 @@ function FreelancerDashboard() {
 
                   <div>
                     <span>{offer.prixProposer} DH</span>
+                    <span>{offer.status}</span>
                   </div>
                 </div>
             ))}
@@ -2631,6 +3133,7 @@ function FreelancerDashboard() {
           </div>
 
         </div>
+      </div>
 
       </DashboardLayout>
   );
@@ -2697,7 +3200,7 @@ function PMEDashboard() {
             <p>Voici un aperçu de vos projets sur DigiPME.</p>
           </div>
 
-          <a href="#" className="dashboard-primary-button">
+          <a href="/projects/new" className="dashboard-primary-button">
             Nouveau projet
             <ArrowRight size={17} />
           </a>
@@ -2911,6 +3414,97 @@ function FreelancersList() {
 }
 
 export default FreelancersList;
+```
+
+# src\guards\AccessDeniedPage.jsx
+
+```jsx
+import { Link } from "react-router-dom";
+import { ShieldAlert, ArrowLeft } from "lucide-react";
+
+function AccessDeniedPage() {
+
+  return (
+    <div className="access-denied-page">
+      <div className="access-denied-card">
+        <div className="access-denied-icon">
+          <ShieldAlert size={48} />
+        </div>
+
+        <h1>Accès refusé</h1>
+        <p>Vous n'avez pas les droits nécessaires pour accéder à cette page.</p>
+
+        <div className="access-denied-actions">
+          <Link to="/login" className="auth-button">
+            <ArrowLeft size={17} />
+            Retour à l'accueil
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default AccessDeniedPage;
+
+```
+
+# src\guards\AuthGuard.jsx
+
+```jsx
+import { Navigate, Outlet } from "react-router-dom";
+
+function AuthGuard() {
+
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+        return <Navigate to="/login" replace />;
+    }
+
+    return <Outlet />;
+}
+
+export default AuthGuard;
+```
+
+# src\guards\AuthRedirect.jsx
+
+```jsx
+import { Navigate } from "react-router-dom";
+
+
+const AuthRedirect = ({ children }) => {
+    const token = localStorage.getItem('token');
+
+    if(token) {
+        return <Navigate to={'/dashboard'} replace/>
+    }
+
+    return children
+}
+
+
+export default AuthRedirect
+```
+
+# src\guards\RoleGuard.jsx
+
+```jsx
+import { Navigate, Outlet } from "react-router-dom";
+
+function RoleGuard({ roles }) {
+
+    const userRole = localStorage.getItem("role");
+
+    if (!roles.includes(userRole)) {
+        return <Navigate to="/access-denied" replace />;
+    }
+
+    return <Outlet />;
+}
+
+export default RoleGuard;
 ```
 
 # src\Home.jsx
@@ -3321,6 +3915,7 @@ button {
   background: #eaf2ff;
   position: absolute;
 }
+
 
 .dashboard-card {
   position: relative;
@@ -4726,7 +5321,7 @@ function MyOffers() {
     }, [page]);
 
     return (
-        <DashboardLayout role="FREELANCE">
+        <DashboardLayout role="FREELANCER">
             <div className="dashboard-header">
                 <div>
                     <h1>Mes offres</h1>
@@ -4832,6 +5427,267 @@ function ProjectOffers() {
 export default ProjectOffers;
 ```
 
+# src\Profile\Profile.css
+
+```css
+.profile-card {
+    background: white;
+    border: 1px solid #e7ebf0;
+    border-radius: 14px;
+    padding: 30px;
+    max-width: 700px;
+}
+
+.profile-identity {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.profile-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #eaf2ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profile-identity h2 {
+    font-size: 20px;
+    color: #172033;
+}
+
+.profile-identity span {
+    color: #8a93a3;
+    font-size: 13px;
+}
+
+.form-input:disabled,
+.form-select:disabled {
+    background: #f8fafc;
+    color: #475467;
+    cursor: not-allowed;
+}
+
+.profile-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile-actions .auth-button {
+    width: auto;
+    padding: 0 26px;
+    margin-top: 0;
+}
+```
+
+# src\Profile\Profile.jsx
+
+```jsx
+import { useState, useEffect } from "react";
+import { jwtDecode } from "jwt-decode";
+import { toast } from "react-toastify";
+import { Pencil } from "lucide-react";
+import api from "../api/axios";
+import DashboardLayout from "../Dashboard/DashboardLayout";
+import "../Auth/Auth.css";
+import "../Dashboard/Dashboard.css";
+import "../Projects/Projects.css";
+import "./Profile.css";
+
+const ROLE_LABELS = { ADMIN: "Administrateur", PME: "PME", FREELANCER: "Freelancer" };
+
+const toForm = (u) => ({
+    nom: u.nom || "",
+    email: u.email || "",
+    telephone: u.telephone || "",
+    adresse: u.adresse || "",
+    rc: u.rc || "",
+    activite: u.activite || "",
+    specialite: u.specialite || "",
+});
+
+function Profile() {
+    const layoutRole = localStorage.getItem("role");
+
+    const [user, setUser] = useState(null);
+    const [form, setForm] = useState(toForm({}));
+    const [editing, setEditing] = useState(false);
+    const [loading, setLoading] = useState(true);
+    const [saving, setSaving] = useState(false);
+    const [error, setError] = useState("");
+
+    useEffect(() => {
+        api
+            .get("/api/users/me")
+            .then((res) => {
+                setUser(res.data);
+                setForm(toForm(res.data));
+                console.log(res.data)
+            })
+            .catch((err) => console.error(err))
+            .finally(() => setLoading(false));
+    }, []);
+
+    const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+
+    const handleCancel = () => {
+        setForm(toForm(user));
+        setError("");
+        setEditing(false);
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError("");
+        setSaving(true);
+
+        console.log(form);
+        console.log("Hello")
+
+        const payload = {
+            nom: form.nom,
+            email: form.email,
+            telephone: form.telephone,
+            adresse: form.adresse,
+            ...(user.role === "PME" && { rc: form.rc, activite: form.activite }),
+            ...(user.role === "FREELANCER" && { specialite: form.specialite }),
+        };
+
+        try {
+            const res = await api.put("/api/users/me", payload);
+            const { user: updated, token } = res.data;
+
+            // L'email a changé → le backend renvoie un nouveau token
+            if (token) {
+                localStorage.setItem("token", token);
+                localStorage.setItem("nom", jwtDecode(token).sub);
+            }
+
+            setUser(updated);
+            setForm(toForm(updated));
+            setEditing(false);
+            toast.success("Profil mis à jour.");
+        } catch (err) {
+            setError(err.response?.data?.message || "Erreur lors de la mise à jour du profil.");
+        } finally {
+            setSaving(false);
+        }
+    };
+
+    if (loading) {
+        return (
+            <DashboardLayout role={layoutRole}>
+                <p>Chargement...</p>
+            </DashboardLayout>
+        );
+    }
+
+    if (!user) {
+        return (
+            <DashboardLayout role={layoutRole}>
+                <div className="empty-state">Impossible de charger votre profil.</div>
+            </DashboardLayout>
+        );
+    }
+
+    const field = (label, name, extra = {}) => (
+        <div className="form-group">
+            <label>{label}</label>
+            <input
+                className="form-input"
+                name={name}
+                value={form[name]}
+                onChange={handleChange}
+                disabled={!editing}
+                {...extra}
+            />
+        </div>
+    );
+
+    return (
+        <DashboardLayout role={layoutRole}>
+            <div className="page-container">
+                <div className="page-header">
+                    <div>
+                        <h1>Mon profil</h1>
+                        <p>Consultez et modifiez vos informations personnelles.</p>
+                    </div>
+
+                    {!editing && (
+                        <button className="dashboard-primary-button" onClick={() => setEditing(true)}>
+                            <Pencil size={16} />
+                            Modifier
+                        </button>
+                    )}
+                </div>
+
+                <div className="profile-card">
+                    <div className="profile-identity">
+                        <div className="profile-avatar">{user.nom?.charAt(0).toUpperCase()}</div>
+                        <div>
+                            <h2>{user.nom}</h2>
+                            <span>
+                                {ROLE_LABELS[user.role]}
+                                {user.role === "FREELANCER" && user.noteMoyenne
+                                    ? ` · ★ ${user.noteMoyenne.toFixed(1)}`
+                                    : ""}
+                            </span>
+                        </div>
+                    </div>
+
+                    <form onSubmit={handleSubmit} className="auth-form">
+                        {error && <p className="auth-error">{error}</p>}
+
+                        {field(user.role === "PME" ? "Nom de l'entreprise" : "Nom complet", "nom", { required: true })}
+
+                        <div className="form-row">
+                            {field("Email", "email", { type: "email", required: true })}
+                            {field("Téléphone", "telephone", { type: "tel", required: true })}
+                        </div>
+
+                        {field("Adresse / Ville", "adresse")}
+
+                        {user.role === "PME" && (
+                            <>
+                                {field("Registre de commerce", "rc", { required: true })}
+                                {field("Activité", "activite", { required: true })}
+                            </>
+                        )}
+
+                        {user.role === "FREELANCER" &&
+                            field("Spécialité", "specialite", { required: true })}
+
+                        {editing && (
+                            <div className="profile-actions">
+                                <button type="submit" className="auth-button" disabled={saving}>
+                                    {saving ? "Enregistrement..." : "Enregistrer"}
+                                </button>
+                                <button type="button" className="small-button" onClick={handleCancel}>
+                                    Annuler
+                                </button>
+                            </div>
+                        )}
+                    </form>
+                </div>
+            </div>
+        </DashboardLayout>
+    );
+}
+
+export default Profile;
+```
+
 # src\Projects\ActiviteTypes.jsx
 
 ```jsx
@@ -4855,7 +5711,6 @@ export function typeLabel(value) {
 # src\Projects\FreelancerOfferBox.jsx
 
 ```jsx
-// nouveau fichier: src/Projects/FreelancerOfferBox.jsx
 import { useState } from "react";
 import api from "../api/axios";
 import { toast } from "react-toastify";
@@ -4962,7 +5817,7 @@ import api from "../api/axios";
 import { toast } from "react-toastify";
 import DashboardLayout from "../Dashboard/DashboardLayout";
 import Pagination from "./Pagination";
-import { typeLabel } from "./activiteTypes";
+import { typeLabel } from "./ActiviteTypes";
 import "../Dashboard/Dashboard.css";
 import "./Projects.css";
 
@@ -5051,10 +5906,10 @@ function MyProjects() {
 
                                         <div className="project-card-actions">
                                             <button className="small-button" onClick={() => navigate(`/projects/${project.id}`)}>Voir</button>
-                                            <button className="small-button" onClick={() => navigate(`/projects/${project.id}/offers`)}>Offres</button>
                                             <button className="small-button" onClick={() => navigate(`/projects/${project.id}/edit`)}>Modifier</button>
                                             <button className="small-button btn-danger" onClick={() => handleDelete(project.id)}>Supprimer</button>
                                         </div>
+                                        <button className="offer-button" onClick={() => navigate(`/projects/${project.id}/offers`)}>Offres</button>
                                     </div>
                                 </div>
                             );
@@ -5227,7 +6082,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import api from "../api/axios";
 import DashboardLayout from "../Dashboard/DashboardLayout";
-import { ACTIVITE_TYPES } from "./activiteTypes";
+import { ACTIVITE_TYPES } from "./ActiviteTypes";
 import "../Auth/Auth.css";
 import "./Projects.css";
 
@@ -5482,7 +6337,7 @@ export default ProjectForm;
 
 .projects-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 18px;
 }
 
@@ -5504,7 +6359,7 @@ export default ProjectForm;
 }
 
 .project-card h3 {
-    font-size: 17px;
+    font-size: 13px;
     color: #172033;
 }
 
@@ -5514,13 +6369,13 @@ export default ProjectForm;
     color: #596273;
     padding: 4px 9px;
     border-radius: 6px;
-    font-size: 11px;
+    font-size: 10px;
     width: fit-content;
 }
 
 .project-card p {
     color: #707a8b;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.5;
     flex: 1;
 }
@@ -5647,7 +6502,7 @@ import { useNavigate } from "react-router-dom";
 import api from "../api/axios";
 import DashboardLayout from "../Dashboard/DashboardLayout";
 import Pagination from "./Pagination";
-import { typeLabel } from "./activiteTypes";
+import { typeLabel } from "./ActiviteTypes";
 import "../Dashboard/Dashboard.css";
 import "./Projects.css";
 
@@ -5790,7 +6645,7 @@ function MyReviews() {
     }, []);
 
     return (
-        <DashboardLayout role="FREELANCE">
+        <DashboardLayout role="FREELANCER">
             <div className="dashboard-header">
                 <div>
                     <h1>Mes évaluations</h1>

@@ -29,7 +29,7 @@ public class ReviewService {
     private final ReviewMapper reviewMapper;
 
 
-    @CacheEvict(value = "reviews", allEntries = true)
+//    @CacheEvict(value = "reviews", allEntries = true)
     public ReviewResponse createReview(ReviewRequest request,
                                        Authentication authentication) {
 
@@ -86,13 +86,14 @@ public class ReviewService {
         review.setFreelancer(freelancer);
 
         Review savedReview = reviewRepository.save(review);
+        refreshAverage(freelancer);
 
         return reviewMapper.toResponse(savedReview);
     }
 
 
 
-    @Cacheable(value = "reviews", key = "'id:' + #id")
+//    @Cacheable(value = "reviews", key = "'id:' + #id")
     public ReviewResponse getReviewById(Long id) {
 
         Review review = reviewRepository.findById(id)
@@ -104,7 +105,7 @@ public class ReviewService {
 
 
 
-    @Cacheable(value = "reviews", key = "'page:' + #page + ':size:' + #size")
+//    @Cacheable(value = "reviews", key = "'page:' + #page + ':size:' + #size")
     public Page<ReviewResponse> getAllReviews(int page, int size) {
 
         Pageable pageable = PageRequest.of(page, size);
@@ -113,8 +114,8 @@ public class ReviewService {
 
 
 
-    @Cacheable(value = "reviews",
-            key = "'freelancer:' + #freelancerId + ':page:' + #page + ':size:' + #size" )
+//    @Cacheable(value = "reviews",
+//            key = "'freelancer:' + #freelancerId + ':page:' + #page + ':size:' + #size" )
     public Page<ReviewResponse> getReviewsByFreelancer(Long freelancerId,
                                                        int page, int size) {
 
@@ -133,7 +134,7 @@ public class ReviewService {
 
 
 
-    @CacheEvict(value = "reviews", allEntries = true)
+//    @CacheEvict(value = "reviews", allEntries = true)
     public void deleteReview(Long id,
                              Authentication authentication) {
 
@@ -155,8 +156,15 @@ public class ReviewService {
         }
 
         reviewRepository.delete(review);
+        reviewRepository.flush();
+        refreshAverage(review.getFreelancer());
     }
 
+
+    private void refreshAverage(Freelancer freelancer) {
+        freelancer.setNoteMoyenne(reviewRepository.findAverageNoteByFreelancerId(freelancer.getId()));
+        userRepository.save(freelancer);
+    }
 
 
 

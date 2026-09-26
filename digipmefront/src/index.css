@@ -251,7 +251,8 @@ button {
   position: absolute;
 }
 
-.dashboard-card {
+
+.hero-dashboard-card  {
   position: relative;
   width: 390px;
   padding: 25px;

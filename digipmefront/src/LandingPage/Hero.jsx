@@ -66,7 +66,7 @@ function Hero() {
 
                     <div className="hero-circle"></div>
 
-                    <div className="dashboard-card">
+                    <div className="hero-dashboard-card ">
 
                         <div className="card-top">
 

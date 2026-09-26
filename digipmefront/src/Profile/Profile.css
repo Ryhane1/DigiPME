@@ -1,0 +1,59 @@
+.profile-card {
+    background: white;
+    border: 1px solid #e7ebf0;
+    border-radius: 14px;
+    padding: 30px;
+    max-width: 700px;
+}
+
+.profile-identity {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.profile-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #eaf2ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profile-identity h2 {
+    font-size: 20px;
+    color: #172033;
+}
+
+.profile-identity span {
+    color: #8a93a3;
+    font-size: 13px;
+}
+
+.form-input:disabled,
+.form-select:disabled {
+    background: #f8fafc;
+    color: #475467;
+    cursor: not-allowed;
+}
+
+.profile-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile-actions .auth-button {
+    width: auto;
+    padding: 0 26px;
+    margin-top: 0;
+}

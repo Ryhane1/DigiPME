@@ -1,20 +1,17 @@
-import {
-  BriefcaseBusiness,
-  Send,
-  FolderKanban,
-  Star,
-  ArrowRight,
-} from "lucide-react";
+import {BriefcaseBusiness, Send, FolderKanban, Star, ArrowRight,} from "lucide-react";
 
 import DashboardLayout from "../DashboardLayout";
 import { useDashboard } from "../useDashboard";
+import {useNavigate} from "react-router-dom";
 
 function FreelancerDashboard() {
   const { data, loading, error } = useDashboard("/api/freelancers/dashboard");
 
+  const navigate = useNavigate();
+
   if (loading) {
     return (
-        <DashboardLayout role="FREELANCE">
+        <DashboardLayout role="FREELANCER">
           <p>Chargement du tableau de bord...</p>
         </DashboardLayout>
     );
@@ -22,24 +19,17 @@ function FreelancerDashboard() {
 
   if (error || !data) {
     return (
-        <DashboardLayout role="FREELANCE">
+        <DashboardLayout role="FREELANCER">
           <p>Impossible de charger votre tableau de bord.</p>
         </DashboardLayout>
     );
   }
 
-  const {
-    profile,
-    projetsDisponibles,
-    propositionsEnvoyees,
-    missionsEnCours,
-    noteMoyenne,
-    recommendedProjects,
-    recentOffers,
-  } = data;
+  const {profile, projetsDisponibles, propositionsEnvoyees,
+    missionsEnCours, noteMoyenne, recommendedProjects, recentOffers,} = data;
 
   return (
-      <DashboardLayout role="FREELANCE">
+      <DashboardLayout role="FREELANCER">
 
         {/* HEADER */}
         <div className="dashboard-header">
@@ -48,7 +38,7 @@ function FreelancerDashboard() {
             <p>Retrouvez vos projets et vos missions.</p>
           </div>
 
-          <a href="#" className="dashboard-primary-button">
+          <a href="/projects" className="dashboard-primary-button">
             Voir les projets
             <ArrowRight size={17} />
           </a>
@@ -98,7 +88,7 @@ function FreelancerDashboard() {
           </div>
 
         </div>
-
+      <div className={"dashboard-cards"}>
         {/* PROJETS RECOMMANDÉS */}
         <div className="dashboard-card">
 
@@ -130,7 +120,8 @@ function FreelancerDashboard() {
                     <strong>{project.prix} DH</strong>
                     <span>Budget estimé</span>
 
-                    <button className="small-button">Voir le projet</button>
+                    <button className="small-button" onClick={() => navigate(`/projects/${project.id}`)}>
+                      Voir le projet</button>
                   </div>
                 </div>
             ))}
@@ -139,7 +130,6 @@ function FreelancerDashboard() {
 
         </div>
 
-        {/* MES OFFRES */}
         <div className="dashboard-card projects-card">
 
           <div className="dashboard-card-header">
@@ -155,8 +145,8 @@ function FreelancerDashboard() {
                 <p>Vous n'avez pas encore envoyé de proposition.</p>
             )}
 
-            {recentOffers.map((offer) => (
-                <div className="project-row" key={offer.id}>
+            {recentOffers.map((offer) =>(
+              <div className="project-row" key={offer.id}>
                   <div>
                     <strong>{offer.description}</strong>
                     <span>Livraison : {offer.dateLivraison}</span>
@@ -164,6 +154,7 @@ function FreelancerDashboard() {
 
                   <div>
                     <span>{offer.prixProposer} DH</span>
+                    <span>{offer.status}</span>
                   </div>
                 </div>
             ))}
@@ -171,6 +162,7 @@ function FreelancerDashboard() {
           </div>
 
         </div>
+      </div>
 
       </DashboardLayout>
   );

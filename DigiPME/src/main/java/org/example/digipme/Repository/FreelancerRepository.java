@@ -6,5 +6,5 @@ import org.example.digipme.Model.Freelancer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface FreelancerRepository extends JpaRepository<Freelancer, Long> {
-    boolean findByEmail(@NotBlank @Email String email);
+    boolean existsByEmail(@NotBlank @Email String email);
 }
