@@ -1,4 +1,4 @@
-name: CI/CD Backend - DigiPME
+name: CI/CD Frontend - DigiPME
 
 on:
   push:
@@ -7,45 +7,33 @@ on:
     branches: [main]
 
 env:
-  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/digipme-backend
+  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/digipme-frontend
 
 jobs:
-  test:
+  lint-and-build:
     runs-on: ubuntu-latest
-    services:
-      mysql:
-        image: mysql:8.0
-        env:
-          MYSQL_ROOT_PASSWORD: uxui2025
-          MYSQL_DATABASE: digipme_db
-        ports:
-          - 3307:3306
-        options: >-
-          --health-cmd="mysqladmin ping -h localhost"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=5
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up JDK 21
-        uses: actions/setup-java@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          java-version: '21'
-          distribution: 'temurin'
-          cache: maven
+          node-version: '20'
+          cache: npm
 
-      - name: Run tests
-        run: ./mvnw clean test -B
-        env:
-          DB_URL: jdbc:mysql://localhost:3307/digipme_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-          DB_USERNAME: root
-          DB_PASSWORD: uxui2025
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
 
   build-and-push:
-    needs: test
+    needs: lint-and-build
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
